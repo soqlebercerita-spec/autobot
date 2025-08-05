@@ -614,23 +614,79 @@ class TradingBot:
         try:
             result = messagebox.askyesno("Confirm", "Are you sure you want to close all positions?")
             if result:
-                positions = self.get_total_open_orders()
-                self.log(f"🔄 Closing {positions} positions...")
-                messagebox.showinfo("Success", f"Closed {positions} positions")
+                if not self.connected or not MT5_AVAILABLE:
+                    self.log("❌ MT5 not connected")
+                    return
+                
+                positions = mt5.positions_get()
+                if not positions:
+                    self.log("ℹ️ No open positions to close")
+                    messagebox.showinfo("Info", "No open positions found")
+                    return
+                
+                closed_count = 0
+                for position in positions:
+                    # Prepare close request
+                    close_type = mt5.ORDER_TYPE_SELL if position.type == mt5.POSITION_TYPE_BUY else mt5.ORDER_TYPE_BUY
+                    
+                    # Get current price
+                    tick = mt5.symbol_info_tick(position.symbol)
+                    if not tick:
+                        continue
+                    
+                    close_price = tick.bid if close_type == mt5.ORDER_TYPE_SELL else tick.ask
+                    
+                    close_request = {
+                        "action": mt5.TRADE_ACTION_DEAL,
+                        "symbol": position.symbol,
+                        "volume": position.volume,
+                        "type": close_type,
+                        "position": position.ticket,
+                        "price": close_price,
+                        "deviation": 20,
+                        "magic": 123456,
+                        "comment": "Manual close all",
+                        "type_time": mt5.ORDER_TIME_GTC,
+                        "type_filling": mt5.ORDER_FILLING_IOC,
+                    }
+                    
+                    # Close position
+                    close_result = mt5.order_send(close_request)
+                    if close_result and close_result.retcode == mt5.TRADE_RETCODE_DONE:
+                        closed_count += 1
+                        self.log(f"✅ Closed position: {position.symbol} ticket {position.ticket}")
+                    else:
+                        self.log(f"❌ Failed to close position {position.ticket}")
+                
+                self.log(f"🔄 Closed {closed_count} out of {len(positions)} positions")
+                messagebox.showinfo("Success", f"Closed {closed_count} out of {len(positions)} positions")
+                
         except Exception as e:
-            self.log(f"Manual close error: {e}")
+            self.log(f"❌ Manual close error: {e}")
+            messagebox.showerror("Error", f"Failed to close positions: {e}")
 
     def enhanced_trading_loop(self):
-        """Enhanced main trading loop"""
+        """Enhanced main trading loop with real MT5 trading"""
         while self.running:
             try:
                 self.log("📊 Scanning market for opportunities...")
                 
-                # Simple signal check (placeholder)
-                if self.total_opportunities_captured < 5:  # Limit for demo
-                    self.total_opportunities_captured += 1
-                    self.update_opportunities_display()
-                    self.log("🎯 Opportunity captured!")
+                # Get real market data and analyze
+                symbol = self.symbol_var.get()
+                opportunity = self.analyze_market_opportunity(symbol)
+                
+                if opportunity:
+                    # Execute real trade
+                    if self.execute_trade(opportunity):
+                        self.total_opportunities_captured += 1
+                        self.update_opportunities_display()
+                        self.log(f"🎯 Trade executed: {opportunity['action']} {symbol}")
+                    else:
+                        self.total_opportunities_missed += 1
+                        self.update_opportunities_display()
+                        self.log("❌ Trade execution failed")
+                else:
+                    self.log("📈 No trading opportunity found")
                 
                 # Enhanced scanning interval
                 scan_interval = max(int(self.interval_var.get()), 1)
@@ -700,6 +756,120 @@ class TradingBot:
 
         except Exception as e:
             self.log(f"❌ Stop bot error: {e}")
+
+    def analyze_market_opportunity(self, symbol):
+        """Analyze market for trading opportunities"""
+        try:
+            if not self.connected or not MT5_AVAILABLE:
+                return None
+            
+            # Get current price
+            tick = mt5.symbol_info_tick(symbol)
+            if not tick:
+                self.log(f"❌ No tick data for {symbol}")
+                return None
+            
+            # Get recent price data for analysis
+            rates = mt5.copy_rates_from_pos(symbol, mt5.TIMEFRAME_M1, 0, 20)
+            if rates is None or len(rates) < 10:
+                self.log(f"❌ Insufficient price data for {symbol}")
+                return None
+            
+            # Simple moving average analysis
+            close_prices = [rate[4] for rate in rates]  # Close prices
+            ma_short = np.mean(close_prices[-5:])  # 5-period MA
+            ma_long = np.mean(close_prices[-10:])   # 10-period MA
+            
+            current_price = tick.bid
+            spread = tick.ask - tick.bid
+            
+            # Check if spread is acceptable
+            symbol_info = mt5.symbol_info(symbol)
+            if not symbol_info:
+                return None
+            
+            spread_pips = spread / symbol_info.point
+            
+            # Trading conditions
+            if spread_pips > 50:  # Spread too wide
+                return None
+            
+            # Generate signal
+            signal = None
+            if ma_short > ma_long * 1.001:  # Upward momentum
+                signal = {
+                    'action': 'BUY',
+                    'price': tick.ask,
+                    'sl': tick.ask - (20 * symbol_info.point),  # 20 point SL
+                    'tp': tick.ask + (30 * symbol_info.point),  # 30 point TP
+                    'reason': 'MA crossover bullish'
+                }
+            elif ma_short < ma_long * 0.999:  # Downward momentum
+                signal = {
+                    'action': 'SELL',
+                    'price': tick.bid,
+                    'sl': tick.bid + (20 * symbol_info.point),  # 20 point SL
+                    'tp': tick.bid - (30 * symbol_info.point),  # 30 point TP
+                    'reason': 'MA crossover bearish'
+                }
+            
+            return signal
+            
+        except Exception as e:
+            self.log(f"❌ Market analysis error: {e}")
+            return None
+    
+    def execute_trade(self, opportunity):
+        """Execute real trade through MT5"""
+        try:
+            if not self.connected or not MT5_AVAILABLE:
+                self.log("❌ MT5 not connected")
+                return False
+            
+            symbol = self.symbol_var.get()
+            lot_size = float(self.lot_var.get())
+            
+            # Check if we already have positions
+            positions = mt5.positions_get(symbol=symbol)
+            if positions and len(positions) >= 3:  # Max 3 positions per symbol
+                self.log("⚠️ Maximum positions reached")
+                return False
+            
+            # Prepare order request
+            order_type = mt5.ORDER_TYPE_BUY if opportunity['action'] == 'BUY' else mt5.ORDER_TYPE_SELL
+            
+            request = {
+                "action": mt5.TRADE_ACTION_DEAL,
+                "symbol": symbol,
+                "volume": lot_size,
+                "type": order_type,
+                "price": opportunity['price'],
+                "sl": opportunity['sl'],
+                "tp": opportunity['tp'],
+                "deviation": 20,
+                "magic": 123456,
+                "comment": f"AuraTrade-{opportunity['reason']}",
+                "type_time": mt5.ORDER_TIME_GTC,
+                "type_filling": mt5.ORDER_FILLING_IOC,
+            }
+            
+            # Send order
+            result = mt5.order_send(request)
+            
+            if result and result.retcode == mt5.TRADE_RETCODE_DONE:
+                self.log(f"✅ Order successful: {opportunity['action']} {lot_size} {symbol}")
+                self.log(f"   Price: {opportunity['price']}, SL: {opportunity['sl']}, TP: {opportunity['tp']}")
+                self.log(f"   Reason: {opportunity['reason']}")
+                self.order_counter += 1
+                return True
+            else:
+                error_msg = f"Order failed: {result.comment if result else 'Unknown error'}"
+                self.log(f"❌ {error_msg}")
+                return False
+                
+        except Exception as e:
+            self.log(f"❌ Trade execution error: {e}")
+            return False
 
     def on_closing(self):
         """Enhanced application closing"""
