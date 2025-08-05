@@ -174,30 +174,23 @@ class TradingBot:
         self.market_api = MarketDataAPI()
         self.simulation = SimulationTrading(self.market_api)
 
-        # Initialize MT5 if available and on Windows
+        # Initialize platform detection
         self.is_windows = platform.system() == "Windows"
         self.connected = False
         
         print(f"🖥️  Platform: {platform.system()}")
 
-        # Initialize MT5 if available and on Windows
+        # Initialize MT5 related objects (but don't connect yet)
         if MT5_AVAILABLE and self.is_windows:
-            try:
-                self.connect_mt5()
-            except Exception as e:
-                print(f"MT5 connection warning: {e}")
-        elif not self.is_windows:
-            print("⚠️  MT5 requires Windows platform - using simulation mode")
-        else:
-            print("⚠️  MT5 not available - using simulation mode")
-
-        # Initialize MT5 related objects
-        if MT5_AVAILABLE and self.is_windows and self.connected:
             self.mt5 = mt5  # Use actual MT5
+            print("✅ MT5 library available for Windows")
         else:
             # Use simulation trading for compatibility
             self.mt5 = self.simulation
-            self.connected = False
+            if not self.is_windows:
+                print("⚠️  MT5 requires Windows platform - using simulation mode")
+            else:
+                print("⚠️  MT5 not available - using simulation mode")
 
         self.indicators = EnhancedIndicators()
 
@@ -218,9 +211,20 @@ class TradingBot:
         self.root = None
         self.log_box = None
         self.perf_box = None
+        self.connect_button = None  # Initialize button references
+        self.start_button = None
+        self.stop_button = None
         
-        # Setup GUI
+        # Setup GUI first
         self.setup_gui()
+        
+        # Now try to auto-connect MT5 after GUI is ready
+        if MT5_AVAILABLE and self.is_windows:
+            try:
+                self.auto_connect_mt5()
+            except Exception as e:
+                self.log(f"MT5 auto-connection failed: {e}")
+        
         self.log_performance("Session started")
 
     def setup_gui(self):
@@ -496,8 +500,8 @@ class TradingBot:
         else:
             print(f"PERF: {perf_entry}")  # Fallback to console
 
-    def connect_mt5(self):
-        """Enhanced MT5 connection for Windows"""
+    def auto_connect_mt5(self):
+        """Auto-connect MT5 during initialization (safe version)"""
         if not MT5_AVAILABLE:
             self.log("❌ MT5 library not available")
             return False
@@ -526,8 +530,54 @@ class TradingBot:
             self.log(f"   Leverage: 1:{account_info.leverage}")
             self.connected = True
 
-            self.connect_button.config(state="disabled")
-            self.start_button.config(state="normal")
+            # Safely update GUI buttons if they exist
+            if hasattr(self, 'connect_button') and self.connect_button:
+                self.connect_button.config(state="disabled")
+            if hasattr(self, 'start_button') and self.start_button:
+                self.start_button.config(state="normal")
+
+            return True
+
+        except Exception as e:
+            self.log(f"❌ Windows MT5 connection error: {e}")
+            self.connected = False
+            return False
+
+    def connect_mt5(self):
+        """Enhanced MT5 connection for Windows (manual connection)"""
+        if not MT5_AVAILABLE:
+            self.log("❌ MT5 library not available")
+            return False
+
+        if not self.is_windows:
+            self.log("❌ MT5 requires Windows platform")
+            return False
+
+        try:
+            self.log("🔄 Initializing MT5 connection...")
+            if not mt5.initialize():
+                error_code, error_msg = mt5.last_error()
+                self.log(f"❌ MT5 initialization failed: {error_code} - {error_msg}")
+                return False
+
+            # Get account information
+            account_info = mt5.account_info()
+            if account_info is None:
+                self.log("❌ Failed to get MT5 account info")
+                return False
+
+            # Success!
+            self.log("✅ Windows MT5 Connection Successful!")
+            self.log(f"   Account: {account_info.login}")
+            self.log(f"   Balance: ${account_info.balance:,.2f}")
+            self.log(f"   Leverage: 1:{account_info.leverage}")
+            self.connected = True
+
+            # Update GUI buttons
+            if self.connect_button:
+                self.connect_button.config(state="disabled")
+            if self.start_button:
+                self.start_button.config(state="normal")
 
             return True
 

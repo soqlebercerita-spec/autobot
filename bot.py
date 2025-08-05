@@ -125,11 +125,8 @@ def launch_trading_bot():
                 # Try different ways to start the bot
                 if hasattr(module, 'main'):
                     print("📊 Starting bot via main() function...")
-                    # The original bot.py launches the bot by calling its main() function
-                    # but the integrated bot has its own main() function.
-                    # So we need to call the main function of the integrated bot.
-                    from tradebot.trading_bot_integrated import main
-                    main()
+                    # Call the main function from the imported module
+                    module.main()
                 elif hasattr(module, bot_info['class_name']):
                     print(f"📊 Starting bot via {bot_info['class_name']} class...")
                     bot_class = getattr(module, bot_info['class_name'])
