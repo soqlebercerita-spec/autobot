@@ -1,3 +1,4 @@
+
 #!/usr/bin/env python3
 """
 AuraTrade - Institutional-Level Python Trading Bot
@@ -85,16 +86,25 @@ def safe_import_module(file_path):
         tradebot_dir = os.path.join(os.getcwd(), 'tradebot')
         if tradebot_dir not in sys.path:
             sys.path.insert(0, tradebot_dir)
+        
+        # Also add current directory
+        current_dir = os.getcwd()
+        if current_dir not in sys.path:
+            sys.path.insert(0, current_dir)
 
         spec = importlib.util.spec_from_file_location("trading_module", file_path)
         if spec is None:
+            print(f"❌ Could not create spec for {file_path}")
             return None
+        
         module = importlib.util.module_from_spec(spec)
+        sys.modules["trading_module"] = module
         spec.loader.exec_module(module)
         return module
     except Exception as e:
         print(f"❌ Failed to import {file_path}: {e}")
-        print(f"   Current sys.path: {sys.path[:3]}...")  # Show first 3 entries
+        print(f"   Current working directory: {os.getcwd()}")
+        print(f"   File exists: {os.path.exists(file_path)}")
         return None
 
 def launch_trading_bot():
@@ -135,11 +145,16 @@ def launch_trading_bot():
                         bot.run()
                     elif hasattr(bot, 'start'):
                         bot.start()
+                    elif hasattr(bot, 'root'):
+                        # Tkinter app
+                        bot.root.mainloop()
                     else:
                         print("✅ Bot class instantiated successfully")
+                        input("Press Enter to exit...")
                 else:
                     print("📊 Executing module directly...")
-                    # Module was imported, if it has startup code it should run
+                    print("✅ Module loaded successfully")
+                    input("Press Enter to exit...")
             else:
                 print("❌ Failed to import bot module")
                 return False

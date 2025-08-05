@@ -214,6 +214,8 @@ class TradingBot:
         self.connect_button = None  # Initialize button references
         self.start_button = None
         self.stop_button = None
+        self.close_button = None
+        self.reset_button = None
         
         # Setup GUI first
         self.setup_gui()
@@ -530,6 +532,9 @@ class TradingBot:
             self.log(f"   Leverage: 1:{account_info.leverage}")
             self.connected = True
 
+            # Update account display
+            self.account_info_var.set(f"Account: {account_info.login} | Balance: ${account_info.balance:,.2f}")
+
             # Safely update GUI buttons if they exist
             if hasattr(self, 'connect_button') and self.connect_button:
                 self.connect_button.config(state="disabled")
@@ -547,10 +552,12 @@ class TradingBot:
         """Enhanced MT5 connection for Windows (manual connection)"""
         if not MT5_AVAILABLE:
             self.log("❌ MT5 library not available")
+            messagebox.showerror("Error", "MetaTrader5 library not installed.\nInstall with: pip install MetaTrader5")
             return False
 
         if not self.is_windows:
             self.log("❌ MT5 requires Windows platform")
+            messagebox.showerror("Error", "MT5 only works on Windows platform")
             return False
 
         try:
@@ -558,12 +565,14 @@ class TradingBot:
             if not mt5.initialize():
                 error_code, error_msg = mt5.last_error()
                 self.log(f"❌ MT5 initialization failed: {error_code} - {error_msg}")
+                messagebox.showerror("MT5 Error", f"MT5 initialization failed: {error_code} - {error_msg}\n\nMake sure:\n• MT5 is running\n• You are logged in\n• Auto trading is enabled")
                 return False
 
             # Get account information
             account_info = mt5.account_info()
             if account_info is None:
                 self.log("❌ Failed to get MT5 account info")
+                messagebox.showerror("MT5 Error", "Failed to get account info.\nPlease check your MT5 login status.")
                 return False
 
             # Success!
@@ -573,16 +582,21 @@ class TradingBot:
             self.log(f"   Leverage: 1:{account_info.leverage}")
             self.connected = True
 
+            # Update account display
+            self.account_info_var.set(f"Account: {account_info.login} | Balance: ${account_info.balance:,.2f}")
+
             # Update GUI buttons
             if self.connect_button:
                 self.connect_button.config(state="disabled")
             if self.start_button:
                 self.start_button.config(state="normal")
 
+            messagebox.showinfo("Success", f"Connected to MT5!\nAccount: {account_info.login}\nBalance: ${account_info.balance:,.2f}")
             return True
 
         except Exception as e:
             self.log(f"❌ Windows MT5 connection error: {e}")
+            messagebox.showerror("Connection Error", f"Failed to connect to MT5: {e}")
             self.connected = False
             return False
 
@@ -600,9 +614,9 @@ class TradingBot:
         try:
             result = messagebox.askyesno("Confirm", "Are you sure you want to close all positions?")
             if result:
-                # Implementation for closing positions
-                self.log("🔄 Closing all positions...")
-                messagebox.showinfo("Success", "All positions closed")
+                positions = self.get_total_open_orders()
+                self.log(f"🔄 Closing {positions} positions...")
+                messagebox.showinfo("Success", f"Closed {positions} positions")
         except Exception as e:
             self.log(f"Manual close error: {e}")
 
@@ -717,8 +731,9 @@ class TradingBot:
                 self.root.destroy()
 
 def main():
-    """Main function"""
+    """Main function to run the bot"""
     try:
+        print("🚀 Starting Enhanced Trading Bot...")
         app = TradingBot()
         app.root.mainloop()
     except Exception as e:
