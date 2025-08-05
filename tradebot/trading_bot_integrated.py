@@ -170,64 +170,76 @@ except ImportError:
 
 class TradingBot:
     def __init__(self):
-        # Initialize simulation trading first
-        self.market_api = MarketDataAPI()
-        self.simulation = SimulationTrading(self.market_api)
-
-        # Initialize platform detection
-        self.is_windows = platform.system() == "Windows"
-        self.connected = False
-        
-        print(f"🖥️  Platform: {platform.system()}")
-
-        # Initialize MT5 related objects (but don't connect yet)
-        if MT5_AVAILABLE and self.is_windows:
-            self.mt5 = mt5  # Use actual MT5
-            print("✅ MT5 library available for Windows")
-        else:
-            # Use simulation trading for compatibility
-            self.mt5 = self.simulation
-            if not self.is_windows:
-                print("⚠️  MT5 requires Windows platform - using simulation mode")
-            else:
-                print("⚠️  MT5 not available - using simulation mode")
-
-        self.indicators = EnhancedIndicators()
-
-        # Bot state
+        # Initialize basic variables first
         self.running = False
+        self.connected = False
+        self.bot_thread = None
+        self.market_api = None
+        self.simulation = None
+        self.indicators = None
+        
+        # Initialize state variables
         self.modal_awal = None
         self.last_price = None
-        self.last_prices = []  # Price history list for HFT
+        self.last_prices = []
         self.last_reset_date = datetime.date.today()
         self.order_counter = 0
         self.total_opportunities_captured = 0
         self.total_opportunities_missed = 0
-
-        # Threading
-        self.bot_thread = None
-
+        
         # Initialize GUI components to None first
         self.root = None
         self.log_box = None
         self.perf_box = None
-        self.connect_button = None  # Initialize button references
+        self.connect_button = None
         self.start_button = None
         self.stop_button = None
         self.close_button = None
         self.reset_button = None
         
-        # Setup GUI first
-        self.setup_gui()
-        
-        # Now try to auto-connect MT5 after GUI is ready
-        if MT5_AVAILABLE and self.is_windows:
-            try:
-                self.auto_connect_mt5()
-            except Exception as e:
-                self.log(f"MT5 auto-connection failed: {e}")
-        
-        self.log_performance("Session started")
+        try:
+            # Initialize simulation trading
+            self.market_api = MarketDataAPI()
+            self.simulation = SimulationTrading(self.market_api)
+
+            # Initialize platform detection
+            self.is_windows = platform.system() == "Windows"
+            
+            print(f"🖥️  Platform: {platform.system()}")
+
+            # Initialize MT5 related objects (but don't connect yet)
+            if MT5_AVAILABLE and self.is_windows:
+                self.mt5 = mt5  # Use actual MT5
+                print("✅ MT5 library available for Windows")
+            else:
+                # Use simulation trading for compatibility
+                self.mt5 = self.simulation
+                if not self.is_windows:
+                    print("⚠️  MT5 requires Windows platform - using simulation mode")
+                else:
+                    print("⚠️  MT5 not available - using simulation mode")
+
+            self.indicators = EnhancedIndicators()
+            
+            # Setup GUI
+            self.setup_gui()
+            
+            # Now try to auto-connect MT5 after GUI is ready
+            if MT5_AVAILABLE and self.is_windows:
+                try:
+                    self.auto_connect_mt5()
+                except Exception as e:
+                    self.log(f"MT5 auto-connection failed: {e}")
+            
+            self.log_performance("Session started")
+            
+        except Exception as e:
+            print(f"Initialization error: {e}")
+            if hasattr(self, 'root') and self.root:
+                try:
+                    self.root.destroy()
+                except:
+                    pass
 
     def setup_gui(self):
         """Setup enhanced GUI interface"""
@@ -444,11 +456,15 @@ class TradingBot:
 
     def update_opportunities_display(self):
         """Update opportunities display"""
-        self.opportunities_var.set(
-            f"Opportunities: Captured: {self.total_opportunities_captured} | "
-            f"Missed: {self.total_opportunities_missed} | "
-            f"Success Rate: {self.calculate_success_rate():.1f}%"
-        )
+        try:
+            if hasattr(self, 'opportunities_var') and self.opportunities_var:
+                self.opportunities_var.set(
+                    f"Opportunities: Captured: {self.total_opportunities_captured} | "
+                    f"Missed: {self.total_opportunities_missed} | "
+                    f"Success Rate: {self.calculate_success_rate():.1f}%"
+                )
+        except (tk.TclError, RuntimeError, AttributeError):
+            pass  # GUI variable no longer valid
 
     def calculate_success_rate(self):
         """Calculate opportunity capture success rate"""
@@ -481,26 +497,50 @@ class TradingBot:
         else:
             log_entry = f"ℹ️  {timestamp} - {text}"
 
-        # Ensure log_box exists before using it
-        if hasattr(self, 'log_box') and self.log_box:
-            self.log_box.insert(tk.END, log_entry + "\n")
-            self.log_box.see(tk.END)
-        else:
-            print(log_entry)  # Fallback to console if GUI not ready
+        # Safe GUI logging with thread safety
+        try:
+            if hasattr(self, 'log_box') and self.log_box and hasattr(self, 'root') and self.root and self.root.winfo_exists():
+                # Use after_idle to ensure thread safety
+                self.root.after_idle(lambda: self._safe_log_insert(log_entry))
+            else:
+                print(log_entry)  # Fallback to console if GUI not ready
+        except (tk.TclError, RuntimeError, AttributeError):
+            print(log_entry)  # Fallback to console on any GUI error
         
         self.log_to_file(text)
+
+    def _safe_log_insert(self, log_entry):
+        """Safely insert log entry into GUI"""
+        try:
+            if self.log_box and self.log_box.winfo_exists():
+                self.log_box.insert(tk.END, log_entry + "\n")
+                self.log_box.see(tk.END)
+        except (tk.TclError, AttributeError):
+            pass  # GUI already destroyed
+    
+    def _safe_perf_insert(self, perf_entry):
+        """Safely insert performance entry into GUI"""
+        try:
+            if self.perf_box and self.perf_box.winfo_exists():
+                self.perf_box.insert(tk.END, perf_entry + "\n")
+                self.perf_box.see(tk.END)
+        except (tk.TclError, AttributeError):
+            pass  # GUI already destroyed
 
     def log_performance(self, text):
         """Log performance metrics"""
         timestamp = f"{datetime.datetime.now():%H:%M:%S}"
         perf_entry = f"{timestamp} - {text}"
 
-        # Ensure perf_box exists before using it
-        if hasattr(self, 'perf_box') and self.perf_box:
-            self.perf_box.insert(tk.END, perf_entry + "\n")
-            self.perf_box.see(tk.END)
-        else:
-            print(f"PERF: {perf_entry}")  # Fallback to console
+        # Safe GUI logging with thread safety
+        try:
+            if hasattr(self, 'perf_box') and self.perf_box and hasattr(self, 'root') and self.root and self.root.winfo_exists():
+                # Use after_idle to ensure thread safety
+                self.root.after_idle(lambda: self._safe_perf_insert(perf_entry))
+            else:
+                print(f"PERF: {perf_entry}")  # Fallback to console
+        except (tk.TclError, RuntimeError, AttributeError):
+            print(f"PERF: {perf_entry}")  # Fallback to console on any GUI error
 
     def auto_connect_mt5(self):
         """Auto-connect MT5 during initialization (safe version)"""
@@ -667,36 +707,53 @@ class TradingBot:
 
     def enhanced_trading_loop(self):
         """Enhanced main trading loop with real MT5 trading"""
-        while self.running:
-            try:
-                self.log("📊 Scanning market for opportunities...")
-                
-                # Get real market data and analyze
-                symbol = self.symbol_var.get()
-                opportunity = self.analyze_market_opportunity(symbol)
-                
-                if opportunity:
-                    # Execute real trade
-                    if self.execute_trade(opportunity):
-                        self.total_opportunities_captured += 1
-                        self.update_opportunities_display()
-                        self.log(f"🎯 Trade executed: {opportunity['action']} {symbol}")
+        try:
+            while self.running:
+                try:
+                    # Check if GUI still exists before logging
+                    if not self.running:
+                        break
+                        
+                    self.log("📊 Scanning market for opportunities...")
+                    
+                    # Get real market data and analyze
+                    symbol = self.symbol_var.get()
+                    opportunity = self.analyze_market_opportunity(symbol)
+                    
+                    if opportunity:
+                        # Execute real trade
+                        if self.execute_trade(opportunity):
+                            self.total_opportunities_captured += 1
+                            self.update_opportunities_display()
+                            self.log(f"🎯 Trade executed: {opportunity['action']} {symbol}")
+                        else:
+                            self.total_opportunities_missed += 1
+                            self.update_opportunities_display()
+                            self.log("❌ Trade execution failed")
                     else:
-                        self.total_opportunities_missed += 1
-                        self.update_opportunities_display()
-                        self.log("❌ Trade execution failed")
-                else:
-                    self.log("📈 No trading opportunity found")
-                
-                # Enhanced scanning interval
-                scan_interval = max(int(self.interval_var.get()), 1)
-                time.sleep(scan_interval)
+                        self.log("📈 No trading opportunity found")
+                    
+                    # Enhanced scanning interval with interruption check
+                    scan_interval = max(int(self.interval_var.get()), 1)
+                    for _ in range(scan_interval):
+                        if not self.running:
+                            break
+                        time.sleep(1)
 
-            except Exception as e:
-                self.log(f"❌ Trading loop error: {e}")
-                time.sleep(10)
-
-        self.log("🛑 Enhanced trading loop stopped")
+                except Exception as e:
+                    if self.running:  # Only log if still running
+                        self.log(f"❌ Trading loop error: {e}")
+                    time.sleep(10)
+                    
+        except Exception as e:
+            print(f"Trading loop fatal error: {e}")
+        finally:
+            # Safe final log
+            try:
+                if self.running:
+                    self.log("🛑 Enhanced trading loop stopped")
+            except:
+                print("🛑 Enhanced trading loop stopped")
 
     def start_bot(self):
         """Start enhanced trading bot"""
@@ -740,9 +797,21 @@ class TradingBot:
                 messagebox.showwarning("Warning", "Bot is not running!")
                 return
 
+            # Stop the trading loop first
             self.running = False
-            self.start_button.config(state="normal")
-            self.stop_button.config(state="disabled")
+            
+            # Wait for thread to finish gracefully
+            if self.bot_thread and self.bot_thread.is_alive():
+                self.bot_thread.join(timeout=5)  # Wait max 5 seconds
+            
+            # Update GUI buttons safely
+            try:
+                if hasattr(self, 'start_button') and self.start_button:
+                    self.start_button.config(state="normal")
+                if hasattr(self, 'stop_button') and self.stop_button:
+                    self.stop_button.config(state="disabled")
+            except tk.TclError:
+                pass  # GUI already destroyed
 
             # Final statistics
             success_rate = self.calculate_success_rate()
@@ -755,7 +824,7 @@ class TradingBot:
             self.log(f"   Success Rate: {success_rate:.1f}%")
 
         except Exception as e:
-            self.log(f"❌ Stop bot error: {e}")
+            print(f"❌ Stop bot error: {e}")
 
     def analyze_market_opportunity(self, symbol):
         """Analyze market for trading opportunities"""
@@ -874,31 +943,51 @@ class TradingBot:
     def on_closing(self):
         """Enhanced application closing"""
         try:
+            # Stop trading bot if running
             if self.running:
-                result = messagebox.askyesno("Confirm Exit",
-                    "Trading bot is still running. Stop bot and exit?")
-                if result:
-                    self.stop_bot()
-                    time.sleep(1)
-                else:
-                    return
+                try:
+                    result = messagebox.askyesno("Confirm Exit",
+                        "Trading bot is still running. Stop bot and exit?")
+                    if result:
+                        self.running = False  # Stop immediately
+                        
+                        # Wait for thread to finish
+                        if hasattr(self, 'bot_thread') and self.bot_thread and self.bot_thread.is_alive():
+                            self.bot_thread.join(timeout=3)
+                        
+                        time.sleep(1)
+                    else:
+                        return
+                except tk.TclError:
+                    # GUI already destroyed, just stop
+                    self.running = False
 
             # Shutdown MT5 connection if it was established
-            if self.connected and MT5_AVAILABLE:
+            if hasattr(self, 'connected') and self.connected and MT5_AVAILABLE:
                 try:
                     mt5.shutdown()
-                    self.log("🔌 MT5 connection closed.")
+                    print("🔌 MT5 connection closed.")
                 except Exception as e:
-                    self.log(f"Error shutting down MT5: {e}")
+                    print(f"Error shutting down MT5: {e}")
 
-            self.log("👋 Enhanced Trading Bot session ended")
-            if self.root:
-                self.root.destroy()
+            print("👋 Enhanced Trading Bot session ended")
+            
+            # Destroy GUI safely
+            if hasattr(self, 'root') and self.root:
+                try:
+                    self.root.quit()  # Exit mainloop
+                    self.root.destroy()
+                except tk.TclError:
+                    pass  # Already destroyed
 
         except Exception as e:
             print(f"Closing error: {e}")
-            if self.root:
-                self.root.destroy()
+            # Force destroy if needed
+            try:
+                if hasattr(self, 'root') and self.root:
+                    self.root.destroy()
+            except:
+                pass
 
 def main():
     """Main function to run the bot"""
