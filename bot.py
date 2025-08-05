@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python3
 """
 AuraTrade - Institutional-Level Python Trading Bot
@@ -17,7 +16,7 @@ def check_and_install_requirements():
         'requests', 'numpy', 'pandas', 'matplotlib', 
         'pillow', 'psutil', 'schedule', 'colorama'
     ]
-    
+
     missing_packages = []
     for package in required_packages:
         try:
@@ -27,7 +26,7 @@ def check_and_install_requirements():
                 __import__(package)
         except ImportError:
             missing_packages.append(package)
-    
+
     if missing_packages:
         print(f"🚀 Installing missing packages: {', '.join(missing_packages)}")
         import subprocess
@@ -37,7 +36,7 @@ def check_and_install_requirements():
                 print(f"✅ Successfully installed {package}")
             except subprocess.CalledProcessError as e:
                 print(f"❌ Failed to install {package}: {e}")
-        
+
         # Test imports again
         print("🔄 Testing imports after installation...")
         for package in missing_packages:
@@ -70,12 +69,12 @@ def find_best_trading_bot():
             'class_name': None
         }
     ]
-    
+
     for bot in bot_candidates:
         if os.path.exists(bot['path']):
             print(f"✅ Found: {bot['name']} at {bot['path']}")
             return bot
-    
+
     print("❌ No trading bot found!")
     return None
 
@@ -86,7 +85,7 @@ def safe_import_module(file_path):
         tradebot_dir = os.path.join(os.getcwd(), 'tradebot')
         if tradebot_dir not in sys.path:
             sys.path.insert(0, tradebot_dir)
-        
+
         spec = importlib.util.spec_from_file_location("trading_module", file_path)
         if spec is None:
             return None
@@ -104,19 +103,19 @@ def launch_trading_bot():
     print("🤖 AURA TRADE - INSTITUTIONAL TRADING BOT")
     print("   Advanced HFT • Multi-Symbol • AI-Powered")
     print("=" * 60)
-    
+
     # Check requirements first
     check_and_install_requirements()
-    
+
     # Find best bot
     bot_info = find_best_trading_bot()
     if not bot_info:
         print("\n❌ No trading bot files found!")
         input("Press Enter to exit...")
         return False
-    
+
     print(f"\n🚀 Launching: {bot_info['name']}")
-    
+
     try:
         # Try to import and run the bot
         if bot_info['path'].endswith('.py'):
@@ -143,9 +142,9 @@ def launch_trading_bot():
             else:
                 print("❌ Failed to import bot module")
                 return False
-        
+
         return True
-        
+
     except KeyboardInterrupt:
         print("\n👋 Bot stopped by user (Ctrl+C)")
         return True
@@ -156,39 +155,60 @@ def launch_trading_bot():
 
 def show_system_info():
     """Show system information"""
-    print(f"🖥️  Platform: {platform.system()} {platform.release()}")
-    print(f"🐍 Python: {sys.version.split()[0]}")
+    print(f"🐍 Python: {sys.version_info.major}.{sys.version_info.minor}.{sys.version_info.micro}")
     print(f"📁 Working Directory: {os.getcwd()}")
-    
-    # Check MT5 availability
-    try:
-        import MetaTrader5
-        print("✅ MetaTrader5 available")
-    except ImportError:
-        print("⚠️  MetaTrader5 not available (will use simulation)")
+
+    # Check platform and MetaTrader5 availability
+    import platform
+    system = platform.system()
+    print(f"🖥️  Platform: {system}")
+
+    if system == "Windows":
+        try:
+            import MetaTrader5 as mt5
+            print("✅ Windows MT5 ready for live trading")
+
+            # Test MT5 initialization
+            if mt5.initialize():
+                account = mt5.account_info()
+                if account:
+                    print(f"🔗 MT5 Connected - Account: {account.login}")
+                    print(f"💰 Balance: ${account.balance:,.2f}")
+                else:
+                    print("⚠️  MT5 terminal found but not logged in")
+                mt5.shutdown()
+            else:
+                print("⚠️  MT5 terminal not running or not accessible")
+
+        except ImportError:
+            print("❌ MetaTrader5 library not installed")
+            print("💡 Install with: pip install MetaTrader5")
+    else:
+        print("⚠️  Non-Windows platform - MT5 live trading not available")
+        print("🔄 Will use simulation mode")
 
 def main():
     """Main entry point"""
     try:
         show_system_info()
         success = launch_trading_bot()
-        
+
         if not success:
             print("\n🔧 TROUBLESHOOTING:")
             print("1. Make sure all files are in place")
             print("2. Check internet connection for package installation")
             print("3. Try running from tradebot/ folder directly")
             print("4. Check the tradebot/README.md for specific instructions")
-        
+
         print(f"\n{'='*60}")
         print("📞 Support: Check README files in tradebot/ folder")
         print("🔄 To restart: python bot.py")
         print(f"{'='*60}")
-        
+
     except Exception as e:
         print(f"\n💥 Critical error in main(): {e}")
         print(f"📝 Traceback:\n{traceback.format_exc()}")
-    
+
     input("\nPress Enter to exit...")
 
 if __name__ == "__main__":
