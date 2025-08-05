@@ -1,0 +1,1986 @@
+2025-08-04 09:38:43.869664 - 🔗 Connecting to MetaTrader5 with enhanced validation...
+2025-08-04 09:38:43.935908 - 🔍 Validating symbol: XAUUSDm
+2025-08-04 09:38:43.937530 - ✅ Symbol XAUUSDm is available
+2025-08-04 09:38:43.938213 - ✅ Price feed working - Bid: 3353.10500, Ask: 3353.26500
+2025-08-04 09:38:43.955591 - ✅ Historical data available: 50 bars
+2025-08-04 09:38:43.958638 - ✅ Enhanced MT5 Connection Successful!
+2025-08-04 09:38:43.959287 -    Account: 273631674
+2025-08-04 09:38:43.959771 -    Balance: $5,204,039.81
+2025-08-04 09:38:43.960876 -    Server: Exness-MT5Trial6
+2025-08-04 09:38:43.965539 -    Leverage: 1:2000
+2025-08-04 09:38:43.966283 -    Symbol: XAUUSDm ✅
+2025-08-04 09:38:43.989827 - 🚀 Ready for enhanced opportunity capture!
+2025-08-04 09:38:45.819725 - 🚀 ENHANCED WINDOWS MT5 TRADING BOT STARTED!
+2025-08-04 09:38:45.820905 -    ═══════════════════════════════════════
+2025-08-04 09:38:45.822104 -    🎯 Symbol: XAUUSDm
+2025-08-04 09:38:45.828799 -    💰 Lot Size: 0.01
+2025-08-04 09:38:45.832273 -    ⏱️  Scan Interval: 8s
+2025-08-04 09:38:45.840589 -    📈 Take Profit: 0.8%
+2025-08-04 09:38:45.847151 -    📉 Stop Loss: 4.0%
+2025-08-04 09:38:45.848213 -    🔥 Scalping Mode: ✅ Enabled
+2025-08-04 09:38:45.849241 -    ═══════════════════════════════════════
+2025-08-04 09:38:45.850158 -    🔧 Enhanced Configuration:
+2025-08-04 09:38:45.850914 -       Price Spike Threshold: 3 (Fixed)
+2025-08-04 09:38:45.852340 -       Signal Confidence: 0.3
+2025-08-04 09:38:45.853117 -       Max Positions: 15
+2025-08-04 09:38:45.853757 -       Trading Hours: 6:00-22:00
+2025-08-04 09:38:45.854474 -    ═══════════════════════════════════════
+2025-08-04 09:38:45.855868 - 🎯 Enhanced features active:
+2025-08-04 09:38:45.857184 -    ✅ Fixed price retrieval mechanism
+2025-08-04 09:38:45.858118 -    ⚡ Optimized signal generation
+2025-08-04 09:38:45.858941 -    🔄 Enhanced retry logic
+2025-08-04 09:38:45.859819 -    📊 Improved opportunity capture
+2025-08-04 09:38:45.871495 -    🛡️  Advanced error handling
+2025-08-04 09:38:45.878117 - 🚀 Enhanced trading loop started with MT5 integration
+2025-08-04 09:38:45.906978 - 📊 Maximum positions reached (15/15)
+2025-08-04 09:38:53.929813 - 📊 Maximum positions reached (15/15)
+2025-08-04 09:39:01.963471 - 📊 Maximum positions reached (15/15)
+2025-08-04 09:39:10.024939 - 📊 Maximum positions reached (15/15)
+2025-08-04 09:39:18.063825 - 📊 Maximum positions reached (15/15)
+2025-08-04 09:39:26.098991 - 📊 Maximum positions reached (15/15)
+2025-08-04 09:39:34.345637 - 📊 Maximum positions reached (15/15)
+2025-08-04 09:39:42.391479 - 📊 Maximum positions reached (15/15)
+2025-08-04 09:39:50.426429 - 📊 Maximum positions reached (15/15)
+2025-08-04 09:39:58.466742 - 📊 Maximum positions reached (15/15)
+2025-08-04 09:40:01.743629 - 🛑 ENHANCED WINDOWS MT5 TRADING BOT STOPPED!
+2025-08-04 09:40:01.744878 -    ═══════════════════════════════════════
+2025-08-04 09:40:01.746044 -    📊 SESSION SUMMARY:
+2025-08-04 09:40:01.746947 -       Orders Executed: 0
+2025-08-04 09:40:01.748397 -       Opportunities Captured: 0
+2025-08-04 09:40:01.750225 -       Opportunities Missed: 0
+2025-08-04 09:40:01.751827 -       Total Opportunities: 0
+2025-08-04 09:40:01.753611 -       Success Rate: 0.0%
+2025-08-04 09:40:01.754682 -       Price Feed Errors: 0
+2025-08-04 09:40:01.756028 -    ═══════════════════════════════════════
+2025-08-04 09:40:01.756752 -    💰 PERFORMANCE:
+2025-08-04 09:40:01.757442 -       Initial Balance: $5,204,039.81
+2025-08-04 09:40:01.758693 -       Final Balance: $5,204,039.81
+2025-08-04 09:40:01.759857 -       Total Return: +0.00%
+2025-08-04 09:40:01.760913 -    ═══════════════════════════════════════
+2025-08-04 09:40:03.844811 - 🔌 MT5 connection closed
+2025-08-04 09:40:03.853733 - 👋 Enhanced Windows MT5 Trading Bot session ended
+2025-08-04 09:40:03.860594 - 💾 All logs saved to files
+2025-08-04 04:26:54.915757 - ⚡ HFT MODE ACTIVATED!
+2025-08-04 04:26:54.916015 -    • Ultra-fast 1-second scanning enabled
+2025-08-04 04:26:54.916237 -    • High-frequency parameters set
+2025-08-04 04:26:54.916610 -    • Target: 10 trades/second capability
+2025-08-04 04:26:54.916805 -    • TP: 0.1% | SL: 0.3% (tight parameters)
+2025-08-04 04:32:45.781761 - 🔄 HFT MODE DISABLED
+2025-08-04 04:32:45.782040 -    • Returned to normal trading parameters
+2025-08-04 04:32:45.782369 -    • 8-second scanning restored
+2025-08-04 04:32:46.708370 - ⚡ HFT MODE ACTIVATED!
+2025-08-04 04:32:46.708549 -    • Ultra-fast 1-second scanning enabled
+2025-08-04 04:32:46.708669 -    • High-frequency parameters set
+2025-08-04 04:32:46.708796 -    • Target: 10 trades/second capability
+2025-08-04 04:32:46.708923 -    • TP: 0.1% | SL: 0.3% (tight parameters)
+2025-08-04 04:37:16.461073 - 🔗 Connecting to Enhanced Trading Simulation...
+2025-08-04 04:37:16.465537 - ⚡ Features: Fixed Price Retrieval, Optimized Signals, Enhanced Opportunity Capture
+2025-08-04 04:38:12.597283 - ⚡ HFT MODE ACTIVATED!
+2025-08-04 04:38:12.597801 -    • Ultra-fast 1-second scanning enabled
+2025-08-04 04:38:12.598027 -    • High-frequency parameters set
+2025-08-04 04:38:12.598241 -    • Target: 10 trades/second capability
+2025-08-04 04:38:12.598469 -    • TP: 0.1% | SL: 0.3% (tight parameters)
+2025-08-04 04:38:14.149974 - 🔗 Connecting to Enhanced Trading Simulation...
+2025-08-04 04:38:14.150474 - ⚡ Features: Fixed Price Retrieval, Optimized Signals, Enhanced Opportunity Capture
+2025-08-04 04:38:18.783148 - ✅ Connected: Enhanced Virtual Account: 999999 | Balance: $10,000.00
+2025-08-04 04:38:18.785355 - 📊 Real market data - Enhanced virtual trading
+2025-08-04 04:38:18.785818 - 🛡️  100% Safe - No real money involved
+2025-08-04 04:38:18.785992 - 🎯 Enhanced opportunity capture system active
+2025-08-04 04:38:54.392229 - 🚀 ENHANCED TRADING BOT STARTED!
+2025-08-04 04:38:54.392628 -    Symbol: XAUUSDm | Lot: 0.01
+2025-08-04 04:38:54.392819 -    TP: 0.1% | SL: 0.3%
+2025-08-04 04:38:54.392995 -    Scan Interval: 1s
+2025-08-04 04:38:54.393220 -    Price Spike Threshold: 2 (Enhanced)
+2025-08-04 04:38:54.393395 -    Signal Confidence Threshold: 0.25
+2025-08-04 04:38:54.393634 - 🎯 Enhanced opportunity capture system active!
+2025-08-04 04:39:04.398275 - 💰 REAL MONEY TP/SL Calculation:
+2025-08-04 04:39:04.398523 -    Real Account Balance: $10,000.00
+2025-08-04 04:39:04.398795 -    Target Profit: $100.00 (1.0% dari modal)
+2025-08-04 04:39:04.399013 -    Max Loss: $500.00 (5.0% dari modal)
+2025-08-04 04:39:04.399319 -    TP Price: 2545.10558 | SL Price: 3145.10558
+2025-08-04 04:39:04.399692 -    Signal: SELL | Current Price: 2645.10558
+2025-08-04 04:39:04.400075 - ⚡ HFT SELL Signal: XAUUSDm @ 2645.10558
+2025-08-04 04:39:04.500950 - ❌ Order failed - Error code: 10019
+2025-08-04 04:39:09.507230 - 💰 REAL MONEY TP/SL Calculation:
+2025-08-04 04:39:09.508587 -    Real Account Balance: $10,000.00
+2025-08-04 04:39:09.508826 -    Target Profit: $100.00 (1.0% dari modal)
+2025-08-04 04:39:09.509022 -    Max Loss: $500.00 (5.0% dari modal)
+2025-08-04 04:39:09.509254 -    TP Price: 2540.43441 | SL Price: 3140.43441
+2025-08-04 04:39:09.509471 -    Signal: SELL | Current Price: 2640.43441
+2025-08-04 04:39:09.509876 - ⚡ HFT SELL Signal: XAUUSDm @ 2640.43441
+2025-08-04 04:39:09.610849 - ❌ Order failed - Error code: 10019
+2025-08-04 04:39:11.218974 - 🛑 ENHANCED TRADING BOT STOPPED!
+2025-08-04 04:39:11.219227 - 📊 Session Summary:
+2025-08-04 04:39:11.219407 -    Orders Executed: 0
+2025-08-04 04:39:11.219593 -    Opportunities Captured: 0
+2025-08-04 04:39:11.219758 -    Opportunities Missed: 0
+2025-08-04 04:39:11.219896 -    Success Rate: 0.0%
+2025-08-04 04:39:12.372178 - ⚡ HFT MODE ACTIVATED!
+2025-08-04 04:39:12.372361 -    • Ultra-fast 1-second scanning enabled
+2025-08-04 04:39:12.372476 -    • High-frequency parameters set
+2025-08-04 04:39:12.372600 -    • Target: 10 trades/second capability
+2025-08-04 04:39:12.372722 -    • TP: 0.1% | SL: 0.3% (tight parameters)
+2025-08-04 04:39:12.372839 - 🔗 Connecting to Enhanced Trading Simulation...
+2025-08-04 04:39:12.372958 - ⚡ Features: Fixed Price Retrieval, Optimized Signals, Enhanced Opportunity Capture
+2025-08-04 04:39:14.611663 - 🛑 Enhanced trading loop stopped
+2025-08-04 04:39:19.765466 - ✅ Connected: Enhanced Virtual Account: 999999 | Balance: $10,000.00
+2025-08-04 04:39:19.765699 - 📊 Real market data - Enhanced virtual trading
+2025-08-04 04:39:19.765908 - 🛡️  100% Safe - No real money involved
+2025-08-04 04:39:19.766106 - 🎯 Enhanced opportunity capture system active
+2025-08-04 04:39:21.131718 - 🚀 ENHANCED TRADING BOT STARTED!
+2025-08-04 04:39:21.132216 -    Symbol: XAUUSDm | Lot: 0.01
+2025-08-04 04:39:21.132379 -    TP: 0.1% | SL: 0.3%
+2025-08-04 04:39:21.132514 -    Scan Interval: 1s
+2025-08-04 04:39:21.132656 -    Price Spike Threshold: 2 (Enhanced)
+2025-08-04 04:39:21.132878 -    Signal Confidence Threshold: 0.25
+2025-08-04 04:39:21.133056 - 🎯 Enhanced opportunity capture system active!
+2025-08-04 04:39:21.133555 - 🚀 HFT QUICK START COMPLETED!
+2025-08-04 04:39:21.133747 -    • HFT mode activated
+2025-08-04 04:39:21.133912 -    • Bot connected and started
+2025-08-04 04:39:21.134055 -    • Ready for high-frequency trading
+2025-08-04 04:39:21.150988 - 💰 REAL MONEY TP/SL Calculation:
+2025-08-04 04:39:21.151386 -    Real Account Balance: $10,000.00
+2025-08-04 04:39:21.151695 -    Target Profit: $100.00 (1.0% dari modal)
+2025-08-04 04:39:21.152098 -    Max Loss: $500.00 (5.0% dari modal)
+2025-08-04 04:39:21.152603 -    TP Price: 2753.76905 | SL Price: 2153.76905
+2025-08-04 04:39:21.152982 -    Signal: BUY | Current Price: 2653.76905
+2025-08-04 04:39:21.153342 - ⚡ HFT BUY Signal: XAUUSDm @ 2653.76905
+2025-08-04 04:39:21.254181 - ❌ Order failed - Error code: 10019
+2025-08-04 04:39:23.821034 - 🛑 ENHANCED TRADING BOT STOPPED!
+2025-08-04 04:39:23.821427 - 📊 Session Summary:
+2025-08-04 04:39:23.821576 -    Orders Executed: 0
+2025-08-04 04:39:23.821704 -    Opportunities Captured: 0
+2025-08-04 04:39:23.821826 -    Opportunities Missed: 0
+2025-08-04 04:39:23.821949 -    Success Rate: 0.0%
+2025-08-04 04:39:24.964585 - ⚡ HFT MODE ACTIVATED!
+2025-08-04 04:39:24.964801 -    • Ultra-fast 1-second scanning enabled
+2025-08-04 04:39:24.964941 -    • High-frequency parameters set
+2025-08-04 04:39:24.965065 -    • Target: 10 trades/second capability
+2025-08-04 04:39:24.965222 -    • TP: 0.1% | SL: 0.3% (tight parameters)
+2025-08-04 04:39:24.965336 - 🔗 Connecting to Enhanced Trading Simulation...
+2025-08-04 04:39:24.965462 - ⚡ Features: Fixed Price Retrieval, Optimized Signals, Enhanced Opportunity Capture
+2025-08-04 04:39:26.255096 - 🛑 Enhanced trading loop stopped
+2025-08-04 04:39:59.544951 - ✅ Connected: Enhanced Virtual Account: 999999 | Balance: $10,000.00
+2025-08-04 04:39:59.545171 - 📊 Real market data - Enhanced virtual trading
+2025-08-04 04:39:59.546168 - 🛡️  100% Safe - No real money involved
+2025-08-04 04:39:59.546310 - 🎯 Enhanced opportunity capture system active
+2025-08-04 04:40:02.943262 - 🚀 ENHANCED TRADING BOT STARTED!
+2025-08-04 04:40:02.943462 -    Symbol: XAUUSDm | Lot: 0.01
+2025-08-04 04:40:02.943629 -    TP: 0.1% | SL: 0.3%
+2025-08-04 04:40:02.943782 -    Scan Interval: 1s
+2025-08-04 04:40:02.943936 -    Price Spike Threshold: 2 (Enhanced)
+2025-08-04 04:40:02.944094 -    Signal Confidence Threshold: 0.25
+2025-08-04 04:40:02.944324 - 🎯 Enhanced opportunity capture system active!
+2025-08-04 04:40:02.944509 - 🚀 HFT QUICK START COMPLETED!
+2025-08-04 04:40:02.944664 -    • HFT mode activated
+2025-08-04 04:40:02.944801 -    • Bot connected and started
+2025-08-04 04:40:02.944931 -    • Ready for high-frequency trading
+2025-08-04 04:40:07.953715 - 💰 REAL MONEY TP/SL Calculation:
+2025-08-04 04:40:07.954000 -    Real Account Balance: $10,000.00
+2025-08-04 04:40:07.954299 -    Target Profit: $100.00 (1.0% dari modal)
+2025-08-04 04:40:07.954602 -    Max Loss: $500.00 (5.0% dari modal)
+2025-08-04 04:40:07.955446 -    TP Price: 2545.80113 | SL Price: 3145.80113
+2025-08-04 04:40:07.955718 -    Signal: SELL | Current Price: 2645.80113
+2025-08-04 04:40:07.955981 - ⚡ HFT SELL Signal: XAUUSDm @ 2645.80113
+2025-08-04 04:40:08.056887 - ❌ Order failed - Error code: 10019
+2025-08-04 04:40:09.322783 - ⚡ HFT MODE ACTIVATED!
+2025-08-04 04:40:09.323060 -    • Ultra-fast 1-second scanning enabled
+2025-08-04 04:40:09.323454 -    • High-frequency parameters set
+2025-08-04 04:40:09.323633 -    • Target: 10 trades/second capability
+2025-08-04 04:40:09.323805 -    • TP: 0.1% | SL: 0.3% (tight parameters)
+2025-08-04 04:40:09.324051 - ⚡ HFT parameters applied to running bot!
+2025-08-04 04:40:12.497288 - ⚡ HFT MODE ACTIVATED!
+2025-08-04 04:40:12.497515 -    • Ultra-fast 1-second scanning enabled
+2025-08-04 04:40:12.497694 -    • High-frequency parameters set
+2025-08-04 04:40:12.497876 -    • Target: 10 trades/second capability
+2025-08-04 04:40:12.498017 -    • TP: 0.1% | SL: 0.3% (tight parameters)
+2025-08-04 04:40:12.498194 - ⚡ HFT parameters applied to running bot!
+2025-08-04 04:40:13.059028 - 💰 REAL MONEY TP/SL Calculation:
+2025-08-04 04:40:13.059315 -    Real Account Balance: $10,000.00
+2025-08-04 04:40:13.059669 -    Target Profit: $100.00 (1.0% dari modal)
+2025-08-04 04:40:13.059960 -    Max Loss: $500.00 (5.0% dari modal)
+2025-08-04 04:40:13.060181 -    TP Price: 2753.43234 | SL Price: 2153.43234
+2025-08-04 04:40:13.060387 -    Signal: BUY | Current Price: 2653.43234
+2025-08-04 04:40:13.066862 - ⚡ HFT BUY Signal: XAUUSDm @ 2653.43234
+2025-08-04 04:40:13.177695 - ❌ Order failed - Error code: 10019
+2025-08-04 04:40:18.179580 - 💰 REAL MONEY TP/SL Calculation:
+2025-08-04 04:40:18.180212 -    Real Account Balance: $10,000.00
+2025-08-04 04:40:18.180445 -    Target Profit: $100.00 (1.0% dari modal)
+2025-08-04 04:40:18.180656 -    Max Loss: $500.00 (5.0% dari modal)
+2025-08-04 04:40:18.180889 -    TP Price: 2549.63703 | SL Price: 3149.63703
+2025-08-04 04:40:18.181107 -    Signal: SELL | Current Price: 2649.63703
+2025-08-04 04:40:18.181344 - ⚡ HFT SELL Signal: XAUUSDm @ 2649.63703
+2025-08-04 04:40:18.282085 - ❌ Order failed - Error code: 10019
+2025-08-04 04:40:21.918578 - 🛑 ENHANCED TRADING BOT STOPPED!
+2025-08-04 04:40:21.918776 - 📊 Session Summary:
+2025-08-04 04:40:21.918925 -    Orders Executed: 0
+2025-08-04 04:40:21.919107 -    Opportunities Captured: 0
+2025-08-04 04:40:21.919337 -    Opportunities Missed: 0
+2025-08-04 04:40:21.919496 -    Success Rate: 0.0%
+2025-08-04 04:40:23.282858 - 🛑 Enhanced trading loop stopped
+2025-08-04 04:40:23.397902 - ⚡ HFT MODE ACTIVATED!
+2025-08-04 04:40:23.398159 -    • Ultra-fast 1-second scanning enabled
+2025-08-04 04:40:23.398323 -    • High-frequency parameters set
+2025-08-04 04:40:23.398488 -    • Target: 10 trades/second capability
+2025-08-04 04:40:23.398652 -    • TP: 0.1% | SL: 0.3% (tight parameters)
+2025-08-04 04:40:32.041104 - ⚡ HFT MODE ACTIVATED!
+2025-08-04 04:40:32.041326 -    • Ultra-fast 1-second scanning enabled
+2025-08-04 04:40:32.041515 -    • High-frequency parameters set
+2025-08-04 04:40:32.041704 -    • Target: 10 trades/second capability
+2025-08-04 04:40:32.041888 -    • TP: 0.1% | SL: 0.3% (tight parameters)
+2025-08-04 04:40:32.042076 - 🔗 Connecting to Enhanced Trading Simulation...
+2025-08-04 04:40:32.042299 - ⚡ Features: Fixed Price Retrieval, Optimized Signals, Enhanced Opportunity Capture
+2025-08-04 04:40:41.318654 - ✅ Connected: Enhanced Virtual Account: 999999 | Balance: $10,000.00
+2025-08-04 04:40:41.318855 - 📊 Real market data - Enhanced virtual trading
+2025-08-04 04:40:41.319024 - 🛡️  100% Safe - No real money involved
+2025-08-04 04:40:41.319235 - 🎯 Enhanced opportunity capture system active
+2025-08-04 04:40:43.636032 - 🚀 ENHANCED TRADING BOT STARTED!
+2025-08-04 04:40:43.636315 -    Symbol: XAUUSDm | Lot: 0.01
+2025-08-04 04:40:43.636615 -    TP: 0.1% | SL: 0.3%
+2025-08-04 04:40:43.636828 -    Scan Interval: 1s
+2025-08-04 04:40:43.637017 -    Price Spike Threshold: 2 (Enhanced)
+2025-08-04 04:40:43.637303 -    Signal Confidence Threshold: 0.25
+2025-08-04 04:40:43.637489 - 🎯 Enhanced opportunity capture system active!
+2025-08-04 04:40:43.637659 - 🚀 HFT QUICK START COMPLETED!
+2025-08-04 04:40:43.637856 -    • HFT mode activated
+2025-08-04 04:40:43.638007 -    • Bot connected and started
+2025-08-04 04:40:43.638303 -    • Ready for high-frequency trading
+2025-08-04 04:40:43.649626 - 💰 REAL MONEY TP/SL Calculation:
+2025-08-04 04:40:43.650307 -    Real Account Balance: $10,000.00
+2025-08-04 04:40:43.650671 -    Target Profit: $100.00 (1.0% dari modal)
+2025-08-04 04:40:43.651073 -    Max Loss: $500.00 (5.0% dari modal)
+2025-08-04 04:40:43.651498 -    TP Price: 2755.65193 | SL Price: 2155.65193
+2025-08-04 04:40:43.651902 -    Signal: BUY | Current Price: 2655.65193
+2025-08-04 04:40:43.652336 - ⚡ HFT BUY Signal: XAUUSDm @ 2655.65193
+2025-08-04 04:40:43.753553 - ❌ Order failed - Error code: 10019
+2025-08-04 04:40:46.967418 - 🛑 ENHANCED TRADING BOT STOPPED!
+2025-08-04 04:40:46.967617 - 📊 Session Summary:
+2025-08-04 04:40:46.967791 -    Orders Executed: 0
+2025-08-04 04:40:46.967962 -    Opportunities Captured: 0
+2025-08-04 04:40:46.968151 -    Opportunities Missed: 0
+2025-08-04 04:40:46.968319 -    Success Rate: 0.0%
+2025-08-04 04:40:48.443327 - ⚡ HFT MODE ACTIVATED!
+2025-08-04 04:40:48.443548 -    • Ultra-fast 1-second scanning enabled
+2025-08-04 04:40:48.443698 -    • High-frequency parameters set
+2025-08-04 04:40:48.443837 -    • Target: 10 trades/second capability
+2025-08-04 04:40:48.444000 -    • TP: 0.1% | SL: 0.3% (tight parameters)
+2025-08-04 04:40:48.754317 - 🛑 Enhanced trading loop stopped
+2025-08-04 04:40:57.490592 - ⚡ HFT MODE ACTIVATED!
+2025-08-04 04:40:57.490832 -    • Ultra-fast 1-second scanning enabled
+2025-08-04 04:40:57.490998 -    • High-frequency parameters set
+2025-08-04 04:40:57.491232 -    • Target: 10 trades/second capability
+2025-08-04 04:40:57.491396 -    • TP: 0.1% | SL: 0.3% (tight parameters)
+2025-08-04 04:40:59.196088 - ⚡ HFT MODE ACTIVATED!
+2025-08-04 04:40:59.196397 -    • Ultra-fast 1-second scanning enabled
+2025-08-04 04:40:59.196585 -    • High-frequency parameters set
+2025-08-04 04:40:59.196762 -    • Target: 10 trades/second capability
+2025-08-04 04:40:59.196928 -    • TP: 0.1% | SL: 0.3% (tight parameters)
+2025-08-04 04:40:59.939837 - ⚡ HFT MODE ACTIVATED!
+2025-08-04 04:40:59.940044 -    • Ultra-fast 1-second scanning enabled
+2025-08-04 04:40:59.940199 -    • High-frequency parameters set
+2025-08-04 04:40:59.940339 -    • Target: 10 trades/second capability
+2025-08-04 04:40:59.940488 -    • TP: 0.1% | SL: 0.3% (tight parameters)
+2025-08-04 04:41:00.114832 - ⚡ HFT MODE ACTIVATED!
+2025-08-04 04:41:00.115048 -    • Ultra-fast 1-second scanning enabled
+2025-08-04 04:41:00.115299 -    • High-frequency parameters set
+2025-08-04 04:41:00.115486 -    • Target: 10 trades/second capability
+2025-08-04 04:41:00.115689 -    • TP: 0.1% | SL: 0.3% (tight parameters)
+2025-08-04 04:41:00.318840 - ⚡ HFT MODE ACTIVATED!
+2025-08-04 04:41:00.319072 -    • Ultra-fast 1-second scanning enabled
+2025-08-04 04:41:00.319385 -    • High-frequency parameters set
+2025-08-04 04:41:00.319548 -    • Target: 10 trades/second capability
+2025-08-04 04:41:00.319715 -    • TP: 0.1% | SL: 0.3% (tight parameters)
+2025-08-04 04:41:00.471091 - ⚡ HFT MODE ACTIVATED!
+2025-08-04 04:41:00.471308 -    • Ultra-fast 1-second scanning enabled
+2025-08-04 04:41:00.471536 -    • High-frequency parameters set
+2025-08-04 04:41:00.471749 -    • Target: 10 trades/second capability
+2025-08-04 04:41:00.471932 -    • TP: 0.1% | SL: 0.3% (tight parameters)
+2025-08-04 04:41:00.633042 - ⚡ HFT MODE ACTIVATED!
+2025-08-04 04:41:00.633344 -    • Ultra-fast 1-second scanning enabled
+2025-08-04 04:41:00.633555 -    • High-frequency parameters set
+2025-08-04 04:41:00.633792 -    • Target: 10 trades/second capability
+2025-08-04 04:41:00.634093 -    • TP: 0.1% | SL: 0.3% (tight parameters)
+2025-08-04 04:41:00.797703 - ⚡ HFT MODE ACTIVATED!
+2025-08-04 04:41:00.797946 -    • Ultra-fast 1-second scanning enabled
+2025-08-04 04:41:00.798089 -    • High-frequency parameters set
+2025-08-04 04:41:00.798283 -    • Target: 10 trades/second capability
+2025-08-04 04:41:00.798421 -    • TP: 0.1% | SL: 0.3% (tight parameters)
+2025-08-04 04:41:00.953961 - ⚡ HFT MODE ACTIVATED!
+2025-08-04 04:41:00.954249 -    • Ultra-fast 1-second scanning enabled
+2025-08-04 04:41:00.954405 -    • High-frequency parameters set
+2025-08-04 04:41:00.954541 -    • Target: 10 trades/second capability
+2025-08-04 04:41:00.954682 -    • TP: 0.1% | SL: 0.3% (tight parameters)
+2025-08-04 04:41:01.100295 - ⚡ HFT MODE ACTIVATED!
+2025-08-04 04:41:01.100512 -    • Ultra-fast 1-second scanning enabled
+2025-08-04 04:41:01.100688 -    • High-frequency parameters set
+2025-08-04 04:41:01.101058 -    • Target: 10 trades/second capability
+2025-08-04 04:41:01.101225 -    • TP: 0.1% | SL: 0.3% (tight parameters)
+2025-08-04 04:41:01.252115 - ⚡ HFT MODE ACTIVATED!
+2025-08-04 04:41:01.252405 -    • Ultra-fast 1-second scanning enabled
+2025-08-04 04:41:01.252563 -    • High-frequency parameters set
+2025-08-04 04:41:01.252779 -    • Target: 10 trades/second capability
+2025-08-04 04:41:01.252973 -    • TP: 0.1% | SL: 0.3% (tight parameters)
+2025-08-04 04:41:14.817402 - 🚀 ENHANCED TRADING BOT STARTED!
+2025-08-04 04:41:14.817652 -    Symbol: XAUUSDm | Lot: 0.01
+2025-08-04 04:41:14.817829 -    TP: 0.1% | SL: 0.3%
+2025-08-04 04:41:14.818004 -    Scan Interval: 1s
+2025-08-04 04:41:14.818194 -    Price Spike Threshold: 2 (Enhanced)
+2025-08-04 04:41:14.818375 -    Signal Confidence Threshold: 0.25
+2025-08-04 04:41:14.818548 - 🎯 Enhanced opportunity capture system active!
+2025-08-04 04:41:14.820841 - 💰 REAL MONEY TP/SL Calculation:
+2025-08-04 04:41:14.821200 -    Real Account Balance: $10,000.00
+2025-08-04 04:41:14.821467 -    Target Profit: $100.00 (1.0% dari modal)
+2025-08-04 04:41:14.821729 -    Max Loss: $500.00 (5.0% dari modal)
+2025-08-04 04:41:14.822157 -    TP Price: 2553.55279 | SL Price: 3153.55279
+2025-08-04 04:41:14.822674 -    Signal: SELL | Current Price: 2653.55279
+2025-08-04 04:41:14.822963 - ⚡ HFT SELL Signal: XAUUSDm @ 2653.55279
+2025-08-04 04:41:14.923878 - ❌ Order failed - Error code: 10019
+2025-08-04 04:41:16.433336 - 🛑 ENHANCED TRADING BOT STOPPED!
+2025-08-04 04:41:16.433571 - 📊 Session Summary:
+2025-08-04 04:41:16.433751 -    Orders Executed: 0
+2025-08-04 04:41:16.433925 -    Opportunities Captured: 0
+2025-08-04 04:41:16.434121 -    Opportunities Missed: 0
+2025-08-04 04:41:16.434389 -    Success Rate: 0.0%
+2025-08-04 04:41:17.583979 - ⚡ HFT MODE ACTIVATED!
+2025-08-04 04:41:17.584196 -    • Ultra-fast 1-second scanning enabled
+2025-08-04 04:41:17.584356 -    • High-frequency parameters set
+2025-08-04 04:41:17.584493 -    • Target: 10 trades/second capability
+2025-08-04 04:41:17.584632 -    • TP: 0.1% | SL: 0.3% (tight parameters)
+2025-08-04 04:41:17.584766 - 🔗 Connecting to Enhanced Trading Simulation...
+2025-08-04 04:41:17.584898 - ⚡ Features: Fixed Price Retrieval, Optimized Signals, Enhanced Opportunity Capture
+2025-08-04 04:41:19.924529 - 🛑 Enhanced trading loop stopped
+2025-08-04 04:41:25.710298 - ✅ Connected: Enhanced Virtual Account: 999999 | Balance: $10,000.00
+2025-08-04 04:41:25.710551 - 📊 Real market data - Enhanced virtual trading
+2025-08-04 04:41:25.710747 - 🛡️  100% Safe - No real money involved
+2025-08-04 04:41:25.710950 - 🎯 Enhanced opportunity capture system active
+2025-08-04 04:41:27.148828 - 🚀 ENHANCED TRADING BOT STARTED!
+2025-08-04 04:41:27.149088 -    Symbol: XAUUSDm | Lot: 0.01
+2025-08-04 04:41:27.149377 -    TP: 0.1% | SL: 0.3%
+2025-08-04 04:41:27.149586 -    Scan Interval: 1s
+2025-08-04 04:41:27.149788 -    Price Spike Threshold: 2 (Enhanced)
+2025-08-04 04:41:27.149986 -    Signal Confidence Threshold: 0.25
+2025-08-04 04:41:27.150204 - 🎯 Enhanced opportunity capture system active!
+2025-08-04 04:41:27.150395 - 🚀 HFT QUICK START COMPLETED!
+2025-08-04 04:41:27.150577 -    • HFT mode activated
+2025-08-04 04:41:27.150772 -    • Bot connected and started
+2025-08-04 04:41:27.150952 -    • Ready for high-frequency trading
+2025-08-04 04:41:27.164703 - 💰 REAL MONEY TP/SL Calculation:
+2025-08-04 04:41:27.165227 -    Real Account Balance: $10,000.00
+2025-08-04 04:41:27.165474 -    Target Profit: $100.00 (1.0% dari modal)
+2025-08-04 04:41:27.165691 -    Max Loss: $500.00 (5.0% dari modal)
+2025-08-04 04:41:27.166030 -    TP Price: 2756.51734 | SL Price: 2156.51734
+2025-08-04 04:41:27.166308 -    Signal: BUY | Current Price: 2656.51734
+2025-08-04 04:41:27.166574 - ⚡ HFT BUY Signal: XAUUSDm @ 2656.51734
+2025-08-04 04:41:27.267373 - ❌ Order failed - Error code: 10019
+2025-08-04 04:41:27.758625 - 🔄 Opportunity counters reset
+2025-08-04 04:41:29.832206 - No positions to close
+2025-08-04 04:41:37.270165 - 💰 REAL MONEY TP/SL Calculation:
+2025-08-04 04:41:37.270445 -    Real Account Balance: $10,000.00
+2025-08-04 04:41:37.270665 -    Target Profit: $100.00 (1.0% dari modal)
+2025-08-04 04:41:37.270882 -    Max Loss: $500.00 (5.0% dari modal)
+2025-08-04 04:41:37.271214 -    TP Price: 2549.02345 | SL Price: 3149.02345
+2025-08-04 04:41:37.271456 -    Signal: SELL | Current Price: 2649.02345
+2025-08-04 04:41:37.271744 - ⚡ HFT SELL Signal: XAUUSDm @ 2649.02345
+2025-08-04 04:41:37.372788 - ❌ Order failed - Error code: 10019
+2025-08-04 04:41:42.374648 - 💰 REAL MONEY TP/SL Calculation:
+2025-08-04 04:41:42.374909 -    Real Account Balance: $10,000.00
+2025-08-04 04:41:42.375110 -    Target Profit: $100.00 (1.0% dari modal)
+2025-08-04 04:41:42.375410 -    Max Loss: $500.00 (5.0% dari modal)
+2025-08-04 04:41:42.375595 -    TP Price: 2756.35470 | SL Price: 2156.35470
+2025-08-04 04:41:42.375820 -    Signal: BUY | Current Price: 2656.35470
+2025-08-04 04:41:42.376084 - ⚡ HFT BUY Signal: XAUUSDm @ 2656.35470
+2025-08-04 04:41:42.476939 - ❌ Order failed - Error code: 10019
+2025-08-04 04:41:47.478753 - 💰 REAL MONEY TP/SL Calculation:
+2025-08-04 04:41:47.479046 -    Real Account Balance: $10,000.00
+2025-08-04 04:41:47.479432 -    Target Profit: $100.00 (1.0% dari modal)
+2025-08-04 04:41:47.479742 -    Max Loss: $500.00 (5.0% dari modal)
+2025-08-04 04:41:47.479962 -    TP Price: 2549.69549 | SL Price: 3149.69549
+2025-08-04 04:41:47.480241 -    Signal: SELL | Current Price: 2649.69549
+2025-08-04 04:41:47.480526 - ⚡ HFT SELL Signal: XAUUSDm @ 2649.69549
+2025-08-04 04:41:47.582786 - ❌ Order failed - Error code: 10019
+2025-08-04 04:41:52.584532 - 💰 REAL MONEY TP/SL Calculation:
+2025-08-04 04:41:52.584858 -    Real Account Balance: $10,000.00
+2025-08-04 04:41:52.585139 -    Target Profit: $100.00 (1.0% dari modal)
+2025-08-04 04:41:52.585314 -    Max Loss: $500.00 (5.0% dari modal)
+2025-08-04 04:41:52.585490 -    TP Price: 2755.68669 | SL Price: 2155.68669
+2025-08-04 04:41:52.585726 -    Signal: BUY | Current Price: 2655.68669
+2025-08-04 04:41:52.586016 - ⚡ HFT BUY Signal: XAUUSDm @ 2655.68669
+2025-08-04 04:41:52.686672 - ❌ Order failed - Error code: 10019
+2025-08-04 04:41:57.688462 - 💰 REAL MONEY TP/SL Calculation:
+2025-08-04 04:41:57.688775 -    Real Account Balance: $10,000.00
+2025-08-04 04:41:57.689084 -    Target Profit: $100.00 (1.0% dari modal)
+2025-08-04 04:41:57.689386 -    Max Loss: $500.00 (5.0% dari modal)
+2025-08-04 04:41:57.689662 -    TP Price: 2551.70919 | SL Price: 3151.70919
+2025-08-04 04:41:57.689891 -    Signal: SELL | Current Price: 2651.70919
+2025-08-04 04:41:57.690233 - ⚡ HFT SELL Signal: XAUUSDm @ 2651.70919
+2025-08-04 04:41:57.790984 - ❌ Order failed - Error code: 10019
+2025-08-04 04:42:02.792483 - 💰 REAL MONEY TP/SL Calculation:
+2025-08-04 04:42:02.792960 -    Real Account Balance: $10,000.00
+2025-08-04 04:42:02.793245 -    Target Profit: $100.00 (1.0% dari modal)
+2025-08-04 04:42:02.793576 -    Max Loss: $500.00 (5.0% dari modal)
+2025-08-04 04:42:02.793882 -    TP Price: 2550.33615 | SL Price: 3150.33615
+2025-08-04 04:42:02.796752 -    Signal: SELL | Current Price: 2650.33615
+2025-08-04 04:42:02.797103 - ⚡ HFT SELL Signal: XAUUSDm @ 2650.33615
+2025-08-04 04:42:02.898887 - ❌ Order failed - Error code: 10019
+2025-08-04 04:42:07.900752 - 💰 REAL MONEY TP/SL Calculation:
+2025-08-04 04:42:07.901028 -    Real Account Balance: $10,000.00
+2025-08-04 04:42:07.901354 -    Target Profit: $100.00 (1.0% dari modal)
+2025-08-04 04:42:07.901585 -    Max Loss: $500.00 (5.0% dari modal)
+2025-08-04 04:42:07.901815 -    TP Price: 2548.67850 | SL Price: 3148.67850
+2025-08-04 04:42:07.902022 -    Signal: SELL | Current Price: 2648.67850
+2025-08-04 04:42:07.902250 - ⚡ HFT SELL Signal: XAUUSDm @ 2648.67850
+2025-08-04 04:42:08.003016 - ❌ Order failed - Error code: 10019
+2025-08-04 04:42:18.006306 - 💰 REAL MONEY TP/SL Calculation:
+2025-08-04 04:42:18.006726 -    Real Account Balance: $10,000.00
+2025-08-04 04:42:18.006992 -    Target Profit: $100.00 (1.0% dari modal)
+2025-08-04 04:42:18.007407 -    Max Loss: $500.00 (5.0% dari modal)
+2025-08-04 04:42:18.007725 -    TP Price: 2547.41887 | SL Price: 3147.41887
+2025-08-04 04:42:18.007990 -    Signal: SELL | Current Price: 2647.41887
+2025-08-04 04:42:18.008568 - ⚡ HFT SELL Signal: XAUUSDm @ 2647.41887
+2025-08-04 04:42:18.109435 - ❌ Order failed - Error code: 10019
+2025-08-04 04:42:23.111007 - 💰 REAL MONEY TP/SL Calculation:
+2025-08-04 04:42:23.111357 -    Real Account Balance: $10,000.00
+2025-08-04 04:42:23.111641 -    Target Profit: $100.00 (1.0% dari modal)
+2025-08-04 04:42:23.111972 -    Max Loss: $500.00 (5.0% dari modal)
+2025-08-04 04:42:23.112303 -    TP Price: 2752.88185 | SL Price: 2152.88185
+2025-08-04 04:42:23.112524 -    Signal: BUY | Current Price: 2652.88185
+2025-08-04 04:42:23.112832 - ⚡ HFT BUY Signal: XAUUSDm @ 2652.88185
+2025-08-04 04:42:23.213678 - ❌ Order failed - Error code: 10019
+2025-08-04 04:42:28.215349 - 💰 REAL MONEY TP/SL Calculation:
+2025-08-04 04:42:28.215652 -    Real Account Balance: $10,000.00
+2025-08-04 04:42:28.215938 -    Target Profit: $100.00 (1.0% dari modal)
+2025-08-04 04:42:28.216398 -    Max Loss: $500.00 (5.0% dari modal)
+2025-08-04 04:42:28.216912 -    TP Price: 2760.13271 | SL Price: 2160.13271
+2025-08-04 04:42:28.217430 -    Signal: BUY | Current Price: 2660.13271
+2025-08-04 04:42:28.217679 - ⚡ HFT BUY Signal: XAUUSDm @ 2660.13271
+2025-08-04 04:42:28.318358 - ❌ Order failed - Error code: 10019
+2025-08-04 04:42:33.320358 - 💰 REAL MONEY TP/SL Calculation:
+2025-08-04 04:42:33.320677 -    Real Account Balance: $10,000.00
+2025-08-04 04:42:33.321017 -    Target Profit: $100.00 (1.0% dari modal)
+2025-08-04 04:42:33.321459 -    Max Loss: $500.00 (5.0% dari modal)
+2025-08-04 04:42:33.321743 -    TP Price: 2552.88881 | SL Price: 3152.88881
+2025-08-04 04:42:33.322181 -    Signal: SELL | Current Price: 2652.88881
+2025-08-04 04:42:33.322564 - ⚡ HFT SELL Signal: XAUUSDm @ 2652.88881
+2025-08-04 04:42:33.423700 - ❌ Order failed - Error code: 10019
+2025-08-04 04:42:38.425865 - 💰 REAL MONEY TP/SL Calculation:
+2025-08-04 04:42:38.426111 -    Real Account Balance: $10,000.00
+2025-08-04 04:42:38.426447 -    Target Profit: $100.00 (1.0% dari modal)
+2025-08-04 04:42:38.426700 -    Max Loss: $500.00 (5.0% dari modal)
+2025-08-04 04:42:38.426977 -    TP Price: 2550.52448 | SL Price: 3150.52448
+2025-08-04 04:42:38.427330 -    Signal: SELL | Current Price: 2650.52448
+2025-08-04 04:42:38.427586 - ⚡ HFT SELL Signal: XAUUSDm @ 2650.52448
+2025-08-04 04:42:38.528626 - ❌ Order failed - Error code: 10019
+2025-08-04 04:42:43.530049 - 💰 REAL MONEY TP/SL Calculation:
+2025-08-04 04:42:43.530425 -    Real Account Balance: $10,000.00
+2025-08-04 04:42:43.530712 -    Target Profit: $100.00 (1.0% dari modal)
+2025-08-04 04:42:43.530954 -    Max Loss: $500.00 (5.0% dari modal)
+2025-08-04 04:42:43.531412 -    TP Price: 2758.69958 | SL Price: 2158.69958
+2025-08-04 04:42:43.531684 -    Signal: BUY | Current Price: 2658.69958
+2025-08-04 04:42:43.531935 - ⚡ HFT BUY Signal: XAUUSDm @ 2658.69958
+2025-08-04 04:42:43.632695 - ❌ Order failed - Error code: 10019
+2025-08-04 04:42:48.634254 - 💰 REAL MONEY TP/SL Calculation:
+2025-08-04 04:42:48.634590 -    Real Account Balance: $10,000.00
+2025-08-04 04:42:48.634896 -    Target Profit: $100.00 (1.0% dari modal)
+2025-08-04 04:42:48.635291 -    Max Loss: $500.00 (5.0% dari modal)
+2025-08-04 04:42:48.635551 -    TP Price: 2548.71555 | SL Price: 3148.71555
+2025-08-04 04:42:48.635834 -    Signal: SELL | Current Price: 2648.71555
+2025-08-04 04:42:48.636082 - ⚡ HFT SELL Signal: XAUUSDm @ 2648.71555
+2025-08-04 04:42:48.737217 - ❌ Order failed - Error code: 10019
+2025-08-04 04:42:53.739054 - 💰 REAL MONEY TP/SL Calculation:
+2025-08-04 04:42:53.739599 -    Real Account Balance: $10,000.00
+2025-08-04 04:42:53.739951 -    Target Profit: $100.00 (1.0% dari modal)
+2025-08-04 04:42:53.740229 -    Max Loss: $500.00 (5.0% dari modal)
+2025-08-04 04:42:53.740557 -    TP Price: 2546.17361 | SL Price: 3146.17361
+2025-08-04 04:42:53.740836 -    Signal: SELL | Current Price: 2646.17361
+2025-08-04 04:42:53.741071 - ⚡ HFT SELL Signal: XAUUSDm @ 2646.17361
+2025-08-04 04:42:53.842511 - ❌ Order failed - Error code: 10019
+2025-08-04 04:42:58.850878 - 💰 REAL MONEY TP/SL Calculation:
+2025-08-04 04:42:58.851681 -    Real Account Balance: $10,000.00
+2025-08-04 04:42:58.851985 -    Target Profit: $100.00 (1.0% dari modal)
+2025-08-04 04:42:58.852600 -    Max Loss: $500.00 (5.0% dari modal)
+2025-08-04 04:42:58.852943 -    TP Price: 2749.09900 | SL Price: 2149.09900
+2025-08-04 04:42:58.853344 -    Signal: BUY | Current Price: 2649.09900
+2025-08-04 04:42:58.853621 - ⚡ HFT BUY Signal: XAUUSDm @ 2649.09900
+2025-08-04 04:42:58.954274 - ❌ Order failed - Error code: 10019
+2025-08-04 04:43:03.956769 - 💰 REAL MONEY TP/SL Calculation:
+2025-08-04 04:43:03.957090 -    Real Account Balance: $10,000.00
+2025-08-04 04:43:03.957417 -    Target Profit: $100.00 (1.0% dari modal)
+2025-08-04 04:43:03.958273 -    Max Loss: $500.00 (5.0% dari modal)
+2025-08-04 04:43:03.958615 -    TP Price: 2544.91779 | SL Price: 3144.91779
+2025-08-04 04:43:03.958866 -    Signal: SELL | Current Price: 2644.91779
+2025-08-04 04:43:03.959101 - ⚡ HFT SELL Signal: XAUUSDm @ 2644.91779
+2025-08-04 04:43:04.060821 - ❌ Order failed - Error code: 10019
+2025-08-04 04:43:09.063273 - 💰 REAL MONEY TP/SL Calculation:
+2025-08-04 04:43:09.063587 -    Real Account Balance: $10,000.00
+2025-08-04 04:43:09.063935 -    Target Profit: $100.00 (1.0% dari modal)
+2025-08-04 04:43:09.064452 -    Max Loss: $500.00 (5.0% dari modal)
+2025-08-04 04:43:09.064731 -    TP Price: 2747.58172 | SL Price: 2147.58172
+2025-08-04 04:43:09.065042 -    Signal: BUY | Current Price: 2647.58172
+2025-08-04 04:43:09.065368 - ⚡ HFT BUY Signal: XAUUSDm @ 2647.58172
+2025-08-04 04:43:09.167495 - ❌ Order failed - Error code: 10019
+2025-08-04 04:43:14.169445 - 💰 REAL MONEY TP/SL Calculation:
+2025-08-04 04:43:14.169742 -    Real Account Balance: $10,000.00
+2025-08-04 04:43:14.170091 -    Target Profit: $100.00 (1.0% dari modal)
+2025-08-04 04:43:14.170482 -    Max Loss: $500.00 (5.0% dari modal)
+2025-08-04 04:43:14.170901 -    TP Price: 2751.37718 | SL Price: 2151.37718
+2025-08-04 04:43:14.171250 -    Signal: BUY | Current Price: 2651.37718
+2025-08-04 04:43:14.171563 - ⚡ HFT BUY Signal: XAUUSDm @ 2651.37718
+2025-08-04 04:43:14.273941 - ❌ Order failed - Error code: 10019
+2025-08-04 04:43:19.275221 - 💰 REAL MONEY TP/SL Calculation:
+2025-08-04 04:43:19.275482 -    Real Account Balance: $10,000.00
+2025-08-04 04:43:19.276824 -    Target Profit: $100.00 (1.0% dari modal)
+2025-08-04 04:43:19.277204 -    Max Loss: $500.00 (5.0% dari modal)
+2025-08-04 04:43:19.277484 -    TP Price: 2753.38733 | SL Price: 2153.38733
+2025-08-04 04:43:19.277681 -    Signal: BUY | Current Price: 2653.38733
+2025-08-04 04:43:19.277941 - ⚡ HFT BUY Signal: XAUUSDm @ 2653.38733
+2025-08-04 04:43:19.381758 - ❌ Order failed - Error code: 10019
+2025-08-04 04:43:24.388495 - 💰 REAL MONEY TP/SL Calculation:
+2025-08-04 04:43:24.388981 -    Real Account Balance: $10,000.00
+2025-08-04 04:43:24.389261 -    Target Profit: $100.00 (1.0% dari modal)
+2025-08-04 04:43:24.389478 -    Max Loss: $500.00 (5.0% dari modal)
+2025-08-04 04:43:24.389765 -    TP Price: 2547.82397 | SL Price: 3147.82397
+2025-08-04 04:43:24.390087 -    Signal: SELL | Current Price: 2647.82397
+2025-08-04 04:43:24.390417 - ⚡ HFT SELL Signal: XAUUSDm @ 2647.82397
+2025-08-04 04:43:24.491327 - ❌ Order failed - Error code: 10019
+2025-08-04 04:43:29.494186 - 💰 REAL MONEY TP/SL Calculation:
+2025-08-04 04:43:29.494582 -    Real Account Balance: $10,000.00
+2025-08-04 04:43:29.494882 -    Target Profit: $100.00 (1.0% dari modal)
+2025-08-04 04:43:29.495226 -    Max Loss: $500.00 (5.0% dari modal)
+2025-08-04 04:43:29.495551 -    TP Price: 2544.89696 | SL Price: 3144.89696
+2025-08-04 04:43:29.495869 -    Signal: SELL | Current Price: 2644.89696
+2025-08-04 04:43:29.496153 - ⚡ HFT SELL Signal: XAUUSDm @ 2644.89696
+2025-08-04 04:43:29.597058 - ❌ Order failed - Error code: 10019
+2025-08-04 04:43:34.598887 - 💰 REAL MONEY TP/SL Calculation:
+2025-08-04 04:43:34.599318 -    Real Account Balance: $10,000.00
+2025-08-04 04:43:34.599659 -    Target Profit: $100.00 (1.0% dari modal)
+2025-08-04 04:43:34.599912 -    Max Loss: $500.00 (5.0% dari modal)
+2025-08-04 04:43:34.600277 -    TP Price: 2751.61329 | SL Price: 2151.61329
+2025-08-04 04:43:34.600632 -    Signal: BUY | Current Price: 2651.61329
+2025-08-04 04:43:34.600955 - ⚡ HFT BUY Signal: XAUUSDm @ 2651.61329
+2025-08-04 04:43:34.702084 - ❌ Order failed - Error code: 10019
+2025-08-04 04:43:49.707081 - 💰 REAL MONEY TP/SL Calculation:
+2025-08-04 04:43:49.707430 -    Real Account Balance: $10,000.00
+2025-08-04 04:43:49.707762 -    Target Profit: $100.00 (1.0% dari modal)
+2025-08-04 04:43:49.708206 -    Max Loss: $500.00 (5.0% dari modal)
+2025-08-04 04:43:49.708538 -    TP Price: 2545.08084 | SL Price: 3145.08084
+2025-08-04 04:43:49.708818 -    Signal: SELL | Current Price: 2645.08084
+2025-08-04 04:43:49.709084 - ⚡ HFT SELL Signal: XAUUSDm @ 2645.08084
+2025-08-04 04:43:49.809854 - ❌ Order failed - Error code: 10019
+2025-08-04 04:43:59.812510 - 💰 REAL MONEY TP/SL Calculation:
+2025-08-04 04:43:59.812837 -    Real Account Balance: $10,000.00
+2025-08-04 04:43:59.813231 -    Target Profit: $100.00 (1.0% dari modal)
+2025-08-04 04:43:59.813498 -    Max Loss: $500.00 (5.0% dari modal)
+2025-08-04 04:43:59.813754 -    TP Price: 2748.34577 | SL Price: 2148.34577
+2025-08-04 04:43:59.814011 -    Signal: BUY | Current Price: 2648.34577
+2025-08-04 04:43:59.814366 - ⚡ HFT BUY Signal: XAUUSDm @ 2648.34577
+2025-08-04 04:43:59.915357 - ❌ Order failed - Error code: 10019
+2025-08-04 04:44:04.917289 - 💰 REAL MONEY TP/SL Calculation:
+2025-08-04 04:44:04.917600 -    Real Account Balance: $10,000.00
+2025-08-04 04:44:04.917933 -    Target Profit: $100.00 (1.0% dari modal)
+2025-08-04 04:44:04.918331 -    Max Loss: $500.00 (5.0% dari modal)
+2025-08-04 04:44:04.918740 -    TP Price: 2544.10776 | SL Price: 3144.10776
+2025-08-04 04:44:04.919098 -    Signal: SELL | Current Price: 2644.10776
+2025-08-04 04:44:04.919490 - ⚡ HFT SELL Signal: XAUUSDm @ 2644.10776
+2025-08-04 04:44:05.022501 - ❌ Order failed - Error code: 10019
+2025-08-04 04:44:10.027995 - 💰 REAL MONEY TP/SL Calculation:
+2025-08-04 04:44:10.028480 -    Real Account Balance: $10,000.00
+2025-08-04 04:44:10.028709 -    Target Profit: $100.00 (1.0% dari modal)
+2025-08-04 04:44:10.028936 -    Max Loss: $500.00 (5.0% dari modal)
+2025-08-04 04:44:10.029171 -    TP Price: 2750.01282 | SL Price: 2150.01282
+2025-08-04 04:44:10.029440 -    Signal: BUY | Current Price: 2650.01282
+2025-08-04 04:44:10.029771 - ⚡ HFT BUY Signal: XAUUSDm @ 2650.01282
+2025-08-04 04:44:10.130786 - ❌ Order failed - Error code: 10019
+2025-08-04 04:44:15.133550 - 💰 REAL MONEY TP/SL Calculation:
+2025-08-04 04:44:15.134104 -    Real Account Balance: $10,000.00
+2025-08-04 04:44:15.134451 -    Target Profit: $100.00 (1.0% dari modal)
+2025-08-04 04:44:15.134808 -    Max Loss: $500.00 (5.0% dari modal)
+2025-08-04 04:44:15.135160 -    TP Price: 2752.16566 | SL Price: 2152.16566
+2025-08-04 04:44:15.135490 -    Signal: BUY | Current Price: 2652.16566
+2025-08-04 04:44:15.135805 - ⚡ HFT BUY Signal: XAUUSDm @ 2652.16566
+2025-08-04 04:44:15.236817 - ❌ Order failed - Error code: 10019
+2025-08-04 04:44:20.238764 - 💰 REAL MONEY TP/SL Calculation:
+2025-08-04 04:44:20.239623 -    Real Account Balance: $10,000.00
+2025-08-04 04:44:20.239984 -    Target Profit: $100.00 (1.0% dari modal)
+2025-08-04 04:44:20.240329 -    Max Loss: $500.00 (5.0% dari modal)
+2025-08-04 04:44:20.240606 -    TP Price: 2547.30161 | SL Price: 3147.30161
+2025-08-04 04:44:20.240852 -    Signal: SELL | Current Price: 2647.30161
+2025-08-04 04:44:20.241093 - ⚡ HFT SELL Signal: XAUUSDm @ 2647.30161
+2025-08-04 04:44:20.342093 - ❌ Order failed - Error code: 10019
+2025-08-04 04:44:59.594554 - 👋 Enhanced Trading Bot session ended
+2025-08-04 04:46:45.140699 - ❌ HFT activation error: 'TradingBot' object has no attribute 'tp_var'
+2025-08-04 04:46:47.036069 - ❌ HFT activation error: 'TradingBot' object has no attribute 'tp_var'
+2025-08-04 04:47:00.598863 - ❌ HFT activation error: 'TradingBot' object has no attribute 'tp_var'
+2025-08-04 04:47:00.599346 - 🔗 Connecting to Enhanced Trading Simulation...
+2025-08-04 04:47:00.599635 - ⚡ Features: Fixed Price Retrieval, Optimized Signals, Enhanced Opportunity Capture
+2025-08-04 04:47:41.245456 - ❌ HFT activation error: 'TradingBot' object has no attribute 'tp_var'
+2025-08-04 04:47:41.245953 - 🔗 Connecting to Enhanced Trading Simulation...
+2025-08-04 04:47:41.246199 - ⚡ Features: Fixed Price Retrieval, Optimized Signals, Enhanced Opportunity Capture
+2025-08-04 04:49:14.578436 - ✅ Connected: Enhanced Virtual Account: 999999 | Balance: $10,000.00
+2025-08-04 04:49:14.580307 - 📊 Real market data - Enhanced virtual trading
+2025-08-04 04:49:14.580995 - 🛡️  100% Safe - No real money involved
+2025-08-04 04:49:14.581185 - 🎯 Enhanced opportunity capture system active
+2025-08-04 04:49:18.801183 - ❌ Start bot error: 'TradingBot' object has no attribute 'tp_var'
+2025-08-04 04:49:22.139240 - 🚀 HFT QUICK START COMPLETED!
+2025-08-04 04:49:22.139857 -    • HFT mode activated
+2025-08-04 04:49:22.140050 -    • Bot connected and started
+2025-08-04 04:49:22.140641 -    • Ready for high-frequency trading
+2025-08-04 04:49:24.054411 - ❌ HFT activation error: 'TradingBot' object has no attribute 'tp_var'
+2025-08-04 04:49:24.054571 - 🔗 Connecting to Enhanced Trading Simulation...
+2025-08-04 04:49:24.054732 - ⚡ Features: Fixed Price Retrieval, Optimized Signals, Enhanced Opportunity Capture
+2025-08-04 04:49:26.276269 - ✅ Connected: Enhanced Virtual Account: 999999 | Balance: $10,000.00
+2025-08-04 04:49:26.276518 - 📊 Real market data - Enhanced virtual trading
+2025-08-04 04:49:26.276726 - 🛡️  100% Safe - No real money involved
+2025-08-04 04:49:26.276850 - 🎯 Enhanced opportunity capture system active
+2025-08-04 04:49:28.029938 - ❌ Start bot error: 'TradingBot' object has no attribute 'tp_var'
+2025-08-04 04:49:28.772928 - 🚀 HFT QUICK START COMPLETED!
+2025-08-04 04:49:28.773160 -    • HFT mode activated
+2025-08-04 04:49:28.773314 -    • Bot connected and started
+2025-08-04 04:49:28.773448 -    • Ready for high-frequency trading
+2025-08-04 04:49:34.040803 - ⚡ HFT MODE ACTIVATED!
+2025-08-04 04:49:34.041292 -    • Ultra-fast 1-second scanning enabled
+2025-08-04 04:49:34.041630 -    • High-frequency parameters set
+2025-08-04 04:49:34.042367 -    • Target: 10 trades/second capability
+2025-08-04 04:49:34.042589 -    • TP: 0.1% | SL: 0.3% (tight parameters)
+2025-08-04 04:49:34.042951 - 🔗 Connecting to Enhanced Trading Simulation...
+2025-08-04 04:49:34.043388 - ⚡ Features: Fixed Price Retrieval, Optimized Signals, Enhanced Opportunity Capture
+2025-08-04 04:49:35.809766 - ✅ Connected: Enhanced Virtual Account: 999999 | Balance: $10,000.00
+2025-08-04 04:49:35.810456 - 📊 Real market data - Enhanced virtual trading
+2025-08-04 04:49:35.810785 - 🛡️  100% Safe - No real money involved
+2025-08-04 04:49:35.810965 - 🎯 Enhanced opportunity capture system active
+2025-08-04 04:49:37.323859 - 🚀 ENHANCED TRADING BOT STARTED!
+2025-08-04 04:49:37.324497 -    Symbol: XAUUSDm | Lot: 0.01
+2025-08-04 04:49:37.324716 -    TP: 0.1% | SL: 0.3%
+2025-08-04 04:49:37.324874 -    Scan Interval: 1s
+2025-08-04 04:49:37.325271 -    Price Spike Threshold: 2 (Enhanced)
+2025-08-04 04:49:37.325413 -    Signal Confidence Threshold: 0.25
+2025-08-04 04:49:37.325563 - 🎯 Enhanced opportunity capture system active!
+2025-08-04 04:49:37.325896 - 🚀 HFT QUICK START COMPLETED!
+2025-08-04 04:49:37.326076 -    • HFT mode activated
+2025-08-04 04:49:37.326317 -    • Bot connected and started
+2025-08-04 04:49:37.326508 -    • Ready for high-frequency trading
+2025-08-04 04:49:47.338360 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:49:47.338866 -    Account Balance: $10,000.00
+2025-08-04 04:49:47.339419 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:49:47.339953 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:49:47.340582 -    TP Price: 2612.46954 | SL Price: 2792.46954
+2025-08-04 04:49:47.341008 -    Signal: SELL | Current Price: 2642.46954
+2025-08-04 04:49:47.341517 - ⚡ HFT SELL Signal: XAUUSDm @ 2642.46954
+2025-08-04 04:49:47.442586 - ❌ Order failed - Error code: 10019
+2025-08-04 04:49:52.444118 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:49:52.444867 -    Account Balance: $10,000.00
+2025-08-04 04:49:52.445287 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:49:52.445642 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:49:52.446064 -    TP Price: 2681.15090 | SL Price: 2501.15090
+2025-08-04 04:49:52.446850 -    Signal: BUY | Current Price: 2651.15090
+2025-08-04 04:49:52.447434 - ⚡ HFT BUY Signal: XAUUSDm @ 2651.15090
+2025-08-04 04:49:52.549241 - ❌ Order failed - Error code: 10019
+2025-08-04 04:49:58.011952 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:49:58.013030 -    Account Balance: $10,000.00
+2025-08-04 04:49:58.013699 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:49:58.014211 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:49:58.019499 -    TP Price: 2617.54888 | SL Price: 2797.54888
+2025-08-04 04:49:58.021104 -    Signal: SELL | Current Price: 2647.54888
+2025-08-04 04:49:58.021657 - ⚡ HFT SELL Signal: XAUUSDm @ 2647.54888
+2025-08-04 04:49:58.122867 - ❌ Order failed - Error code: 10019
+2025-08-04 04:50:03.124272 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:50:03.124655 -    Account Balance: $10,000.00
+2025-08-04 04:50:03.125297 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:50:03.125698 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:50:03.126064 -    TP Price: 2680.40292 | SL Price: 2500.40292
+2025-08-04 04:50:03.126295 -    Signal: BUY | Current Price: 2650.40292
+2025-08-04 04:50:03.126536 - ⚡ HFT BUY Signal: XAUUSDm @ 2650.40292
+2025-08-04 04:50:03.227267 - ❌ Order failed - Error code: 10019
+2025-08-04 04:50:13.229838 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:50:13.230106 -    Account Balance: $10,000.00
+2025-08-04 04:50:13.230345 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:50:13.230690 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:50:13.230973 -    TP Price: 2614.82975 | SL Price: 2794.82975
+2025-08-04 04:50:13.231344 -    Signal: SELL | Current Price: 2644.82975
+2025-08-04 04:50:13.231595 - ⚡ HFT SELL Signal: XAUUSDm @ 2644.82975
+2025-08-04 04:50:13.332357 - ❌ Order failed - Error code: 10019
+2025-08-04 04:50:18.333657 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:50:18.333901 -    Account Balance: $10,000.00
+2025-08-04 04:50:18.334582 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:50:18.334845 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:50:18.335099 -    TP Price: 2676.50152 | SL Price: 2496.50152
+2025-08-04 04:50:18.335437 -    Signal: BUY | Current Price: 2646.50152
+2025-08-04 04:50:18.335637 - ⚡ HFT BUY Signal: XAUUSDm @ 2646.50152
+2025-08-04 04:50:18.437108 - ❌ Order failed - Error code: 10019
+2025-08-04 04:50:23.438870 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:50:23.439273 -    Account Balance: $10,000.00
+2025-08-04 04:50:23.439565 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:50:23.439793 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:50:23.440056 -    TP Price: 2680.25824 | SL Price: 2500.25824
+2025-08-04 04:50:23.440340 -    Signal: BUY | Current Price: 2650.25824
+2025-08-04 04:50:23.440548 - ⚡ HFT BUY Signal: XAUUSDm @ 2650.25824
+2025-08-04 04:50:23.541347 - ❌ Order failed - Error code: 10019
+2025-08-04 04:50:28.542934 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:50:28.543279 -    Account Balance: $10,000.00
+2025-08-04 04:50:28.543692 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:50:28.543974 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:50:28.544345 -    TP Price: 2686.66342 | SL Price: 2506.66342
+2025-08-04 04:50:28.544678 -    Signal: BUY | Current Price: 2656.66342
+2025-08-04 04:50:28.544926 - ⚡ HFT BUY Signal: XAUUSDm @ 2656.66342
+2025-08-04 04:50:28.645756 - ❌ Order failed - Error code: 10019
+2025-08-04 04:50:33.647069 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:50:33.647390 -    Account Balance: $10,000.00
+2025-08-04 04:50:33.647613 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:50:33.647817 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:50:33.648075 -    TP Price: 2615.37308 | SL Price: 2795.37308
+2025-08-04 04:50:33.648371 -    Signal: SELL | Current Price: 2645.37308
+2025-08-04 04:50:33.648592 - ⚡ HFT SELL Signal: XAUUSDm @ 2645.37308
+2025-08-04 04:50:33.749228 - ❌ Order failed - Error code: 10019
+2025-08-04 04:50:38.750554 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:50:38.750865 -    Account Balance: $10,000.00
+2025-08-04 04:50:38.751197 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:50:38.751461 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:50:38.751681 -    TP Price: 2678.26839 | SL Price: 2498.26839
+2025-08-04 04:50:38.751927 -    Signal: BUY | Current Price: 2648.26839
+2025-08-04 04:50:38.752239 - ⚡ HFT BUY Signal: XAUUSDm @ 2648.26839
+2025-08-04 04:50:38.852888 - ❌ Order failed - Error code: 10019
+2025-08-04 04:50:43.854150 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:50:43.854447 -    Account Balance: $10,000.00
+2025-08-04 04:50:43.854729 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:50:43.854980 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:50:43.855333 -    TP Price: 2613.76120 | SL Price: 2793.76120
+2025-08-04 04:50:43.855578 -    Signal: SELL | Current Price: 2643.76120
+2025-08-04 04:50:43.855763 - ⚡ HFT SELL Signal: XAUUSDm @ 2643.76120
+2025-08-04 04:50:43.956512 - ❌ Order failed - Error code: 10019
+2025-08-04 04:50:48.958035 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:50:48.958320 -    Account Balance: $10,000.00
+2025-08-04 04:50:48.958634 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:50:48.958871 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:50:48.959105 -    TP Price: 2681.56103 | SL Price: 2501.56103
+2025-08-04 04:50:48.959391 -    Signal: BUY | Current Price: 2651.56103
+2025-08-04 04:50:48.959623 - ⚡ HFT BUY Signal: XAUUSDm @ 2651.56103
+2025-08-04 04:50:49.060394 - ❌ Order failed - Error code: 10019
+2025-08-04 04:50:52.509167 - 💾 TP/SL Settings Updated:
+2025-08-04 04:50:52.509388 -    Normal TP: 1.0% dari modal
+2025-08-04 04:50:52.509629 -    Normal SL: 3.0% dari modal
+2025-08-04 04:50:54.061729 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:50:54.062032 -    Account Balance: $10,000.00
+2025-08-04 04:50:54.062375 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:50:54.062634 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:50:54.063030 -    TP Price: 2616.11147 | SL Price: 2796.11147
+2025-08-04 04:50:54.063334 -    Signal: SELL | Current Price: 2646.11147
+2025-08-04 04:50:54.063647 - ⚡ HFT SELL Signal: XAUUSDm @ 2646.11147
+2025-08-04 04:50:54.164458 - ❌ Order failed - Error code: 10019
+2025-08-04 04:50:55.437958 - 💾 TP/SL Settings Updated:
+2025-08-04 04:50:55.438248 -    Normal TP: 1.0% dari modal
+2025-08-04 04:50:55.438415 -    Normal SL: 3.0% dari modal
+2025-08-04 04:50:59.166036 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:50:59.166493 -    Account Balance: $10,000.00
+2025-08-04 04:50:59.166755 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:50:59.167028 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:50:59.167327 -    TP Price: 2685.64264 | SL Price: 2505.64264
+2025-08-04 04:50:59.167527 -    Signal: BUY | Current Price: 2655.64264
+2025-08-04 04:50:59.167744 - ⚡ HFT BUY Signal: XAUUSDm @ 2655.64264
+2025-08-04 04:50:59.268627 - ❌ Order failed - Error code: 10019
+2025-08-04 04:51:00.672193 - ⚡ HFT MODE ACTIVATED!
+2025-08-04 04:51:00.672442 -    • Ultra-fast 1-second scanning enabled
+2025-08-04 04:51:00.672555 -    • High-frequency parameters set
+2025-08-04 04:51:00.672660 -    • Target: 10 trades/second capability
+2025-08-04 04:51:00.672770 -    • TP: 0.1% | SL: 0.3% (tight parameters)
+2025-08-04 04:51:00.672946 - ⚡ HFT parameters applied to running bot!
+2025-08-04 04:51:04.269838 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:51:04.270339 -    Account Balance: $10,000.00
+2025-08-04 04:51:04.271408 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:51:04.271689 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:51:04.272074 -    TP Price: 2622.41442 | SL Price: 2802.41442
+2025-08-04 04:51:04.272443 -    Signal: SELL | Current Price: 2652.41442
+2025-08-04 04:51:04.272773 - ⚡ HFT SELL Signal: XAUUSDm @ 2652.41442
+2025-08-04 04:51:04.373562 - ❌ Order failed - Error code: 10019
+2025-08-04 04:51:07.466964 - ⚡ HFT MODE ACTIVATED!
+2025-08-04 04:51:07.467161 -    • Ultra-fast 1-second scanning enabled
+2025-08-04 04:51:07.467294 -    • High-frequency parameters set
+2025-08-04 04:51:07.467439 -    • Target: 10 trades/second capability
+2025-08-04 04:51:07.467577 -    • TP: 0.1% | SL: 0.3% (tight parameters)
+2025-08-04 04:51:07.467677 - ⚡ HFT parameters applied to running bot!
+2025-08-04 04:51:09.374857 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:51:09.375349 -    Account Balance: $10,000.00
+2025-08-04 04:51:09.375759 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:51:09.376039 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:51:09.376392 -    TP Price: 2615.59324 | SL Price: 2795.59324
+2025-08-04 04:51:09.377789 -    Signal: SELL | Current Price: 2645.59324
+2025-08-04 04:51:09.378054 - ⚡ HFT SELL Signal: XAUUSDm @ 2645.59324
+2025-08-04 04:51:09.478781 - ❌ Order failed - Error code: 10019
+2025-08-04 04:51:19.481418 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:51:19.481712 -    Account Balance: $10,000.00
+2025-08-04 04:51:19.482011 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:51:19.482271 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:51:19.482451 -    TP Price: 2614.84083 | SL Price: 2794.84083
+2025-08-04 04:51:19.482746 -    Signal: SELL | Current Price: 2644.84083
+2025-08-04 04:51:19.483121 - ⚡ HFT SELL Signal: XAUUSDm @ 2644.84083
+2025-08-04 04:51:19.583952 - ❌ Order failed - Error code: 10019
+2025-08-04 04:51:24.588587 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:51:24.589028 -    Account Balance: $10,000.00
+2025-08-04 04:51:24.589464 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:51:24.589808 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:51:24.590158 -    TP Price: 2684.09295 | SL Price: 2504.09295
+2025-08-04 04:51:24.590498 -    Signal: BUY | Current Price: 2654.09295
+2025-08-04 04:51:24.590825 - ⚡ HFT BUY Signal: XAUUSDm @ 2654.09295
+2025-08-04 04:51:24.691492 - ❌ Order failed - Error code: 10019
+2025-08-04 04:51:29.692679 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:51:29.693071 -    Account Balance: $10,000.00
+2025-08-04 04:51:29.693433 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:51:29.693823 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:51:29.694020 -    TP Price: 2617.47987 | SL Price: 2797.47987
+2025-08-04 04:51:29.694327 -    Signal: SELL | Current Price: 2647.47987
+2025-08-04 04:51:29.694481 - ⚡ HFT SELL Signal: XAUUSDm @ 2647.47987
+2025-08-04 04:51:29.795368 - ❌ Order failed - Error code: 10019
+2025-08-04 04:51:34.796758 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:51:34.797229 -    Account Balance: $10,000.00
+2025-08-04 04:51:34.797584 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:51:34.797980 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:51:34.798254 -    TP Price: 2614.84308 | SL Price: 2794.84308
+2025-08-04 04:51:34.798542 -    Signal: SELL | Current Price: 2644.84308
+2025-08-04 04:51:34.798705 - ⚡ HFT SELL Signal: XAUUSDm @ 2644.84308
+2025-08-04 04:51:34.899445 - ❌ Order failed - Error code: 10019
+2025-08-04 04:51:39.900941 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:51:39.901530 -    Account Balance: $10,000.00
+2025-08-04 04:51:39.901939 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:51:39.902293 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:51:39.902629 -    TP Price: 2677.34319 | SL Price: 2497.34319
+2025-08-04 04:51:39.902947 -    Signal: BUY | Current Price: 2647.34319
+2025-08-04 04:51:39.903319 - ⚡ HFT BUY Signal: XAUUSDm @ 2647.34319
+2025-08-04 04:51:40.003934 - ❌ Order failed - Error code: 10019
+2025-08-04 04:51:45.005268 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:51:45.005772 -    Account Balance: $10,000.00
+2025-08-04 04:51:45.006317 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:51:45.006517 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:51:45.006893 -    TP Price: 2681.47152 | SL Price: 2501.47152
+2025-08-04 04:51:45.007291 -    Signal: BUY | Current Price: 2651.47152
+2025-08-04 04:51:45.007604 - ⚡ HFT BUY Signal: XAUUSDm @ 2651.47152
+2025-08-04 04:51:45.108497 - ❌ Order failed - Error code: 10019
+2025-08-04 04:51:50.109843 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:51:50.110279 -    Account Balance: $10,000.00
+2025-08-04 04:51:50.110621 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:51:50.110866 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:51:50.111262 -    TP Price: 2684.65543 | SL Price: 2504.65543
+2025-08-04 04:51:50.111523 -    Signal: BUY | Current Price: 2654.65543
+2025-08-04 04:51:50.111882 - ⚡ HFT BUY Signal: XAUUSDm @ 2654.65543
+2025-08-04 04:51:50.212520 - ❌ Order failed - Error code: 10019
+2025-08-04 04:51:55.213817 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:51:55.214430 -    Account Balance: $10,000.00
+2025-08-04 04:51:55.214921 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:51:55.215421 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:51:55.215838 -    TP Price: 2622.19633 | SL Price: 2802.19633
+2025-08-04 04:51:55.216233 -    Signal: SELL | Current Price: 2652.19633
+2025-08-04 04:51:55.216612 - ⚡ HFT SELL Signal: XAUUSDm @ 2652.19633
+2025-08-04 04:51:55.317533 - ❌ Order failed - Error code: 10019
+2025-08-04 04:52:00.318988 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:52:00.319429 -    Account Balance: $10,000.00
+2025-08-04 04:52:00.319642 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:52:00.319987 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:52:00.320396 -    TP Price: 2687.74255 | SL Price: 2507.74255
+2025-08-04 04:52:00.320599 -    Signal: BUY | Current Price: 2657.74255
+2025-08-04 04:52:00.320885 - ⚡ HFT BUY Signal: XAUUSDm @ 2657.74255
+2025-08-04 04:52:00.421614 - ❌ Order failed - Error code: 10019
+2025-08-04 04:52:05.423032 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:52:05.423478 -    Account Balance: $10,000.00
+2025-08-04 04:52:05.423761 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:52:05.424427 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:52:05.425310 -    TP Price: 2613.98589 | SL Price: 2793.98589
+2025-08-04 04:52:05.425643 -    Signal: SELL | Current Price: 2643.98589
+2025-08-04 04:52:05.426033 - ⚡ HFT SELL Signal: XAUUSDm @ 2643.98589
+2025-08-04 04:52:05.527094 - ❌ Order failed - Error code: 10019
+2025-08-04 04:52:10.528563 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:52:10.529042 -    Account Balance: $10,000.00
+2025-08-04 04:52:10.529458 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:52:10.529988 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:52:10.530317 -    TP Price: 2682.24502 | SL Price: 2502.24502
+2025-08-04 04:52:10.530660 -    Signal: BUY | Current Price: 2652.24502
+2025-08-04 04:52:10.531022 - ⚡ HFT BUY Signal: XAUUSDm @ 2652.24502
+2025-08-04 04:52:10.631718 - ❌ Order failed - Error code: 10019
+2025-08-04 04:52:15.633066 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:52:15.633499 -    Account Balance: $10,000.00
+2025-08-04 04:52:15.633908 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:52:15.634352 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:52:15.634963 -    TP Price: 2620.70454 | SL Price: 2800.70454
+2025-08-04 04:52:15.635499 -    Signal: SELL | Current Price: 2650.70454
+2025-08-04 04:52:15.635826 - ⚡ HFT SELL Signal: XAUUSDm @ 2650.70454
+2025-08-04 04:52:15.736640 - ❌ Order failed - Error code: 10019
+2025-08-04 04:52:35.741086 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:52:35.741735 -    Account Balance: $10,000.00
+2025-08-04 04:52:35.742005 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:52:35.742283 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:52:35.742557 -    TP Price: 2682.38414 | SL Price: 2502.38414
+2025-08-04 04:52:35.743013 -    Signal: BUY | Current Price: 2652.38414
+2025-08-04 04:52:35.743457 - ⚡ HFT BUY Signal: XAUUSDm @ 2652.38414
+2025-08-04 04:52:35.844960 - ❌ Order failed - Error code: 10019
+2025-08-04 04:52:40.846446 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:52:40.851722 -    Account Balance: $10,000.00
+2025-08-04 04:52:40.852253 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:52:40.852734 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:52:40.853259 -    TP Price: 2614.36593 | SL Price: 2794.36593
+2025-08-04 04:52:40.853555 -    Signal: SELL | Current Price: 2644.36593
+2025-08-04 04:52:40.853771 - ⚡ HFT SELL Signal: XAUUSDm @ 2644.36593
+2025-08-04 04:52:40.954506 - ❌ Order failed - Error code: 10019
+2025-08-04 04:52:45.955848 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:52:45.956242 -    Account Balance: $10,000.00
+2025-08-04 04:52:45.956671 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:52:45.956923 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:52:45.957559 -    TP Price: 2677.32200 | SL Price: 2497.32200
+2025-08-04 04:52:45.958024 -    Signal: BUY | Current Price: 2647.32200
+2025-08-04 04:52:45.958585 - ⚡ HFT BUY Signal: XAUUSDm @ 2647.32200
+2025-08-04 04:52:46.059443 - ❌ Order failed - Error code: 10019
+2025-08-04 04:52:51.060947 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:52:51.061753 -    Account Balance: $10,000.00
+2025-08-04 04:52:51.061970 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:52:51.062189 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:52:51.062440 -    TP Price: 2685.29132 | SL Price: 2505.29132
+2025-08-04 04:52:51.062985 -    Signal: BUY | Current Price: 2655.29132
+2025-08-04 04:52:51.063320 - ⚡ HFT BUY Signal: XAUUSDm @ 2655.29132
+2025-08-04 04:52:51.167402 - ❌ Order failed - Error code: 10019
+2025-08-04 04:53:01.172208 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:53:01.172540 -    Account Balance: $10,000.00
+2025-08-04 04:53:01.172744 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:53:01.173102 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:53:01.173516 -    TP Price: 2617.36616 | SL Price: 2797.36616
+2025-08-04 04:53:01.173863 -    Signal: SELL | Current Price: 2647.36616
+2025-08-04 04:53:01.174200 - ⚡ HFT SELL Signal: XAUUSDm @ 2647.36616
+2025-08-04 04:53:01.277698 - ❌ Order failed - Error code: 10019
+2025-08-04 04:53:06.279339 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:53:06.279739 -    Account Balance: $10,000.00
+2025-08-04 04:53:06.280102 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:53:06.280779 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:53:06.281489 -    TP Price: 2614.24914 | SL Price: 2794.24914
+2025-08-04 04:53:06.281857 -    Signal: SELL | Current Price: 2644.24914
+2025-08-04 04:53:06.282459 - ⚡ HFT SELL Signal: XAUUSDm @ 2644.24914
+2025-08-04 04:53:06.383173 - ❌ Order failed - Error code: 10019
+2025-08-04 04:53:11.384382 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:53:11.384836 -    Account Balance: $10,000.00
+2025-08-04 04:53:11.385356 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:53:11.385738 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:53:11.386177 -    TP Price: 2680.99633 | SL Price: 2500.99633
+2025-08-04 04:53:11.386480 -    Signal: BUY | Current Price: 2650.99633
+2025-08-04 04:53:11.386785 - ⚡ HFT BUY Signal: XAUUSDm @ 2650.99633
+2025-08-04 04:53:11.487568 - ❌ Order failed - Error code: 10019
+2025-08-04 04:53:16.490078 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:53:16.490487 -    Account Balance: $10,000.00
+2025-08-04 04:53:16.490926 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:53:16.491602 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:53:16.492047 -    TP Price: 2619.41930 | SL Price: 2799.41930
+2025-08-04 04:53:16.492275 -    Signal: SELL | Current Price: 2649.41930
+2025-08-04 04:53:16.492465 - ⚡ HFT SELL Signal: XAUUSDm @ 2649.41930
+2025-08-04 04:53:16.593144 - ❌ Order failed - Error code: 10019
+2025-08-04 04:53:21.594601 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:53:21.595226 -    Account Balance: $10,000.00
+2025-08-04 04:53:21.595475 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:53:21.595795 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:53:21.596175 -    TP Price: 2614.45193 | SL Price: 2794.45193
+2025-08-04 04:53:21.596529 -    Signal: SELL | Current Price: 2644.45193
+2025-08-04 04:53:21.596826 - ⚡ HFT SELL Signal: XAUUSDm @ 2644.45193
+2025-08-04 04:53:21.697466 - ❌ Order failed - Error code: 10019
+2025-08-04 04:53:26.698944 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:53:26.699321 -    Account Balance: $10,000.00
+2025-08-04 04:53:26.699632 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:53:26.699999 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:53:26.700306 -    TP Price: 2678.93271 | SL Price: 2498.93271
+2025-08-04 04:53:26.700603 -    Signal: BUY | Current Price: 2648.93271
+2025-08-04 04:53:26.700858 - ⚡ HFT BUY Signal: XAUUSDm @ 2648.93271
+2025-08-04 04:53:26.801492 - ❌ Order failed - Error code: 10019
+2025-08-04 04:53:36.803617 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:53:36.804995 -    Account Balance: $10,000.00
+2025-08-04 04:53:36.805287 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:53:36.805736 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:53:36.806012 -    TP Price: 2681.57001 | SL Price: 2501.57001
+2025-08-04 04:53:36.806662 -    Signal: BUY | Current Price: 2651.57001
+2025-08-04 04:53:36.807098 - ⚡ HFT BUY Signal: XAUUSDm @ 2651.57001
+2025-08-04 04:53:36.907850 - ❌ Order failed - Error code: 10019
+2025-08-04 04:53:41.909072 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:53:41.909522 -    Account Balance: $10,000.00
+2025-08-04 04:53:41.910007 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:53:41.910385 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:53:41.910693 -    TP Price: 2617.96689 | SL Price: 2797.96689
+2025-08-04 04:53:41.911253 -    Signal: SELL | Current Price: 2647.96689
+2025-08-04 04:53:41.911587 - ⚡ HFT SELL Signal: XAUUSDm @ 2647.96689
+2025-08-04 04:53:42.012304 - ❌ Order failed - Error code: 10019
+2025-08-04 04:53:47.013411 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:53:47.013901 -    Account Balance: $10,000.00
+2025-08-04 04:53:47.014406 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:53:47.014734 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:53:47.015060 -    TP Price: 2680.82398 | SL Price: 2500.82398
+2025-08-04 04:53:47.015442 -    Signal: BUY | Current Price: 2650.82398
+2025-08-04 04:53:47.015832 - ⚡ HFT BUY Signal: XAUUSDm @ 2650.82398
+2025-08-04 04:53:47.116634 - ❌ Order failed - Error code: 10019
+2025-08-04 04:53:52.118333 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:53:52.119062 -    Account Balance: $10,000.00
+2025-08-04 04:53:52.119454 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:53:52.120007 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:53:52.120755 -    TP Price: 2617.75521 | SL Price: 2797.75521
+2025-08-04 04:53:52.121078 -    Signal: SELL | Current Price: 2647.75521
+2025-08-04 04:53:52.121566 - ⚡ HFT SELL Signal: XAUUSDm @ 2647.75521
+2025-08-04 04:53:52.222612 - ❌ Order failed - Error code: 10019
+2025-08-04 04:53:57.223863 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:53:57.224339 -    Account Balance: $10,000.00
+2025-08-04 04:53:57.225258 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:53:57.225584 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:53:57.225824 -    TP Price: 2680.99344 | SL Price: 2500.99344
+2025-08-04 04:53:57.226372 -    Signal: BUY | Current Price: 2650.99344
+2025-08-04 04:53:57.226586 - ⚡ HFT BUY Signal: XAUUSDm @ 2650.99344
+2025-08-04 04:53:57.338609 - ❌ Order failed - Error code: 10019
+2025-08-04 04:54:02.341408 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:54:02.341925 -    Account Balance: $10,000.00
+2025-08-04 04:54:02.343942 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:54:02.344655 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:54:02.344975 -    TP Price: 2614.77296 | SL Price: 2794.77296
+2025-08-04 04:54:02.345760 -    Signal: SELL | Current Price: 2644.77296
+2025-08-04 04:54:02.346058 - ⚡ HFT SELL Signal: XAUUSDm @ 2644.77296
+2025-08-04 04:54:02.446981 - ❌ Order failed - Error code: 10019
+2025-08-04 04:54:07.448650 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:54:07.449392 -    Account Balance: $10,000.00
+2025-08-04 04:54:07.449831 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:54:07.450331 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:54:07.450854 -    TP Price: 2680.54764 | SL Price: 2500.54764
+2025-08-04 04:54:07.451473 -    Signal: BUY | Current Price: 2650.54764
+2025-08-04 04:54:07.452031 - ⚡ HFT BUY Signal: XAUUSDm @ 2650.54764
+2025-08-04 04:54:07.553341 - ❌ Order failed - Error code: 10019
+2025-08-04 04:54:12.554931 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:54:12.555957 -    Account Balance: $10,000.00
+2025-08-04 04:54:12.556369 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:54:12.556650 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:54:12.557004 -    TP Price: 2682.48603 | SL Price: 2502.48603
+2025-08-04 04:54:12.557599 -    Signal: BUY | Current Price: 2652.48603
+2025-08-04 04:54:12.558088 - ⚡ HFT BUY Signal: XAUUSDm @ 2652.48603
+2025-08-04 04:54:12.658928 - ❌ Order failed - Error code: 10019
+2025-08-04 04:54:17.660300 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:54:17.660674 -    Account Balance: $10,000.00
+2025-08-04 04:54:17.660905 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:54:17.661261 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:54:17.661550 -    TP Price: 2620.61138 | SL Price: 2800.61138
+2025-08-04 04:54:17.661871 -    Signal: SELL | Current Price: 2650.61138
+2025-08-04 04:54:17.662289 - ⚡ HFT SELL Signal: XAUUSDm @ 2650.61138
+2025-08-04 04:54:17.762964 - ❌ Order failed - Error code: 10019
+2025-08-04 04:54:22.764416 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:54:22.764855 -    Account Balance: $10,000.00
+2025-08-04 04:54:22.765430 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:54:22.765749 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:54:22.766658 -    TP Price: 2614.69439 | SL Price: 2794.69439
+2025-08-04 04:54:22.766896 -    Signal: SELL | Current Price: 2644.69439
+2025-08-04 04:54:22.767256 - ⚡ HFT SELL Signal: XAUUSDm @ 2644.69439
+2025-08-04 04:54:22.868183 - ❌ Order failed - Error code: 10019
+2025-08-04 04:54:32.870608 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:54:32.870980 -    Account Balance: $10,000.00
+2025-08-04 04:54:32.871169 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:54:32.871624 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:54:32.871808 -    TP Price: 2679.71165 | SL Price: 2499.71165
+2025-08-04 04:54:32.871996 -    Signal: BUY | Current Price: 2649.71165
+2025-08-04 04:54:32.872366 - ⚡ HFT BUY Signal: XAUUSDm @ 2649.71165
+2025-08-04 04:54:32.977707 - ❌ Order failed - Error code: 10019
+2025-08-04 04:54:37.979227 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:54:37.979782 -    Account Balance: $10,000.00
+2025-08-04 04:54:37.980318 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:54:37.980683 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:54:37.981029 -    TP Price: 2617.93250 | SL Price: 2797.93250
+2025-08-04 04:54:37.982245 -    Signal: SELL | Current Price: 2647.93250
+2025-08-04 04:54:37.982552 - ⚡ HFT SELL Signal: XAUUSDm @ 2647.93250
+2025-08-04 04:54:38.083199 - ❌ Order failed - Error code: 10019
+2025-08-04 04:54:43.089501 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:54:43.089867 -    Account Balance: $10,000.00
+2025-08-04 04:54:43.090365 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:54:43.090927 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:54:43.091295 -    TP Price: 2682.63925 | SL Price: 2502.63925
+2025-08-04 04:54:43.091607 -    Signal: BUY | Current Price: 2652.63925
+2025-08-04 04:54:43.091890 - ⚡ HFT BUY Signal: XAUUSDm @ 2652.63925
+2025-08-04 04:54:43.194584 - ❌ Order failed - Error code: 10019
+2025-08-04 04:54:48.195853 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:54:48.196288 -    Account Balance: $10,000.00
+2025-08-04 04:54:48.196534 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:54:48.196727 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:54:48.197383 -    TP Price: 2685.92557 | SL Price: 2505.92557
+2025-08-04 04:54:48.197701 -    Signal: BUY | Current Price: 2655.92557
+2025-08-04 04:54:48.198029 - ⚡ HFT BUY Signal: XAUUSDm @ 2655.92557
+2025-08-04 04:54:48.299011 - ❌ Order failed - Error code: 10019
+2025-08-04 04:54:53.300702 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:54:53.301105 -    Account Balance: $10,000.00
+2025-08-04 04:54:53.301555 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:54:53.301907 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:54:53.302276 -    TP Price: 2616.10175 | SL Price: 2796.10175
+2025-08-04 04:54:53.302606 -    Signal: SELL | Current Price: 2646.10175
+2025-08-04 04:54:53.302917 - ⚡ HFT SELL Signal: XAUUSDm @ 2646.10175
+2025-08-04 04:54:53.403722 - ❌ Order failed - Error code: 10019
+2025-08-04 04:55:03.406597 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:55:03.406992 -    Account Balance: $10,000.00
+2025-08-04 04:55:03.407373 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:55:03.407590 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:55:03.407947 -    TP Price: 2680.48349 | SL Price: 2500.48349
+2025-08-04 04:55:03.408334 -    Signal: BUY | Current Price: 2650.48349
+2025-08-04 04:55:03.408766 - ⚡ HFT BUY Signal: XAUUSDm @ 2650.48349
+2025-08-04 04:55:03.509672 - ❌ Order failed - Error code: 10019
+2025-08-04 04:55:08.510928 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:55:08.511525 -    Account Balance: $10,000.00
+2025-08-04 04:55:08.511767 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:55:08.511967 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:55:08.512383 -    TP Price: 2682.58739 | SL Price: 2502.58739
+2025-08-04 04:55:08.512573 -    Signal: BUY | Current Price: 2652.58739
+2025-08-04 04:55:08.512906 - ⚡ HFT BUY Signal: XAUUSDm @ 2652.58739
+2025-08-04 04:55:08.613663 - ❌ Order failed - Error code: 10019
+2025-08-04 04:55:13.614967 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:55:13.615747 -    Account Balance: $10,000.00
+2025-08-04 04:55:13.616403 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:55:13.616762 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:55:13.617223 -    TP Price: 2620.99285 | SL Price: 2800.99285
+2025-08-04 04:55:13.618259 -    Signal: SELL | Current Price: 2650.99285
+2025-08-04 04:55:13.618569 - ⚡ HFT SELL Signal: XAUUSDm @ 2650.99285
+2025-08-04 04:55:13.720052 - ❌ Order failed - Error code: 10019
+2025-08-04 04:55:18.721305 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:55:18.721679 -    Account Balance: $10,000.00
+2025-08-04 04:55:18.722082 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:55:18.722529 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:55:18.722828 -    TP Price: 2618.38098 | SL Price: 2798.38098
+2025-08-04 04:55:18.723119 -    Signal: SELL | Current Price: 2648.38098
+2025-08-04 04:55:18.723459 - ⚡ HFT SELL Signal: XAUUSDm @ 2648.38098
+2025-08-04 04:55:18.824289 - ❌ Order failed - Error code: 10019
+2025-08-04 04:55:23.825900 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:55:23.826479 -    Account Balance: $10,000.00
+2025-08-04 04:55:23.827279 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:55:23.827755 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:55:23.828101 -    TP Price: 2690.85233 | SL Price: 2510.85233
+2025-08-04 04:55:23.828544 -    Signal: BUY | Current Price: 2660.85233
+2025-08-04 04:55:23.828882 - ⚡ HFT BUY Signal: XAUUSDm @ 2660.85233
+2025-08-04 04:55:23.931895 - ❌ Order failed - Error code: 10019
+2025-08-04 04:55:28.933436 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:55:28.933851 -    Account Balance: $10,000.00
+2025-08-04 04:55:28.934090 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:55:28.934377 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:55:28.935050 -    TP Price: 2614.00857 | SL Price: 2794.00857
+2025-08-04 04:55:28.935292 -    Signal: SELL | Current Price: 2644.00857
+2025-08-04 04:55:28.935504 - ⚡ HFT SELL Signal: XAUUSDm @ 2644.00857
+2025-08-04 04:55:29.036411 - ❌ Order failed - Error code: 10019
+2025-08-04 04:55:34.038164 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:55:34.038676 -    Account Balance: $10,000.00
+2025-08-04 04:55:34.039110 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:55:34.039449 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:55:34.039660 -    TP Price: 2682.25152 | SL Price: 2502.25152
+2025-08-04 04:55:34.040213 -    Signal: BUY | Current Price: 2652.25152
+2025-08-04 04:55:34.040653 - ⚡ HFT BUY Signal: XAUUSDm @ 2652.25152
+2025-08-04 04:55:34.141542 - ❌ Order failed - Error code: 10019
+2025-08-04 04:55:39.142793 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:55:39.143178 -    Account Balance: $10,000.00
+2025-08-04 04:55:39.143482 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:55:39.143660 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:55:39.143864 -    TP Price: 2617.98117 | SL Price: 2797.98117
+2025-08-04 04:55:39.144227 -    Signal: SELL | Current Price: 2647.98117
+2025-08-04 04:55:39.144645 - ⚡ HFT SELL Signal: XAUUSDm @ 2647.98117
+2025-08-04 04:55:39.245426 - ❌ Order failed - Error code: 10019
+2025-08-04 04:55:44.246910 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:55:44.247327 -    Account Balance: $10,000.00
+2025-08-04 04:55:44.247656 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:55:44.248256 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:55:44.248493 -    TP Price: 2681.44533 | SL Price: 2501.44533
+2025-08-04 04:55:44.248846 -    Signal: BUY | Current Price: 2651.44533
+2025-08-04 04:55:44.249231 - ⚡ HFT BUY Signal: XAUUSDm @ 2651.44533
+2025-08-04 04:55:44.350014 - ❌ Order failed - Error code: 10019
+2025-08-04 04:55:54.352860 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:55:54.353306 -    Account Balance: $10,000.00
+2025-08-04 04:55:54.353616 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:55:54.353973 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:55:54.354208 -    TP Price: 2619.48975 | SL Price: 2799.48975
+2025-08-04 04:55:54.354591 -    Signal: SELL | Current Price: 2649.48975
+2025-08-04 04:55:54.355003 - ⚡ HFT SELL Signal: XAUUSDm @ 2649.48975
+2025-08-04 04:55:54.455934 - ❌ Order failed - Error code: 10019
+2025-08-04 04:55:59.457800 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:55:59.459791 -    Account Balance: $10,000.00
+2025-08-04 04:55:59.459971 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:55:59.460147 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:55:59.460341 -    TP Price: 2617.83295 | SL Price: 2797.83295
+2025-08-04 04:55:59.460511 -    Signal: SELL | Current Price: 2647.83295
+2025-08-04 04:55:59.460679 - ⚡ HFT SELL Signal: XAUUSDm @ 2647.83295
+2025-08-04 04:55:59.561811 - ❌ Order failed - Error code: 10019
+2025-08-04 04:56:04.563526 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:56:04.563869 -    Account Balance: $10,000.00
+2025-08-04 04:56:04.564251 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:56:04.564708 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:56:04.565121 -    TP Price: 2682.37713 | SL Price: 2502.37713
+2025-08-04 04:56:04.565684 -    Signal: BUY | Current Price: 2652.37713
+2025-08-04 04:56:04.566025 - ⚡ HFT BUY Signal: XAUUSDm @ 2652.37713
+2025-08-04 04:56:04.667059 - ❌ Order failed - Error code: 10019
+2025-08-04 04:56:09.668338 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:56:09.669347 -    Account Balance: $10,000.00
+2025-08-04 04:56:09.669614 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:56:09.669952 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:56:09.670923 -    TP Price: 2617.68356 | SL Price: 2797.68356
+2025-08-04 04:56:09.671207 -    Signal: SELL | Current Price: 2647.68356
+2025-08-04 04:56:09.672001 - ⚡ HFT SELL Signal: XAUUSDm @ 2647.68356
+2025-08-04 04:56:09.773159 - ❌ Order failed - Error code: 10019
+2025-08-04 04:56:14.774506 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:56:14.774865 -    Account Balance: $10,000.00
+2025-08-04 04:56:14.775591 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:56:14.775941 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:56:14.776295 -    TP Price: 2679.99239 | SL Price: 2499.99239
+2025-08-04 04:56:14.776573 -    Signal: BUY | Current Price: 2649.99239
+2025-08-04 04:56:14.776833 - ⚡ HFT BUY Signal: XAUUSDm @ 2649.99239
+2025-08-04 04:56:14.877746 - ❌ Order failed - Error code: 10019
+2025-08-04 04:56:19.879073 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:56:19.879443 -    Account Balance: $10,000.00
+2025-08-04 04:56:19.879916 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:56:19.880380 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:56:19.880720 -    TP Price: 2615.51808 | SL Price: 2795.51808
+2025-08-04 04:56:19.881037 -    Signal: SELL | Current Price: 2645.51808
+2025-08-04 04:56:19.881524 - ⚡ HFT SELL Signal: XAUUSDm @ 2645.51808
+2025-08-04 04:56:19.982435 - ❌ Order failed - Error code: 10019
+2025-08-04 04:56:24.983842 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:56:24.984389 -    Account Balance: $10,000.00
+2025-08-04 04:56:24.984836 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:56:24.985068 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:56:24.986740 -    TP Price: 2678.38863 | SL Price: 2498.38863
+2025-08-04 04:56:24.987382 -    Signal: BUY | Current Price: 2648.38863
+2025-08-04 04:56:24.987694 - ⚡ HFT BUY Signal: XAUUSDm @ 2648.38863
+2025-08-04 04:56:25.088456 - ❌ Order failed - Error code: 10019
+2025-08-04 04:56:30.089959 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:56:30.090476 -    Account Balance: $10,000.00
+2025-08-04 04:56:30.091073 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:56:30.091410 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:56:30.091916 -    TP Price: 2683.53625 | SL Price: 2503.53625
+2025-08-04 04:56:30.094703 -    Signal: BUY | Current Price: 2653.53625
+2025-08-04 04:56:30.095118 - ⚡ HFT BUY Signal: XAUUSDm @ 2653.53625
+2025-08-04 04:56:30.195845 - ❌ Order failed - Error code: 10019
+2025-08-04 04:56:40.197986 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:56:40.198451 -    Account Balance: $10,000.00
+2025-08-04 04:56:40.198794 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:56:40.199248 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:56:40.199582 -    TP Price: 2611.76579 | SL Price: 2791.76579
+2025-08-04 04:56:40.199997 -    Signal: SELL | Current Price: 2641.76579
+2025-08-04 04:56:40.200540 - ⚡ HFT SELL Signal: XAUUSDm @ 2641.76579
+2025-08-04 04:56:40.301252 - ❌ Order failed - Error code: 10019
+2025-08-04 04:56:50.303411 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:56:50.304493 -    Account Balance: $10,000.00
+2025-08-04 04:56:50.305011 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:56:50.305642 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:56:50.305897 -    TP Price: 2683.96177 | SL Price: 2503.96177
+2025-08-04 04:56:50.306582 -    Signal: BUY | Current Price: 2653.96177
+2025-08-04 04:56:50.307579 - ⚡ HFT BUY Signal: XAUUSDm @ 2653.96177
+2025-08-04 04:56:50.408579 - ❌ Order failed - Error code: 10019
+2025-08-04 04:56:55.410763 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:56:55.411218 -    Account Balance: $10,000.00
+2025-08-04 04:56:55.411599 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:56:55.411960 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:56:55.412381 -    TP Price: 2619.11029 | SL Price: 2799.11029
+2025-08-04 04:56:55.412680 -    Signal: SELL | Current Price: 2649.11029
+2025-08-04 04:56:55.412971 - ⚡ HFT SELL Signal: XAUUSDm @ 2649.11029
+2025-08-04 04:56:55.513644 - ❌ Order failed - Error code: 10019
+2025-08-04 04:57:00.515168 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:57:00.515497 -    Account Balance: $10,000.00
+2025-08-04 04:57:00.515880 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:57:00.516296 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:57:00.516651 -    TP Price: 2613.44928 | SL Price: 2793.44928
+2025-08-04 04:57:00.516979 -    Signal: SELL | Current Price: 2643.44928
+2025-08-04 04:57:00.517361 - ⚡ HFT SELL Signal: XAUUSDm @ 2643.44928
+2025-08-04 04:57:00.618458 - ❌ Order failed - Error code: 10019
+2025-08-04 04:57:05.619894 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:57:05.620246 -    Account Balance: $10,000.00
+2025-08-04 04:57:05.620556 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:57:05.620982 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:57:05.621323 -    TP Price: 2686.51136 | SL Price: 2506.51136
+2025-08-04 04:57:05.621633 -    Signal: BUY | Current Price: 2656.51136
+2025-08-04 04:57:05.622081 - ⚡ HFT BUY Signal: XAUUSDm @ 2656.51136
+2025-08-04 04:57:05.722789 - ❌ Order failed - Error code: 10019
+2025-08-04 04:57:15.724995 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:57:15.725430 -    Account Balance: $10,000.00
+2025-08-04 04:57:15.725771 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:57:15.726101 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:57:15.726353 -    TP Price: 2625.60261 | SL Price: 2805.60261
+2025-08-04 04:57:15.726709 -    Signal: SELL | Current Price: 2655.60261
+2025-08-04 04:57:15.727032 - ⚡ HFT SELL Signal: XAUUSDm @ 2655.60261
+2025-08-04 04:57:15.827936 - ❌ Order failed - Error code: 10019
+2025-08-04 04:57:20.829684 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:57:20.830641 -    Account Balance: $10,000.00
+2025-08-04 04:57:20.831672 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:57:20.832713 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:57:20.833052 -    TP Price: 2622.98656 | SL Price: 2802.98656
+2025-08-04 04:57:20.833487 -    Signal: SELL | Current Price: 2652.98656
+2025-08-04 04:57:20.834204 - ⚡ HFT SELL Signal: XAUUSDm @ 2652.98656
+2025-08-04 04:57:20.935757 - ❌ Order failed - Error code: 10019
+2025-08-04 04:57:25.936983 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:57:25.937446 -    Account Balance: $10,000.00
+2025-08-04 04:57:25.937813 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:57:25.946982 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:57:25.947654 -    TP Price: 2688.33928 | SL Price: 2508.33928
+2025-08-04 04:57:25.948077 -    Signal: BUY | Current Price: 2658.33928
+2025-08-04 04:57:25.948677 - ⚡ HFT BUY Signal: XAUUSDm @ 2658.33928
+2025-08-04 04:57:26.050964 - ❌ Order failed - Error code: 10019
+2025-08-04 04:57:31.052285 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:57:31.052793 -    Account Balance: $10,000.00
+2025-08-04 04:57:31.053205 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:57:31.053563 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:57:31.053874 -    TP Price: 2619.57459 | SL Price: 2799.57459
+2025-08-04 04:57:31.054225 -    Signal: SELL | Current Price: 2649.57459
+2025-08-04 04:57:31.054564 - ⚡ HFT SELL Signal: XAUUSDm @ 2649.57459
+2025-08-04 04:57:31.155463 - ❌ Order failed - Error code: 10019
+2025-08-04 04:57:41.157719 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:57:41.158099 -    Account Balance: $10,000.00
+2025-08-04 04:57:41.158729 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:57:41.158966 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:57:41.159508 -    TP Price: 2682.69165 | SL Price: 2502.69165
+2025-08-04 04:57:41.159836 -    Signal: BUY | Current Price: 2652.69165
+2025-08-04 04:57:41.160388 - ⚡ HFT BUY Signal: XAUUSDm @ 2652.69165
+2025-08-04 04:57:41.261008 - ❌ Order failed - Error code: 10019
+2025-08-04 04:57:46.262348 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:57:46.262716 -    Account Balance: $10,000.00
+2025-08-04 04:57:46.263333 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:57:46.263724 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:57:46.264077 -    TP Price: 2614.89812 | SL Price: 2794.89812
+2025-08-04 04:57:46.264614 -    Signal: SELL | Current Price: 2644.89812
+2025-08-04 04:57:46.264899 - ⚡ HFT SELL Signal: XAUUSDm @ 2644.89812
+2025-08-04 04:57:46.365685 - ❌ Order failed - Error code: 10019
+2025-08-04 04:57:51.367841 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:57:51.368714 -    Account Balance: $10,000.00
+2025-08-04 04:57:51.369650 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:57:51.369955 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:57:51.370240 -    TP Price: 2676.71744 | SL Price: 2496.71744
+2025-08-04 04:57:51.370550 -    Signal: BUY | Current Price: 2646.71744
+2025-08-04 04:57:51.370856 - ⚡ HFT BUY Signal: XAUUSDm @ 2646.71744
+2025-08-04 04:57:51.472303 - ❌ Order failed - Error code: 10019
+2025-08-04 04:57:56.473498 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:57:56.473860 -    Account Balance: $10,000.00
+2025-08-04 04:57:56.474351 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:57:56.474700 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:57:56.475078 -    TP Price: 2685.65122 | SL Price: 2505.65122
+2025-08-04 04:57:56.475441 -    Signal: BUY | Current Price: 2655.65122
+2025-08-04 04:57:56.475830 - ⚡ HFT BUY Signal: XAUUSDm @ 2655.65122
+2025-08-04 04:57:56.576570 - ❌ Order failed - Error code: 10019
+2025-08-04 04:58:01.577873 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:58:01.578312 -    Account Balance: $10,000.00
+2025-08-04 04:58:01.579206 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:58:01.580295 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:58:01.580632 -    TP Price: 2617.03478 | SL Price: 2797.03478
+2025-08-04 04:58:01.581004 -    Signal: SELL | Current Price: 2647.03478
+2025-08-04 04:58:01.581590 - ⚡ HFT SELL Signal: XAUUSDm @ 2647.03478
+2025-08-04 04:58:01.682352 - ❌ Order failed - Error code: 10019
+2025-08-04 04:58:06.683877 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:58:06.684289 -    Account Balance: $10,000.00
+2025-08-04 04:58:06.684516 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:58:06.684858 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:58:06.685038 -    TP Price: 2612.24287 | SL Price: 2792.24287
+2025-08-04 04:58:06.685540 -    Signal: SELL | Current Price: 2642.24287
+2025-08-04 04:58:06.685873 - ⚡ HFT SELL Signal: XAUUSDm @ 2642.24287
+2025-08-04 04:58:06.787121 - ❌ Order failed - Error code: 10019
+2025-08-04 04:58:11.788487 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:58:11.788824 -    Account Balance: $10,000.00
+2025-08-04 04:58:11.789356 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:58:11.789833 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:58:11.790251 -    TP Price: 2684.90071 | SL Price: 2504.90071
+2025-08-04 04:58:11.790470 -    Signal: BUY | Current Price: 2654.90071
+2025-08-04 04:58:11.790832 - ⚡ HFT BUY Signal: XAUUSDm @ 2654.90071
+2025-08-04 04:58:11.891507 - ❌ Order failed - Error code: 10019
+2025-08-04 04:58:16.892964 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:58:16.893348 -    Account Balance: $10,000.00
+2025-08-04 04:58:16.893673 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:58:16.894019 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:58:16.894564 -    TP Price: 2620.31680 | SL Price: 2800.31680
+2025-08-04 04:58:16.895034 -    Signal: SELL | Current Price: 2650.31680
+2025-08-04 04:58:16.895439 - ⚡ HFT SELL Signal: XAUUSDm @ 2650.31680
+2025-08-04 04:58:16.996293 - ❌ Order failed - Error code: 10019
+2025-08-04 04:58:21.997950 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:58:21.998577 -    Account Balance: $10,000.00
+2025-08-04 04:58:21.999002 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:58:21.999444 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:58:21.999823 -    TP Price: 2617.52651 | SL Price: 2797.52651
+2025-08-04 04:58:22.000417 -    Signal: SELL | Current Price: 2647.52651
+2025-08-04 04:58:22.000809 - ⚡ HFT SELL Signal: XAUUSDm @ 2647.52651
+2025-08-04 04:58:22.101630 - ❌ Order failed - Error code: 10019
+2025-08-04 04:58:27.103001 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:58:27.103373 -    Account Balance: $10,000.00
+2025-08-04 04:58:27.103702 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:58:27.104036 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:58:27.104382 -    TP Price: 2681.13402 | SL Price: 2501.13402
+2025-08-04 04:58:27.104734 -    Signal: BUY | Current Price: 2651.13402
+2025-08-04 04:58:27.105073 - ⚡ HFT BUY Signal: XAUUSDm @ 2651.13402
+2025-08-04 04:58:27.205919 - ❌ Order failed - Error code: 10019
+2025-08-04 04:58:32.207173 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:58:32.207802 -    Account Balance: $10,000.00
+2025-08-04 04:58:32.208067 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:58:32.208657 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:58:32.209072 -    TP Price: 2616.60452 | SL Price: 2796.60452
+2025-08-04 04:58:32.209486 -    Signal: SELL | Current Price: 2646.60452
+2025-08-04 04:58:32.209738 - ⚡ HFT SELL Signal: XAUUSDm @ 2646.60452
+2025-08-04 04:58:32.310504 - ❌ Order failed - Error code: 10019
+2025-08-04 04:58:37.312106 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:58:37.313188 -    Account Balance: $10,000.00
+2025-08-04 04:58:37.314085 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:58:37.317273 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:58:37.317504 -    TP Price: 2678.37801 | SL Price: 2498.37801
+2025-08-04 04:58:37.318015 -    Signal: BUY | Current Price: 2648.37801
+2025-08-04 04:58:37.318307 - ⚡ HFT BUY Signal: XAUUSDm @ 2648.37801
+2025-08-04 04:58:37.419184 - ❌ Order failed - Error code: 10019
+2025-08-04 04:58:42.420510 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:58:42.420882 -    Account Balance: $10,000.00
+2025-08-04 04:58:42.421348 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:58:42.421583 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:58:42.421952 -    TP Price: 2682.07532 | SL Price: 2502.07532
+2025-08-04 04:58:42.422368 -    Signal: BUY | Current Price: 2652.07532
+2025-08-04 04:58:42.422738 - ⚡ HFT BUY Signal: XAUUSDm @ 2652.07532
+2025-08-04 04:58:42.523447 - ❌ Order failed - Error code: 10019
+2025-08-04 04:58:47.525054 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:58:47.525735 -    Account Balance: $10,000.00
+2025-08-04 04:58:47.526254 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:58:47.526525 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:58:47.526738 -    TP Price: 2616.47188 | SL Price: 2796.47188
+2025-08-04 04:58:47.527026 -    Signal: SELL | Current Price: 2646.47188
+2025-08-04 04:58:47.527339 - ⚡ HFT SELL Signal: XAUUSDm @ 2646.47188
+2025-08-04 04:58:47.628050 - ❌ Order failed - Error code: 10019
+2025-08-04 04:58:52.629361 - 💰 HFT Mode TP/SL Calculation:
+2025-08-04 04:58:52.629745 -    Account Balance: $10,000.00
+2025-08-04 04:58:52.630009 -    Target Profit: $30.00 (0.3% dari modal)
+2025-08-04 04:58:52.630467 -    Max Loss: $150.00 (1.5% dari modal)
+2025-08-04 04:58:52.631321 -    TP Price: 2682.11802 | SL Price: 2502.11802
+2025-08-04 04:58:52.631675 -    Signal: BUY | Current Price: 2652.11802
+2025-08-04 04:58:52.631927 - ⚡ HFT BUY Signal: XAUUSDm @ 2652.11802
+2025-08-04 04:58:52.732690 - ❌ Order failed - Error code: 10019
+2025-08-04 14:10:57.547015 - 🔗 Connecting to MetaTrader5 with enhanced validation...
+2025-08-04 14:10:57.591240 - 🔍 Validating symbol: XAUUSDm
+2025-08-04 14:10:57.592603 - ✅ Symbol XAUUSDm is available
+2025-08-04 14:10:57.593711 - ✅ Price feed working - Bid: 3360.20300, Ask: 3360.36300
+2025-08-04 14:10:57.625408 - ✅ Historical data available: 50 bars
+2025-08-04 14:10:57.644473 - ✅ Enhanced MT5 Connection Successful!
+2025-08-04 14:10:57.645167 -    Account: 273631674
+2025-08-04 14:10:57.645909 -    Balance: $6,087,680.98
+2025-08-04 14:10:57.646832 -    Server: Exness-MT5Trial6
+2025-08-04 14:10:57.647779 -    Leverage: 1:2000
+2025-08-04 14:10:57.648726 -    Symbol: XAUUSDm ✅
+2025-08-04 14:10:57.661080 - 🚀 Ready for enhanced opportunity capture!
+2025-08-04 14:11:11.001119 - 🚀 ENHANCED WINDOWS MT5 TRADING BOT STARTED!
+2025-08-04 14:11:11.002673 -    ═══════════════════════════════════════
+2025-08-04 14:11:11.004663 -    🎯 Symbol: XAUUSDm
+2025-08-04 14:11:11.014650 -    💰 Lot Size: 0.01
+2025-08-04 14:11:11.019190 -    ⏱️  Scan Interval: 8s
+2025-08-04 14:11:11.033215 -    📈 Take Profit: 1.0%
+2025-08-04 14:11:11.042966 -    📉 Stop Loss: 3.0%
+2025-08-04 14:11:11.043647 -    🔥 Scalping Mode: ✅ Enabled
+2025-08-04 14:11:11.044106 -    ═══════════════════════════════════════
+2025-08-04 14:11:11.045014 -    🔧 Enhanced Configuration:
+2025-08-04 14:11:11.045872 -       Price Spike Threshold: 2 (Fixed)
+2025-08-04 14:11:11.046774 -       Signal Confidence: 0.25
+2025-08-04 14:11:11.047479 -       Max Positions: 50
+2025-08-04 14:11:11.048084 -       Trading Hours: 0:00-23:00
+2025-08-04 14:11:11.048821 -    ═══════════════════════════════════════
+2025-08-04 14:11:11.049504 - 🎯 Enhanced features active:
+2025-08-04 14:11:11.052061 -    ✅ Fixed price retrieval mechanism
+2025-08-04 14:11:11.055584 -    ⚡ Optimized signal generation
+2025-08-04 14:11:11.058232 -    🔄 Enhanced retry logic
+2025-08-04 14:11:11.061390 -    📊 Improved opportunity capture
+2025-08-04 14:11:11.077125 -    🛡️  Advanced error handling
+2025-08-04 14:11:11.084280 - 🚀 Enhanced trading loop started with MT5 integration
+2025-08-04 14:14:35.294291 - 🛑 ENHANCED WINDOWS MT5 TRADING BOT STOPPED!
+2025-08-04 14:14:35.299069 -    ═══════════════════════════════════════
+2025-08-04 14:14:35.304873 -    📊 SESSION SUMMARY:
+2025-08-04 14:14:35.310019 -       Orders Executed: 0
+2025-08-04 14:14:35.316361 -       Opportunities Captured: 0
+2025-08-04 14:14:35.326594 -       Opportunities Missed: 0
+2025-08-04 14:14:35.330510 -       Total Opportunities: 0
+2025-08-04 14:14:35.333506 -       Success Rate: 0.0%
+2025-08-04 14:14:35.339455 -       Price Feed Errors: 0
+2025-08-04 14:14:35.341842 -    ═══════════════════════════════════════
+2025-08-04 14:14:35.344251 -    💰 PERFORMANCE:
+2025-08-04 14:14:35.346183 -       Initial Balance: $6,087,680.98
+2025-08-04 14:14:35.348224 -       Final Balance: $6,087,680.98
+2025-08-04 14:14:35.351499 -       Total Return: +0.00%
+2025-08-04 14:14:35.353397 -    ═══════════════════════════════════════
+2025-08-04 14:14:35.716491 - 🛑 Enhanced trading loop stopped
+2025-08-04 14:14:38.666089 - 🚀 ENHANCED WINDOWS MT5 TRADING BOT STARTED!
+2025-08-04 14:14:38.669857 -    ═══════════════════════════════════════
+2025-08-04 14:14:38.676218 -    🎯 Symbol: XAUUSDm
+2025-08-04 14:14:38.678723 -    💰 Lot Size: 0.01
+2025-08-04 14:14:38.683933 -    ⏱️  Scan Interval: 8s
+2025-08-04 14:14:38.686609 -    📈 Take Profit: 1.0%
+2025-08-04 14:14:38.690429 -    📉 Stop Loss: 3.0%
+2025-08-04 14:14:38.694430 -    🔥 Scalping Mode: ❌ Disabled
+2025-08-04 14:14:38.697205 -    ═══════════════════════════════════════
+2025-08-04 14:14:38.701355 -    🔧 Enhanced Configuration:
+2025-08-04 14:14:38.704175 -       Price Spike Threshold: 2 (Fixed)
+2025-08-04 14:14:38.706552 -       Signal Confidence: 0.25
+2025-08-04 14:14:38.709763 -       Max Positions: 50
+2025-08-04 14:14:38.713702 -       Trading Hours: 0:00-23:00
+2025-08-04 14:14:38.716580 -    ═══════════════════════════════════════
+2025-08-04 14:14:38.719546 - 🎯 Enhanced features active:
+2025-08-04 14:14:38.723431 -    ✅ Fixed price retrieval mechanism
+2025-08-04 14:14:38.725817 -    ⚡ Optimized signal generation
+2025-08-04 14:14:38.727714 -    🔄 Enhanced retry logic
+2025-08-04 14:14:38.729601 -    📊 Improved opportunity capture
+2025-08-04 14:14:38.733680 -    🛡️  Advanced error handling
+2025-08-04 14:14:38.741060 - 🚀 Enhanced trading loop started with MT5 integration
+2025-08-04 14:14:38.765281 - ❌ Balance-based TP/SL calculation error: Invalid TP/SL calculation
+2025-08-04 14:14:38.767585 - 🎯 ENHANCED SIGNAL DETECTED!
+2025-08-04 14:14:38.770754 -    Signal: BUY
+2025-08-04 14:14:38.774184 -    Confidence: 0.267 (Base: 0.267)
+2025-08-04 14:14:38.780032 -    Strength: 0.116
+2025-08-04 14:14:38.782242 -    Current Price: 3361.29600
+2025-08-04 14:14:38.785054 -    TP: 3378.10248 | SL: 3344.48952
+2025-08-04 14:14:38.787926 -    📊 Technical Analysis:
+2025-08-04 14:14:38.792570 -       RSI: 46.2
+2025-08-04 14:14:38.795313 -       MA Short: 3360.43800
+2025-08-04 14:14:38.797999 -       EMA Fast: 3360.82728
+2025-08-04 14:14:38.801141 -       BB Upper: 3362.41018
+2025-08-04 14:14:38.803256 -       BB Lower: 3359.02607
+2025-08-04 14:14:38.807190 -    📈 Signal Scores:
+2025-08-04 14:14:38.810931 -       Buy Score: 4
+2025-08-04 14:14:38.814000 -       Sell Score: 0
+2025-08-04 14:14:38.826768 - 📤 Sending Enhanced BUY order:
+2025-08-04 14:14:38.829083 -    Symbol: XAUUSDm
+2025-08-04 14:14:38.831566 -    Volume: 0.01 lots
+2025-08-04 14:14:38.834230 -    Price: 3361.46600
+2025-08-04 14:14:38.836803 -    TP: 3378.10248
+2025-08-04 14:14:38.842554 -    SL: 3344.48952
+2025-08-04 14:14:38.844959 -    Spread: 0.16000
+2025-08-04 14:14:39.016684 - 🎯 Enhanced BUY Order SUCCESSFUL!
+2025-08-04 14:14:39.035129 -    Ticket: #1897755800
+2025-08-04 14:14:39.042301 -    Executed @ 3361.46600
+2025-08-04 14:14:39.047908 -    TP: 3378.10248 | SL: 3344.48952
+2025-08-04 14:14:39.052459 -    Volume: 0.01 lots
+2025-08-04 14:14:39.066705 - ✅ Trade #1 executed successfully!
+2025-08-04 14:14:47.086378 - ❌ Balance-based TP/SL calculation error: Invalid TP/SL calculation
+2025-08-04 14:14:47.091407 - 🎯 ENHANCED SIGNAL DETECTED!
+2025-08-04 14:14:47.095145 -    Signal: BUY
+2025-08-04 14:14:47.108391 -    Confidence: 0.267 (Base: 0.267)
+2025-08-04 14:14:47.114321 -    Strength: 0.113
+2025-08-04 14:14:47.116793 -    Current Price: 3361.38600
+2025-08-04 14:14:47.119328 -    TP: 3378.19293 | SL: 3344.57907
+2025-08-04 14:14:47.127149 -    📊 Technical Analysis:
+2025-08-04 14:14:47.129958 -       RSI: 47.0
+2025-08-04 14:14:47.133386 -       MA Short: 3360.44925
+2025-08-04 14:14:47.139548 -       EMA Fast: 3360.84978
+2025-08-04 14:14:47.143078 -       BB Upper: 3362.42247
+2025-08-04 14:14:47.147708 -       BB Lower: 3359.02503
+2025-08-04 14:14:47.150098 -    📈 Signal Scores:
+2025-08-04 14:14:47.152784 -       Buy Score: 4
+2025-08-04 14:14:47.160066 -       Sell Score: 0
+2025-08-04 14:14:47.165525 - 📤 Sending Enhanced BUY order:
+2025-08-04 14:14:47.167405 -    Symbol: XAUUSDm
+2025-08-04 14:14:47.173674 -    Volume: 0.01 lots
+2025-08-04 14:14:47.176640 -    Price: 3361.54600
+2025-08-04 14:14:47.179615 -    TP: 3378.19293
+2025-08-04 14:14:47.182010 -    SL: 3344.57907
+2025-08-04 14:14:47.186503 -    Spread: 0.16000
+2025-08-04 14:14:47.345105 - 🎯 Enhanced BUY Order SUCCESSFUL!
+2025-08-04 14:14:47.351826 -    Ticket: #1897756148
+2025-08-04 14:14:47.361462 -    Executed @ 3361.54600
+2025-08-04 14:14:47.367756 -    TP: 3378.19293 | SL: 3344.57907
+2025-08-04 14:14:47.377534 -    Volume: 0.01 lots
+2025-08-04 14:14:47.391184 - ✅ Trade #2 executed successfully!
+2025-08-04 14:14:55.421293 - ❌ Balance-based TP/SL calculation error: Invalid TP/SL calculation
+2025-08-04 14:14:55.428920 - 🎯 ENHANCED SIGNAL DETECTED!
+2025-08-04 14:14:55.448189 -    Signal: BUY
+2025-08-04 14:14:55.458289 -    Confidence: 0.267 (Base: 0.267)
+2025-08-04 14:14:55.461371 -    Strength: 0.119
+2025-08-04 14:14:55.464200 -    Current Price: 3361.19700
+2025-08-04 14:14:55.468668 -    TP: 3378.00298 | SL: 3344.39102
+2025-08-04 14:14:55.472350 -    📊 Technical Analysis:
+2025-08-04 14:14:55.476287 -       RSI: 45.3
+2025-08-04 14:14:55.482024 -       MA Short: 3360.42562
+2025-08-04 14:14:55.485986 -       EMA Fast: 3360.80253
+2025-08-04 14:14:55.489390 -       BB Upper: 3362.39769
+2025-08-04 14:14:55.493740 -       BB Lower: 3359.02619
+2025-08-04 14:14:55.498216 -    📈 Signal Scores:
+2025-08-04 14:14:55.501551 -       Buy Score: 4
+2025-08-04 14:14:55.505805 -       Sell Score: 0
+2025-08-04 14:14:55.515892 - 📤 Sending Enhanced BUY order:
+2025-08-04 14:14:55.519725 -    Symbol: XAUUSDm
+2025-08-04 14:14:55.523216 -    Volume: 0.01 lots
+2025-08-04 14:14:55.529684 -    Price: 3361.35700
+2025-08-04 14:14:55.532348 -    TP: 3378.00298
+2025-08-04 14:14:55.536135 -    SL: 3344.39102
+2025-08-04 14:14:55.540190 -    Spread: 0.16000
+2025-08-04 14:14:55.691071 - 🎯 Enhanced BUY Order SUCCESSFUL!
+2025-08-04 14:14:55.700857 -    Ticket: #1897756398
+2025-08-04 14:14:55.709685 -    Executed @ 3361.35700
+2025-08-04 14:14:55.715803 -    TP: 3378.00298 | SL: 3344.39102
+2025-08-04 14:14:55.720455 -    Volume: 0.01 lots
+2025-08-04 14:14:55.738600 - ✅ Trade #3 executed successfully!
+2025-08-04 14:15:03.753629 - ❌ Balance-based TP/SL calculation error: Invalid TP/SL calculation
+2025-08-04 14:15:03.758592 - 🎯 ENHANCED SIGNAL DETECTED!
+2025-08-04 14:15:03.765242 -    Signal: BUY
+2025-08-04 14:15:03.770750 -    Confidence: 0.400 (Base: 0.400)
+2025-08-04 14:15:03.774618 -    Strength: 0.049
+2025-08-04 14:15:03.777045 -    Current Price: 3361.20100
+2025-08-04 14:15:03.781018 -    TP: 3378.00700 | SL: 3344.39500
+2025-08-04 14:15:03.783137 -    📊 Technical Analysis:
+2025-08-04 14:15:03.787402 -       RSI: 44.3
+2025-08-04 14:15:03.792035 -       MA Short: 3360.62575
+2025-08-04 14:15:03.797092 -       EMA Fast: 3360.89503
+2025-08-04 14:15:03.801081 -       BB Upper: 3362.07276
+2025-08-04 14:15:03.805036 -       BB Lower: 3359.16762
+2025-08-04 14:15:03.810160 -    📈 Signal Scores:
+2025-08-04 14:15:03.818861 -       Buy Score: 6
+2025-08-04 14:15:03.824881 -       Sell Score: 0
+2025-08-04 14:15:03.833420 - 📤 Sending Enhanced BUY order:
+2025-08-04 14:15:03.835732 -    Symbol: XAUUSDm
+2025-08-04 14:15:03.842093 -    Volume: 0.01 lots
+2025-08-04 14:15:03.846018 -    Price: 3361.36100
+2025-08-04 14:15:03.853273 -    TP: 3378.00700
+2025-08-04 14:15:03.857651 -    SL: 3344.39500
+2025-08-04 14:15:03.860776 -    Spread: 0.16000
+2025-08-04 14:15:03.997487 - 🎯 Enhanced BUY Order SUCCESSFUL!
+2025-08-04 14:15:04.004123 -    Ticket: #1897756839
+2025-08-04 14:15:04.016956 -    Executed @ 3361.36100
+2025-08-04 14:15:04.026832 -    TP: 3378.00700 | SL: 3344.39500
+2025-08-04 14:15:04.033293 -    Volume: 0.01 lots
+2025-08-04 14:15:04.054626 - ✅ Trade #4 executed successfully!
+2025-08-04 14:15:12.078485 - ❌ Balance-based TP/SL calculation error: Invalid TP/SL calculation
+2025-08-04 14:15:12.083052 - 🎯 ENHANCED SIGNAL DETECTED!
+2025-08-04 14:15:12.089795 -    Signal: BUY
+2025-08-04 14:15:12.096615 -    Confidence: 0.267 (Base: 0.267)
+2025-08-04 14:15:12.100175 -    Strength: 0.042
+2025-08-04 14:15:12.107121 -    Current Price: 3361.43900
+2025-08-04 14:15:12.111549 -    TP: 3378.24619 | SL: 3344.63180
+2025-08-04 14:15:12.114121 -    📊 Technical Analysis:
+2025-08-04 14:15:12.116859 -       RSI: 46.4
+2025-08-04 14:15:12.119636 -       MA Short: 3360.65550
+2025-08-04 14:15:12.121789 -       EMA Fast: 3360.95453
+2025-08-04 14:15:12.126519 -       BB Upper: 3362.11043
+2025-08-04 14:15:12.130130 -       BB Lower: 3359.15970
+2025-08-04 14:15:12.134377 -    📈 Signal Scores:
+2025-08-04 14:15:12.137471 -       Buy Score: 4
+2025-08-04 14:15:12.140500 -       Sell Score: 0
+2025-08-04 14:15:12.146112 - 📤 Sending Enhanced BUY order:
+2025-08-04 14:15:12.149067 -    Symbol: XAUUSDm
+2025-08-04 14:15:12.151126 -    Volume: 0.01 lots
+2025-08-04 14:15:12.153269 -    Price: 3361.63000
+2025-08-04 14:15:12.158141 -    TP: 3378.24619
+2025-08-04 14:15:12.160476 -    SL: 3344.63180
+2025-08-04 14:15:12.163286 -    Spread: 0.16000
+2025-08-04 14:15:12.302684 - 🎯 Enhanced BUY Order SUCCESSFUL!
+2025-08-04 14:15:12.315898 -    Ticket: #1897757264
+2025-08-04 14:15:12.323531 -    Executed @ 3361.63000
+2025-08-04 14:15:12.327275 -    TP: 3378.24619 | SL: 3344.63180
+2025-08-04 14:15:12.331947 -    Volume: 0.01 lots
+2025-08-04 14:15:12.339148 - ✅ Trade #5 executed successfully!
+2025-08-04 14:15:20.378700 - ❌ Balance-based TP/SL calculation error: Invalid TP/SL calculation
+2025-08-04 14:15:20.385521 - 🎯 ENHANCED SIGNAL DETECTED!
+2025-08-04 14:15:20.390399 -    Signal: BUY
+2025-08-04 14:15:20.393943 -    Confidence: 0.267 (Base: 0.267)
+2025-08-04 14:15:20.396739 -    Strength: 0.065
+2025-08-04 14:15:20.399844 -    Current Price: 3360.65000
+2025-08-04 14:15:20.407027 -    TP: 3377.45325 | SL: 3343.84675
+2025-08-04 14:15:20.410553 -    📊 Technical Analysis:
+2025-08-04 14:15:20.416930 -       RSI: 40.4
+2025-08-04 14:15:20.421117 -       MA Short: 3360.55688
+2025-08-04 14:15:20.425174 -       EMA Fast: 3360.75728
+2025-08-04 14:15:20.432249 -       BB Upper: 3362.01333
+2025-08-04 14:15:20.433972 -       BB Lower: 3359.15817
+2025-08-04 14:15:20.437414 -    📈 Signal Scores:
+2025-08-04 14:15:20.443883 -       Buy Score: 4
+2025-08-04 14:15:20.446544 -       Sell Score: 0
+2025-08-04 14:15:20.449572 - 📤 Sending Enhanced BUY order:
+2025-08-04 14:15:20.452024 -    Symbol: XAUUSDm
+2025-08-04 14:15:20.456550 -    Volume: 0.01 lots
+2025-08-04 14:15:20.459795 -    Price: 3360.81000
+2025-08-04 14:15:20.463449 -    TP: 3377.45325
+2025-08-04 14:15:20.466024 -    SL: 3343.84675
+2025-08-04 14:15:20.469148 -    Spread: 0.16000
+2025-08-04 14:15:20.610368 - 🎯 Enhanced BUY Order SUCCESSFUL!
+2025-08-04 14:15:20.614170 -    Ticket: #1897757814
+2025-08-04 14:15:20.619026 -    Executed @ 3360.81000
+2025-08-04 14:15:20.626552 -    TP: 3377.45325 | SL: 3343.84675
+2025-08-04 14:15:20.630126 -    Volume: 0.01 lots
+2025-08-04 14:15:20.637511 - ✅ Trade #6 executed successfully!
+2025-08-04 14:15:28.646434 - ❌ Balance-based TP/SL calculation error: Invalid TP/SL calculation
+2025-08-04 14:15:28.657001 - 🎯 ENHANCED SIGNAL DETECTED!
+2025-08-04 14:15:28.664365 -    Signal: BUY
+2025-08-04 14:15:28.666606 -    Confidence: 0.400 (Base: 0.400)
+2025-08-04 14:15:28.668679 -    Strength: 0.056
+2025-08-04 14:15:28.675014 -    Current Price: 3360.94500
+2025-08-04 14:15:28.676859 -    TP: 3377.74972 | SL: 3344.14028
+2025-08-04 14:15:28.680264 -    📊 Technical Analysis:
+2025-08-04 14:15:28.682510 -       RSI: 42.4
+2025-08-04 14:15:28.684371 -       MA Short: 3360.59375
+2025-08-04 14:15:28.686433 -       EMA Fast: 3360.83103
+2025-08-04 14:15:28.694015 -       BB Upper: 3362.04022
+2025-08-04 14:15:28.698102 -       BB Lower: 3359.16815
+2025-08-04 14:15:28.707444 -    📈 Signal Scores:
+2025-08-04 14:15:28.710476 -       Buy Score: 6
+2025-08-04 14:15:28.712564 -       Sell Score: 0
+2025-08-04 14:15:28.716356 - 📤 Sending Enhanced BUY order:
+2025-08-04 14:15:28.719016 -    Symbol: XAUUSDm
+2025-08-04 14:15:28.722297 -    Volume: 0.01 lots
+2025-08-04 14:15:28.724549 -    Price: 3361.07900
+2025-08-04 14:15:28.726363 -    TP: 3377.74972
+2025-08-04 14:15:28.728700 -    SL: 3344.14028
+2025-08-04 14:15:28.730461 -    Spread: 0.16000
+2025-08-04 14:15:28.877159 - 🎯 Enhanced BUY Order SUCCESSFUL!
+2025-08-04 14:15:28.888262 -    Ticket: #1897758151
+2025-08-04 14:15:28.895160 -    Executed @ 3361.07900
+2025-08-04 14:15:28.909267 -    TP: 3377.74972 | SL: 3344.14028
+2025-08-04 14:15:28.922777 -    Volume: 0.01 lots
+2025-08-04 14:15:28.951112 - ✅ Trade #7 executed successfully!
+2025-08-04 14:15:36.970159 - ❌ Balance-based TP/SL calculation error: Invalid TP/SL calculation
+2025-08-04 14:15:36.973588 - 🎯 ENHANCED SIGNAL DETECTED!
+2025-08-04 14:15:36.976312 -    Signal: BUY
+2025-08-04 14:15:36.979292 -    Confidence: 0.400 (Base: 0.400)
+2025-08-04 14:15:36.983293 -    Strength: 0.058
+2025-08-04 14:15:36.989202 -    Current Price: 3360.88900
+2025-08-04 14:15:36.991808 -    TP: 3377.69344 | SL: 3344.08455
+2025-08-04 14:15:36.993772 -    📊 Technical Analysis:
+2025-08-04 14:15:36.997213 -       RSI: 42.0
+2025-08-04 14:15:37.000619 -       MA Short: 3360.58675
+2025-08-04 14:15:37.003208 -       EMA Fast: 3360.81703
+2025-08-04 14:15:37.009846 -       BB Upper: 3362.03423
+2025-08-04 14:15:37.012555 -       BB Lower: 3359.16714
+2025-08-04 14:15:37.015748 -    📈 Signal Scores:
+2025-08-04 14:15:37.018329 -       Buy Score: 6
+2025-08-04 14:15:37.021891 -       Sell Score: 0
+2025-08-04 14:15:37.027980 - 📤 Sending Enhanced BUY order:
+2025-08-04 14:15:37.030252 -    Symbol: XAUUSDm
+2025-08-04 14:15:37.032602 -    Volume: 0.01 lots
+2025-08-04 14:15:37.037480 -    Price: 3361.04900
+2025-08-04 14:15:37.047263 -    TP: 3377.69344
+2025-08-04 14:15:37.052217 -    SL: 3344.08455
+2025-08-04 14:15:37.056652 -    Spread: 0.16000
+2025-08-04 14:15:37.243832 - 🎯 Enhanced BUY Order SUCCESSFUL!
+2025-08-04 14:15:37.248202 -    Ticket: #1897758358
+2025-08-04 14:15:37.252284 -    Executed @ 3361.04900
+2025-08-04 14:15:37.263472 -    TP: 3377.69344 | SL: 3344.08455
+2025-08-04 14:15:37.268117 -    Volume: 0.01 lots
+2025-08-04 14:15:37.280473 - ✅ Trade #8 executed successfully!
+2025-08-04 14:15:45.311824 - ❌ Balance-based TP/SL calculation error: Invalid TP/SL calculation
+2025-08-04 14:15:45.340026 - 🎯 ENHANCED SIGNAL DETECTED!
+2025-08-04 14:15:45.349164 -    Signal: BUY
+2025-08-04 14:15:45.354685 -    Confidence: 0.400 (Base: 0.400)
+2025-08-04 14:15:45.364692 -    Strength: 0.059
+2025-08-04 14:15:45.369168 -    Current Price: 3360.84800
+2025-08-04 14:15:45.375301 -    TP: 3377.65224 | SL: 3344.04376
+2025-08-04 14:15:45.382740 -    📊 Technical Analysis:
+2025-08-04 14:15:45.388759 -       RSI: 41.7
+2025-08-04 14:15:45.394830 -       MA Short: 3360.58163
+2025-08-04 14:15:45.403082 -       EMA Fast: 3360.80678
+2025-08-04 14:15:45.411113 -       BB Upper: 3362.03011
+2025-08-04 14:15:45.421072 -       BB Lower: 3359.16614
+2025-08-04 14:15:45.428657 -    📈 Signal Scores:
+2025-08-04 14:15:45.437157 -       Buy Score: 6
+2025-08-04 14:15:45.446735 -       Sell Score: 0
+2025-08-04 14:15:45.454352 - 📤 Sending Enhanced BUY order:
+2025-08-04 14:15:45.463268 -    Symbol: XAUUSDm
+2025-08-04 14:15:45.470503 -    Volume: 0.01 lots
+2025-08-04 14:15:45.479428 -    Price: 3361.00800
+2025-08-04 14:15:45.485580 -    TP: 3377.65224
+2025-08-04 14:15:45.492657 -    SL: 3344.04376
+2025-08-04 14:15:45.498857 -    Spread: 0.16000
+2025-08-04 14:15:45.673247 - 🎯 Enhanced BUY Order SUCCESSFUL!
+2025-08-04 14:15:45.695610 -    Ticket: #1897758790
+2025-08-04 14:15:45.710804 -    Executed @ 3361.00800
+2025-08-04 14:15:45.719910 -    TP: 3377.65224 | SL: 3344.04376
+2025-08-04 14:15:45.734002 -    Volume: 0.01 lots
+2025-08-04 14:15:45.751412 - ✅ Trade #9 executed successfully!
+2025-08-04 14:15:53.769244 - ❌ Balance-based TP/SL calculation error: Invalid TP/SL calculation
+2025-08-04 14:15:53.780042 - 🎯 ENHANCED SIGNAL DETECTED!
+2025-08-04 14:15:53.789665 -    Signal: BUY
+2025-08-04 14:15:53.802178 -    Confidence: 0.267 (Base: 0.267)
+2025-08-04 14:15:53.816759 -    Strength: 0.065
+2025-08-04 14:15:53.825375 -    Current Price: 3360.65600
+2025-08-04 14:15:53.832268 -    TP: 3377.45928 | SL: 3343.85272
+2025-08-04 14:15:53.845380 -    📊 Technical Analysis:
+2025-08-04 14:15:53.850092 -       RSI: 40.5
+2025-08-04 14:15:53.858223 -       MA Short: 3360.55763
+2025-08-04 14:15:53.864290 -       EMA Fast: 3360.75878
+2025-08-04 14:15:53.870818 -       BB Upper: 3362.01376
+2025-08-04 14:15:53.875700 -       BB Lower: 3359.15849
+2025-08-04 14:15:53.880427 -    📈 Signal Scores:
+2025-08-04 14:15:53.886944 -       Buy Score: 4
+2025-08-04 14:15:53.898388 -       Sell Score: 0
+2025-08-04 14:15:53.921557 - 📤 Sending Enhanced BUY order:
+2025-08-04 14:15:53.937139 -    Symbol: XAUUSDm
+2025-08-04 14:15:53.951183 -    Volume: 0.01 lots
+2025-08-04 14:15:53.959972 -    Price: 3360.78400
+2025-08-04 14:15:53.967655 -    TP: 3377.45928
+2025-08-04 14:15:53.976696 -    SL: 3343.85272
+2025-08-04 14:15:53.981402 -    Spread: 0.16000
+2025-08-04 14:15:54.152888 - 🎯 Enhanced BUY Order SUCCESSFUL!
+2025-08-04 14:15:54.157344 -    Ticket: #1897759092
+2025-08-04 14:15:54.167941 -    Executed @ 3360.78400
+2025-08-04 14:15:54.180254 -    TP: 3377.45928 | SL: 3343.85272
+2025-08-04 14:15:54.193364 -    Volume: 0.01 lots
+2025-08-04 14:15:54.217799 - ✅ Trade #10 executed successfully!
+2025-08-04 14:16:02.255071 - 📊 Market analysis: WAIT - Confidence: 0.000
+2025-08-04 14:16:10.370097 - ❌ Balance-based TP/SL calculation error: Invalid TP/SL calculation
+2025-08-04 14:16:10.389346 - 🎯 ENHANCED SIGNAL DETECTED!
+2025-08-04 14:16:10.397861 -    Signal: SELL
+2025-08-04 14:16:10.405039 -    Confidence: 0.267 (Base: 0.267)
+2025-08-04 14:16:10.412305 -    Strength: 0.023
+2025-08-04 14:16:10.425370 -    Current Price: 3359.99400
+2025-08-04 14:16:10.445949 -    TP: 3343.19403 | SL: 3376.79397
+2025-08-04 14:16:10.452562 -    📊 Technical Analysis:
+2025-08-04 14:16:10.462865 -       RSI: 44.0
+2025-08-04 14:16:10.469496 -       MA Short: 3360.57287
+2025-08-04 14:16:10.474089 -       EMA Fast: 3360.53946
+2025-08-04 14:16:10.480419 -       BB Upper: 3362.00496
+2025-08-04 14:16:10.484885 -       BB Lower: 3359.11967
+2025-08-04 14:16:10.489809 -    📈 Signal Scores:
+2025-08-04 14:16:10.495376 -       Buy Score: 2
+2025-08-04 14:16:10.499245 -       Sell Score: 4
+2025-08-04 14:16:10.508739 - 📤 Sending Enhanced SELL order:
+2025-08-04 14:16:10.514002 -    Symbol: XAUUSDm
+2025-08-04 14:16:10.519348 -    Volume: 0.01 lots
+2025-08-04 14:16:10.527978 -    Price: 3359.99400
+2025-08-04 14:16:10.535889 -    TP: 3343.19403
+2025-08-04 14:16:10.550331 -    SL: 3376.79397
+2025-08-04 14:16:10.565117 -    Spread: 0.16000
+2025-08-04 14:16:10.705712 - 🎯 Enhanced SELL Order SUCCESSFUL!
+2025-08-04 14:16:10.713434 -    Ticket: #1897760639
+2025-08-04 14:16:10.720567 -    Executed @ 3359.99400
+2025-08-04 14:16:10.731146 -    TP: 3343.19403 | SL: 3376.79397
+2025-08-04 14:16:10.737837 -    Volume: 0.01 lots
+2025-08-04 14:16:10.753771 - ✅ Trade #11 executed successfully!
+2025-08-04 14:16:18.775030 - ❌ Balance-based TP/SL calculation error: Invalid TP/SL calculation
+2025-08-04 14:16:18.782220 - 🎯 ENHANCED SIGNAL DETECTED!
+2025-08-04 14:16:18.787640 -    Signal: SELL
+2025-08-04 14:16:18.796141 -    Confidence: 0.267 (Base: 0.267)
+2025-08-04 14:16:18.802475 -    Strength: 0.033
+2025-08-04 14:16:18.808423 -    Current Price: 3359.66000
+2025-08-04 14:16:18.815140 -    TP: 3342.86170 | SL: 3376.45830
+2025-08-04 14:16:18.821382 -    📊 Technical Analysis:
+2025-08-04 14:16:18.827601 -       RSI: 41.6
+2025-08-04 14:16:18.833613 -       MA Short: 3360.53112
+2025-08-04 14:16:18.838717 -       EMA Fast: 3360.45596
+2025-08-04 14:16:18.845702 -       BB Upper: 3362.01767
+2025-08-04 14:16:18.851092 -       BB Lower: 3359.06520
+2025-08-04 14:16:18.856899 -    📈 Signal Scores:
+2025-08-04 14:16:18.862901 -       Buy Score: 2
+2025-08-04 14:16:18.873381 -       Sell Score: 4
+2025-08-04 14:16:18.884827 - 📤 Sending Enhanced SELL order:
+2025-08-04 14:16:18.898453 -    Symbol: XAUUSDm
+2025-08-04 14:16:18.906764 -    Volume: 0.01 lots
+2025-08-04 14:16:18.911739 -    Price: 3359.66000
+2025-08-04 14:16:18.918735 -    TP: 3342.86170
+2025-08-04 14:16:18.923561 -    SL: 3376.45830
+2025-08-04 14:16:18.929097 -    Spread: 0.16000
+2025-08-04 14:16:19.065882 - 🎯 Enhanced SELL Order SUCCESSFUL!
+2025-08-04 14:16:19.072461 -    Ticket: #1897761602
+2025-08-04 14:16:19.077961 -    Executed @ 3359.66000
+2025-08-04 14:16:19.082625 -    TP: 3342.86170 | SL: 3376.45830
+2025-08-04 14:16:19.088348 -    Volume: 0.01 lots
+2025-08-04 14:16:19.105373 - ✅ Trade #12 executed successfully!
+2025-08-04 14:16:27.128662 - ❌ Balance-based TP/SL calculation error: Invalid TP/SL calculation
+2025-08-04 14:16:27.133926 - 🎯 ENHANCED SIGNAL DETECTED!
+2025-08-04 14:16:27.139946 -    Signal: SELL
+2025-08-04 14:16:27.146149 -    Confidence: 0.267 (Base: 0.267)
+2025-08-04 14:16:27.152698 -    Strength: 0.034
+2025-08-04 14:16:27.156863 -    Current Price: 3359.63200
+2025-08-04 14:16:27.161046 -    TP: 3342.83384 | SL: 3376.43016
+2025-08-04 14:16:27.166559 -    📊 Technical Analysis:
+2025-08-04 14:16:27.170733 -       RSI: 41.4
+2025-08-04 14:16:27.174864 -       MA Short: 3360.52763
+2025-08-04 14:16:27.179946 -       EMA Fast: 3360.44896
+2025-08-04 14:16:27.185586 -       BB Upper: 3362.01936
+2025-08-04 14:16:27.189656 -       BB Lower: 3359.06002
+2025-08-04 14:16:27.194443 -    📈 Signal Scores:
+2025-08-04 14:16:27.198534 -       Buy Score: 2
+2025-08-04 14:16:27.203247 -       Sell Score: 4
+2025-08-04 14:16:27.211755 - 📤 Sending Enhanced SELL order:
+2025-08-04 14:16:27.215774 -    Symbol: XAUUSDm
+2025-08-04 14:16:27.219765 -    Volume: 0.01 lots
+2025-08-04 14:16:27.228947 -    Price: 3359.63200
+2025-08-04 14:16:27.234161 -    TP: 3342.83384
+2025-08-04 14:16:27.241311 -    SL: 3376.43016
+2025-08-04 14:16:27.245322 -    Spread: 0.16000
+2025-08-04 14:16:27.377728 - 🎯 Enhanced SELL Order SUCCESSFUL!
+2025-08-04 14:16:27.387222 -    Ticket: #1897762136
+2025-08-04 14:16:27.394000 -    Executed @ 3359.63200
+2025-08-04 14:16:27.404481 -    TP: 3342.83384 | SL: 3376.43016
+2025-08-04 14:16:27.412007 -    Volume: 0.01 lots
+2025-08-04 14:16:27.425161 - ✅ Trade #13 executed successfully!
+2025-08-04 14:16:28.555938 - 🛑 ENHANCED WINDOWS MT5 TRADING BOT STOPPED!
+2025-08-04 14:16:28.558708 -    ═══════════════════════════════════════
+2025-08-04 14:16:28.562848 -    📊 SESSION SUMMARY:
+2025-08-04 14:16:28.565533 -       Orders Executed: 13
+2025-08-04 14:16:28.569453 -       Opportunities Captured: 13
+2025-08-04 14:16:28.571738 -       Opportunities Missed: 0
+2025-08-04 14:16:28.576450 -       Total Opportunities: 13
+2025-08-04 14:16:28.579377 -       Success Rate: 100.0%
+2025-08-04 14:16:28.582483 -       Price Feed Errors: 0
+2025-08-04 14:16:28.586996 -    ═══════════════════════════════════════
+2025-08-04 14:16:28.591856 -    💰 PERFORMANCE:
+2025-08-04 14:16:28.594958 -       Initial Balance: $6,087,680.98
+2025-08-04 14:16:28.597966 -       Final Balance: $6,087,680.98
+2025-08-04 14:16:28.602454 -       Total Return: +0.00%
+2025-08-04 14:16:28.606096 -    ═══════════════════════════════════════
+2025-08-04 14:16:35.434084 - 🛑 Enhanced trading loop stopped
+2025-08-04 14:16:37.376937 - 🔌 MT5 connection closed
+2025-08-04 14:16:37.390169 - 👋 Enhanced Windows MT5 Trading Bot session ended
+2025-08-04 14:16:37.399555 - 💾 All logs saved to files
+2025-08-05 00:34:58.036721 - 🔗 Connecting to MetaTrader5 with enhanced validation...
+2025-08-05 00:34:58.082891 - 🔍 Validating symbol: XAUUSDm
+2025-08-05 00:34:58.083646 - ✅ Symbol XAUUSDm is available
+2025-08-05 00:34:58.084337 - ✅ Price feed working - Bid: 3373.03700, Ask: 3373.19700
+2025-08-05 00:34:58.095012 - ✅ Historical data available: 50 bars
+2025-08-05 00:34:58.098121 - ✅ Enhanced MT5 Connection Successful!
+2025-08-05 00:34:58.098678 -    Account: 273631674
+2025-08-05 00:34:58.099083 -    Balance: $5,000,000.00
+2025-08-05 00:34:58.099424 -    Server: Exness-MT5Trial6
+2025-08-05 00:34:58.099764 -    Leverage: 1:2000
+2025-08-05 00:34:58.100218 -    Symbol: XAUUSDm ✅
+2025-08-05 00:34:58.110316 - 🚀 Ready for enhanced opportunity capture!
+2025-08-05 00:34:59.828473 - 🚀 ENHANCED WINDOWS MT5 TRADING BOT STARTED!
+2025-08-05 00:34:59.830550 -    ═══════════════════════════════════════
+2025-08-05 00:34:59.832250 -    🎯 Symbol: XAUUSDm
+2025-08-05 00:34:59.844111 -    💰 Lot Size: 0.01
+2025-08-05 00:34:59.847137 -    ⏱️  Scan Interval: 8s
+2025-08-05 00:34:59.854291 -    📈 Take Profit: 1.0%
+2025-08-05 00:34:59.861369 -    📉 Stop Loss: 3.0%
+2025-08-05 00:34:59.862036 -    🔥 Scalping Mode: ✅ Enabled
+2025-08-05 00:34:59.863524 -    ═══════════════════════════════════════
+2025-08-05 00:34:59.865053 -    🔧 Enhanced Configuration:
+2025-08-05 00:34:59.866484 -       Price Spike Threshold: 2 (Fixed)
+2025-08-05 00:34:59.868914 -       Signal Confidence: 0.25
+2025-08-05 00:34:59.870576 -       Max Positions: 50
+2025-08-05 00:34:59.872094 -       Trading Hours: 0:00-23:00
+2025-08-05 00:34:59.876676 -    ═══════════════════════════════════════
+2025-08-05 00:34:59.879145 - 🎯 Enhanced features active:
+2025-08-05 00:34:59.880790 -    ✅ Fixed price retrieval mechanism
+2025-08-05 00:34:59.882143 -    ⚡ Optimized signal generation
+2025-08-05 00:34:59.883960 -    🔄 Enhanced retry logic
+2025-08-05 00:34:59.885588 -    📊 Improved opportunity capture
+2025-08-05 00:34:59.897859 -    🛡️  Advanced error handling
+2025-08-05 00:34:59.903771 - 🚀 Enhanced trading loop started with MT5 integration
+2025-08-05 00:34:59.929896 - ❌ Balance-based TP/SL calculation error: Invalid TP/SL calculation
+2025-08-05 00:34:59.932984 - 🎯 ENHANCED SIGNAL DETECTED!
+2025-08-05 00:34:59.934750 -    Signal: BUY
+2025-08-05 00:34:59.936801 -    Confidence: 0.267 (Base: 0.267)
+2025-08-05 00:34:59.938747 -    Strength: 0.250
+2025-08-05 00:34:59.941253 -    Current Price: 3373.23600
+2025-08-05 00:34:59.944098 -    TP: 3390.10218 | SL: 3356.36982
+2025-08-05 00:34:59.948736 -    📊 Technical Analysis:
+2025-08-05 00:34:59.950589 -       RSI: 51.9
+2025-08-05 00:34:59.952668 -       MA Short: 3373.21925
+2025-08-05 00:34:59.955399 -       EMA Fast: 3373.29441
+2025-08-05 00:34:59.957392 -       BB Upper: 3374.25593
+2025-08-05 00:34:59.960317 -       BB Lower: 3371.54994
+2025-08-05 00:34:59.962472 -    📈 Signal Scores:
+2025-08-05 00:34:59.964708 -       Buy Score: 4
+2025-08-05 00:34:59.966651 -       Sell Score: 1
+2025-08-05 00:34:59.981744 - 📤 Sending Enhanced BUY order:
+2025-08-05 00:34:59.984080 -    Symbol: XAUUSDm
+2025-08-05 00:34:59.986256 -    Volume: 0.01 lots
+2025-08-05 00:34:59.988133 -    Price: 3373.39600
+2025-08-05 00:34:59.990242 -    TP: 3390.10218
+2025-08-05 00:34:59.994450 -    SL: 3356.36982
+2025-08-05 00:34:59.996502 -    Spread: 0.16000
+2025-08-05 00:35:00.163951 - 🎯 Enhanced BUY Order SUCCESSFUL!
+2025-08-05 00:35:00.172726 -    Ticket: #1900812165
+2025-08-05 00:35:00.177543 -    Executed @ 3373.39600
+2025-08-05 00:35:00.183196 -    TP: 3390.10218 | SL: 3356.36982
+2025-08-05 00:35:00.187081 -    Volume: 0.01 lots
+2025-08-05 00:35:00.206191 - ✅ Trade #1 executed successfully!
+2025-08-05 00:35:08.226002 - 📊 Market analysis: WAIT - Confidence: 0.000
+2025-08-05 00:35:16.245572 - 📊 Market analysis: WAIT - Confidence: 0.000
+2025-08-05 00:35:24.258644 - 📊 Market analysis: WAIT - Confidence: 0.000
+2025-08-05 00:35:27.761621 - 🛑 ENHANCED WINDOWS MT5 TRADING BOT STOPPED!
+2025-08-05 00:35:27.766340 -    ═══════════════════════════════════════
+2025-08-05 00:35:27.770477 -    📊 SESSION SUMMARY:
+2025-08-05 00:35:27.773924 -       Orders Executed: 1
+2025-08-05 00:35:27.776674 -       Opportunities Captured: 1
+2025-08-05 00:35:27.779149 -       Opportunities Missed: 0
+2025-08-05 00:35:27.782125 -       Total Opportunities: 1
+2025-08-05 00:35:27.784100 -       Success Rate: 100.0%
+2025-08-05 00:35:27.786096 -       Price Feed Errors: 0
+2025-08-05 00:35:27.787963 -    ═══════════════════════════════════════
+2025-08-05 00:35:27.792607 -    💰 PERFORMANCE:
+2025-08-05 00:35:27.795041 -       Initial Balance: $5,000,000.00
+2025-08-05 00:35:27.797334 -       Final Balance: $5,000,000.00
+2025-08-05 00:35:27.800379 -       Total Return: +0.00%
+2025-08-05 00:35:27.802554 -    ═══════════════════════════════════════
+2025-08-05 00:35:30.739809 - 🔄 Attempting to close 1 positions...
+2025-08-05 00:35:30.880773 - ✅ Position 2271290988 closed @ 3373.28300
+2025-08-05 00:35:30.886446 - 📊 Close All Summary: ✅1 closed, ❌0 failed
+2025-08-05 00:35:31.914634 - 🔌 MT5 connection closed
+2025-08-05 00:35:31.927443 - 👋 Enhanced Windows MT5 Trading Bot session ended
+2025-08-05 00:35:31.936214 - 💾 All logs saved to files

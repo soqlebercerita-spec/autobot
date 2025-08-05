@@ -1,0 +1,64 @@
+modules = ["python-3.11"]
+
+[nix]
+channel = "stable-25_05"
+packages = ["cairo", "ffmpeg-full", "freetype", "ghostscript", "glibcLocales", "gobject-introspection", "gtk3", "pkg-config", "qhull", "tcl", "tk"]
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Trading Bot"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Windows Trading Bot"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Multi-Mode Trading"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Real MT5 Trader"
+
+[[workflows.workflow]]
+name = "Trading Bot"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python trading_bot_integrated.py"
+
+[[workflows.workflow]]
+name = "Windows Trading Bot"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python trading_bot_windows.py"
+
+[[workflows.workflow]]
+name = "Multi-Mode Trading"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python trading_modes.py"
+
+[[workflows.workflow]]
+name = "Real MT5 Trader"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python real_mt5_trader.py"
+
+[agent]
+expertMode = true
