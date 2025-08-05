@@ -5,3 +5,13 @@ channel = "stable-25_05"
 packages = ["cairo", "ffmpeg-full", "freetype", "ghostscript", "glibcLocales", "gobject-introspection", "gtk3", "pkg-config", "qhull", "tcl", "tk"]
 
 [workflows]
+runButton = "Start AuraTrade Bot"
+
+[[workflows.workflow]]
+name = "Start AuraTrade Bot"
+author = 45989302
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python bot.py"
