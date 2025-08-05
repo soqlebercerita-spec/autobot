@@ -1992,3 +1992,7 @@
 2025-08-05 02:20:12.347418 -    Features: Technical Analysis + Risk Management + Windows MT5
 2025-08-05 02:20:12.347970 -    Version: v2.0 Enhanced for Windows MT5
 2025-08-05 02:20:12.348516 - ℹ️  Non-Windows platform - Simulation mode only
+2025-08-05 02:27:17.889391 - 🚀 Enhanced Integrated Trading Bot Started
+2025-08-05 02:27:17.892460 -    Features: Technical Analysis + Risk Management + Windows MT5
+2025-08-05 02:27:17.893164 -    Version: v2.0 Enhanced for Windows MT5
+2025-08-05 02:27:17.893777 - ℹ️  Non-Windows platform - Simulation mode only
