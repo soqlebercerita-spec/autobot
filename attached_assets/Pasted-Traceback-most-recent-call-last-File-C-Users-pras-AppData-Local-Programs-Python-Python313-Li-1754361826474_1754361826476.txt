@@ -1,0 +1,35 @@
+Traceback (most recent call last):
+  File "C:\Users\pras\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 1043, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "C:\Users\pras\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 994, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pras\OneDrive\Desktop\prototype\prototype17\autobot\tradebot/trading_bot_integrated.py", line 699, in enhanced_trading_loop
+    self.log("🛑 Enhanced trading loop stopped")
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pras\OneDrive\Desktop\prototype\prototype17\autobot\tradebot/trading_bot_integrated.py", line 486, in log
+    self.log_box.insert(tk.END, log_entry + "\n")
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pras\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 3967, in insert
+    self.tk.call((self._w, 'insert', index, chars) + args)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: invalid command name ".!labelframe4.!notebook.!frame.!frame.!scrolledtext"
+🔌 MT5 Market Data disconnected
+Exception ignored in: <function Variable.__del__ at 0x000001B1F8E29120>
+Traceback (most recent call last):
+  File "C:\Users\pras\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 414, in __del__
+    if self._tk.getboolean(self._tk.call("info", "exists", self._name)):
+RuntimeError: main thread is not in main loop
+Exception ignored in: <function Variable.__del__ at 0x000001B1F8E29120>
+Traceback (most recent call last):
+  File "C:\Users\pras\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 414, in __del__
+    if self._tk.getboolean(self._tk.call("info", "exists", self._name)):
+RuntimeError: main thread is not in main loop
+Exception ignored in: <function Variable.__del__ at 0x000001B1F8E29120>
+Traceback (most recent call last):
+  File "C:\Users\pras\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 414, in __del__
+    if self._tk.getboolean(self._tk.call("info", "exists", self._name)):
+RuntimeError: main thread is not in main loop
+Exception ignored in: <function Variable.__del__ at 0x000001B1F8E29120>
+Traceback (most recent call last):
