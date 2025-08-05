@@ -1984,3 +1984,7 @@
 2025-08-05 00:35:31.914634 - 🔌 MT5 connection closed
 2025-08-05 00:35:31.927443 - 👋 Enhanced Windows MT5 Trading Bot session ended
 2025-08-05 00:35:31.936214 - 💾 All logs saved to files
+2025-08-05 02:15:28.796601 - 🚀 Enhanced Integrated Trading Bot Started
+2025-08-05 02:15:28.801224 -    Features: Technical Analysis + Risk Management + Windows MT5
+2025-08-05 02:15:28.801853 -    Version: v2.0 Enhanced for Windows MT5
+2025-08-05 02:15:28.805496 - ℹ️  Non-Windows platform - Simulation mode only
