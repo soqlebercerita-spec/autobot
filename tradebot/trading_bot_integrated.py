@@ -534,14 +534,23 @@ class TradingBot:
         basic_left = ttk.Frame(basic_tab)
         basic_left.pack(side="left", fill="y", padx=10)
         
-        ttk.Label(basic_left, text="Symbol:").grid(row=0, column=0, sticky="e", pady=5, padx=5)
-        ttk.Entry(basic_left, textvariable=self.symbol_var, width=15).grid(row=0, column=1, pady=5)
+        # Symbol setting
+        symbol_frame = ttk.Frame(basic_left)
+        symbol_frame.pack(fill="x", pady=5)
+        ttk.Label(symbol_frame, text="Symbol:").pack(side="left", padx=(0,5))
+        ttk.Entry(symbol_frame, textvariable=self.symbol_var, width=15).pack(side="right")
         
-        ttk.Label(basic_left, text="Lot Size:").grid(row=1, column=0, sticky="e", pady=5, padx=5)
-        ttk.Entry(basic_left, textvariable=self.lot_var, width=15).grid(row=1, column=1, pady=5)
+        # Lot size setting
+        lot_frame = ttk.Frame(basic_left)
+        lot_frame.pack(fill="x", pady=5)
+        ttk.Label(lot_frame, text="Lot Size:").pack(side="left", padx=(0,5))
+        ttk.Entry(lot_frame, textvariable=self.lot_var, width=15).pack(side="right")
         
-        ttk.Label(basic_left, text="Scan Interval (s):").grid(row=2, column=0, sticky="e", pady=5, padx=5)
-        ttk.Entry(basic_left, textvariable=self.interval_var, width=15).grid(row=2, column=1, pady=5)
+        # Interval setting
+        interval_frame = ttk.Frame(basic_left)
+        interval_frame.pack(fill="x", pady=5)
+        ttk.Label(interval_frame, text="Scan Interval (s):").pack(side="left", padx=(0,5))
+        ttk.Entry(interval_frame, textvariable=self.interval_var, width=15).pack(side="right")
         
         # Balance-based TP/SL
         tpsl_frame = ttk.LabelFrame(basic_tab, text="💰 Auto TP/SL (% of Balance)", padding=10)
@@ -550,11 +559,16 @@ class TradingBot:
         ttk.Checkbutton(tpsl_frame, text="🎯 Enable Auto TP/SL", 
                        variable=self.auto_tp_sl_var).pack(anchor="w", pady=5)
         
-        ttk.Label(tpsl_frame, text="Take Profit (%):").grid(row=1, column=0, sticky="e", pady=3)
-        ttk.Entry(tpsl_frame, textvariable=self.tp_balance_var, width=10).grid(row=1, column=1, pady=3)
+        # Create sub-frames for proper layout
+        tp_frame = ttk.Frame(tpsl_frame)
+        tp_frame.pack(fill="x", pady=3)
+        ttk.Label(tp_frame, text="Take Profit (%):").pack(side="left")
+        ttk.Entry(tp_frame, textvariable=self.tp_balance_var, width=10).pack(side="right")
         
-        ttk.Label(tpsl_frame, text="Stop Loss (%):").grid(row=2, column=0, sticky="e", pady=3)
-        ttk.Entry(tpsl_frame, textvariable=self.sl_balance_var, width=10).grid(row=2, column=1, pady=3)
+        sl_frame = ttk.Frame(tpsl_frame)
+        sl_frame.pack(fill="x", pady=3)
+        ttk.Label(sl_frame, text="Stop Loss (%):").pack(side="left")
+        ttk.Entry(sl_frame, textvariable=self.sl_balance_var, width=10).pack(side="right")
         
         # Advanced Settings Tab
         advanced_tab = ttk.Frame(notebook)
@@ -678,16 +692,21 @@ class TradingBot:
             log_entry = f"{icon} {timestamp} - {message}\n"
             
             try:
-                if self.log_box and self.log_box.winfo_exists():
+                if self.log_box and hasattr(self.log_box, 'winfo_exists') and self.log_box.winfo_exists():
                     self.log_box.insert(tk.END, log_entry)
                     self.log_box.see(tk.END)
                     
                     # Color the last line
-                    last_line = self.log_box.get("end-2l", "end-1l")
-                    line_start = f"end-2l"
-                    self.log_box.tag_add(log_type, line_start, "end-1l")
-                    self.log_box.tag_config(log_type, foreground=color)
-            except:
+                    try:
+                        last_line = self.log_box.get("end-2l", "end-1l")
+                        line_start = f"end-2l"
+                        self.log_box.tag_add(log_type, line_start, "end-1l")
+                        self.log_box.tag_config(log_type, foreground=color)
+                    except:
+                        pass  # Skip coloring if there's an issue
+                else:
+                    print(f"{log_entry.strip()}")
+            except Exception as e:
                 print(f"{log_entry.strip()}")
         
         # Add to queue for thread-safe update
@@ -707,10 +726,12 @@ class TradingBot:
             perf_entry = f"📊 {timestamp} - {message}\n"
             
             try:
-                if self.perf_box and self.perf_box.winfo_exists():
+                if self.perf_box and hasattr(self.perf_box, 'winfo_exists') and self.perf_box.winfo_exists():
                     self.perf_box.insert(tk.END, perf_entry)
                     self.perf_box.see(tk.END)
-            except:
+                else:
+                    print(f"PERF: {perf_entry.strip()}")
+            except Exception as e:
                 print(f"PERF: {perf_entry.strip()}")
         
         self.gui_queue.put(update_perf)
