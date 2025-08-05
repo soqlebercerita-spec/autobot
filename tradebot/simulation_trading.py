@@ -58,6 +58,45 @@ class OrderSendResult:
         self.deal = deal
         self.order = order
 
+import time
+import random
+from datetime import datetime, timedelta
+
+class AccountInfo:
+    def __init__(self):
+        self.balance = 10000.0
+        self.equity = 10000.0
+        self.profit = 0.0
+        self.margin = 0.0
+        self.free_margin = 10000.0
+        self.login = 999999
+        self.margin_level = 0.0
+
+class Position:
+    def __init__(self, ticket, symbol, volume, type_order, price_open):
+        self.ticket = ticket
+        self.symbol = symbol
+        self.volume = volume
+        self.type = type_order
+        self.price_open = price_open
+        self.price_current = price_open
+        self.profit = 0.0
+        self.swap = 0.0
+        self.comment = ""
+        self.time = datetime.now()
+
+class SymbolInfo:
+    def __init__(self, symbol, bid, ask):
+        self.symbol = symbol
+        self.bid = bid
+        self.ask = ask
+        self.spread = ask - bid
+
+class OrderResult:
+    def __init__(self, retcode, deal=None):
+        self.retcode = retcode
+        self.deal = deal
+
 class SimulationTrading:
     """Enhanced trading simulation with realistic conditions"""
     
@@ -74,6 +113,10 @@ class SimulationTrading:
         self.TRADE_ACTION_DEAL = 1
         self.ORDER_FILLING_IOC = 1
         self.ORDER_TIME_GTC = 0
+        
+        # Return codes
+        self.TRADE_RETCODE_DONE = 10009
+        self.TRADE_RETCODE_ERROR = 10013
         
         # Slippage and execution settings
         self.max_slippage = 3  # pips
@@ -104,6 +147,146 @@ class SimulationTrading:
             total_profit = sum(pos.profit for pos in self.positions.values())
             self.account.equity = self.account.balance + total_profit
             self.account.profit = total_profit
+            return self.account
+        except Exception as e:
+            print(f"Account info error: {e}")
+            return self.account
+
+    def symbol_info_tick(self, symbol):
+        """Get current tick data for symbol"""
+        try:
+            current_price = self.market_api.get_current_price(symbol)
+            spread = self.market_api.get_spread(symbol)
+            
+            return SymbolInfo(
+                symbol=symbol,
+                bid=current_price - spread/2,
+                ask=current_price + spread/2
+            )
+        except Exception as e:
+            print(f"Symbol info error: {e}")
+            return None
+
+    def order_send(self, request):
+        """Send trading order"""
+        try:
+            time.sleep(self.execution_delay)
+            
+            # Basic validation
+            if request.get('volume', 0) <= 0:
+                return OrderResult(self.TRADE_RETCODE_ERROR)
+            
+            # Check account balance
+            if self.account.balance <= 0:
+                return OrderResult(self.TRADE_RETCODE_ERROR)
+            
+            # Create position
+            ticket = self.next_ticket
+            self.next_ticket += 1
+            
+            # Add some realistic slippage
+            price = request.get('price', 0)
+            if random.random() < 0.1:  # 10% chance of slippage
+                slippage = random.uniform(0, self.max_slippage) * 0.0001
+                if request.get('type') == self.ORDER_TYPE_BUY:
+                    price += slippage
+                else:
+                    price -= slippage
+            
+            position = Position(
+                ticket=ticket,
+                symbol=request.get('symbol'),
+                volume=request.get('volume'),
+                type_order=request.get('type'),
+                price_open=price
+            )
+            
+            self.positions[ticket] = position
+            
+            return OrderResult(self.TRADE_RETCODE_DONE, ticket)
+            
+        except Exception as e:
+            print(f"Order send error: {e}")
+            return OrderResult(self.TRADE_RETCODE_ERROR)
+
+    def positions_get(self, symbol=None):
+        """Get open positions"""
+        try:
+            if symbol:
+                return [pos for pos in self.positions.values() if pos.symbol == symbol]
+            return list(self.positions.values())
+        except Exception as e:
+            print(f"Positions get error: {e}")
+            return []
+
+    def position_close(self, ticket):
+        """Close position by ticket"""
+        try:
+            if ticket in self.positions:
+                pos = self.positions[ticket]
+                
+                # Calculate profit
+                current_price = self.market_api.get_current_price(pos.symbol)
+                if pos.type == self.ORDER_TYPE_BUY:
+                    profit = (current_price - pos.price_open) * pos.volume * 100
+                else:
+                    profit = (pos.price_open - current_price) * pos.volume * 100
+                
+                # Update account balance
+                self.account.balance += profit
+                
+                # Remove position
+                del self.positions[ticket]
+                
+                return OrderResult(self.TRADE_RETCODE_DONE)
+            
+            return OrderResult(self.TRADE_RETCODE_ERROR)
+            
+        except Exception as e:
+            print(f"Position close error: {e}")
+            return OrderResult(self.TRADE_RETCODE_ERROR)
+
+    def copy_rates_from_pos(self, symbol, timeframe, start_pos, count):
+        """Get historical rates"""
+        try:
+            data = self.market_api.get_market_data(symbol, count=count)
+            if not data:
+                return None
+            
+            # Convert to MT5-like format
+            rates = []
+            for point in data:
+                rates.append({
+                    'time': point.get('time', datetime.now()),
+                    'open': point.get('open', 0),
+                    'high': point.get('high', 0),
+                    'low': point.get('low', 0),
+                    'close': point.get('close', 0),
+                    'tick_volume': point.get('volume', 100),
+                    'spread': 0,
+                    'real_volume': point.get('volume', 100)
+                })
+            
+            return rates
+            
+        except Exception as e:
+            print(f"Copy rates error: {e}")
+            return None
+
+    def update_positions(self):
+        """Update position profits"""
+        try:
+            for pos in self.positions.values():
+                current_price = self.market_api.get_current_price(pos.symbol)
+                pos.price_current = current_price
+                
+                if pos.type == self.ORDER_TYPE_BUY:
+                    pos.profit = (current_price - pos.price_open) * pos.volume * 100
+                else:
+                    pos.profit = (pos.price_open - current_price) * pos.volume * 100
+                    
+        except Exception as e:
+            print(f"Update positions error: {e}")
             
             # Calculate margin (simplified)
             total_margin = 0

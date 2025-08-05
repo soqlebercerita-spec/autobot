@@ -82,6 +82,11 @@ def find_best_trading_bot():
 def safe_import_module(file_path):
     """Safely import a module from file path"""
     try:
+        # Add the tradebot directory to sys.path to fix imports
+        tradebot_dir = os.path.join(os.getcwd(), 'tradebot')
+        if tradebot_dir not in sys.path:
+            sys.path.insert(0, tradebot_dir)
+        
         spec = importlib.util.spec_from_file_location("trading_module", file_path)
         if spec is None:
             return None
@@ -90,6 +95,7 @@ def safe_import_module(file_path):
         return module
     except Exception as e:
         print(f"❌ Failed to import {file_path}: {e}")
+        print(f"   Current sys.path: {sys.path[:3]}...")  # Show first 3 entries
         return None
 
 def launch_trading_bot():

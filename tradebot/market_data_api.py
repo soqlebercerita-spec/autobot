@@ -8,7 +8,7 @@ import time
 import random
 import numpy as np
 from datetime import datetime, timedelta
-from config import config
+from tradebot.config import config
 
 class MarketDataAPI:
     """Enhanced market data provider with multiple sources and retry logic"""

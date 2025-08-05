@@ -40,10 +40,10 @@ except ImportError:
     np = MockNumpy()
 
 # Import enhanced modules
-from market_data_api import MarketDataAPI
-from simulation_trading import SimulationTrading
-from enhanced_indicators import EnhancedIndicators
-from config import config
+from tradebot.market_data_api import MarketDataAPI
+from tradebot.simulation_trading import SimulationTrading
+from tradebot.enhanced_indicators import EnhancedIndicators
+from tradebot.config import config
 
 class TradingBot:
     def __init__(self):
