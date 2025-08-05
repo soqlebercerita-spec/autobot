@@ -1,207 +1,189 @@
 
+#!/usr/bin/env python3
 """
-AuraTrade Bot - Enhanced Entry Point
-Institutional-Level AI Auto Trading Bot with HFT Platform
-Uses the working tradebot system
+AuraTrade - Institutional-Level Python Trading Bot
+Main Entry Point with Auto-Detection and Safe Launch
 """
 
 import sys
 import os
-import threading
-import time
-from datetime import datetime
-import tkinter as tk
-from tkinter import messagebox
+import traceback
+import platform
+import importlib.util
 
-# Add tradebot folder to path
-sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'tradebot'))
-
-try:
-    from config import config
-    from trading_bot_integrated import TradingBot
-    print("✅ Successfully imported working trading bot system")
-except ImportError as e:
-    print(f"❌ Import error: {e}")
-    print("🔄 Trying alternative import...")
-    try:
-        from tradebot.config import config
-        from tradebot.trading_bot_integrated import TradingBot
-        print("✅ Alternative import successful")
-    except ImportError as e2:
-        print(f"❌ Alternative import failed: {e2}")
-        sys.exit(1)
-
-class AuraTradeBotLauncher:
-    def __init__(self):
-        """Initialize the AuraTrade Bot Launcher"""
-        self.bot = None
-        self.running = False
-        print("🚀 AuraTrade Bot Launcher initialized")
-        print(f"📊 Using Balance-Based TP/SL System")
-        print(f"   • Normal TP: {config.TP_PERSEN_BALANCE*100}% of balance")
-        print(f"   • Normal SL: {config.SL_PERSEN_BALANCE*100}% of balance")
-        print(f"   • Scalping TP: {config.SCALPING_TP_PERSEN_BALANCE*100}% of balance")
-        print(f"   • HFT TP: {config.HFT_TP_PERSEN_BALANCE*100}% of balance")
+def check_and_install_requirements():
+    """Check and install required packages if missing"""
+    required_packages = [
+        'requests', 'numpy', 'pandas', 'matplotlib', 
+        'pillow', 'psutil', 'schedule', 'colorama'
+    ]
     
-    def check_dependencies(self):
-        """Check if all required dependencies are available"""
-        required_modules = [
-            'numpy', 'pandas', 'requests', 'tkinter'
-        ]
-        
-        missing = []
-        for module in required_modules:
-            try:
-                __import__(module)
-                print(f"✅ {module} available")
-            except ImportError:
-                missing.append(module)
-                print(f"❌ {module} missing")
-        
-        return missing
-    
-    def show_startup_info(self):
-        """Show startup information"""
-        print("\n" + "="*60)
-        print("🎯 AURATRADE - INSTITUTIONAL TRADING BOT")
-        print("="*60)
-        print("📈 Features:")
-        print("   • HFT Engine (<1ms targeting)")
-        print("   • Balance-Based TP/SL System")
-        print("   • Multi-Symbol Trading (GOLD, FOREX, CRYPTO)")
-        print("   • Custom Indicators (No TA-Lib)")
-        print("   • Real-time GUI Interface")
-        print("   • Telegram Notifications")
-        print("   • Advanced Risk Management")
-        print("   • Machine Learning Integration")
-        print("\n🔧 Trading Modes Available:")
-        print("   • Normal Trading (Balanced)")
-        print("   • Scalping Mode (Quick profits)")
-        print("   • HFT Mode (Ultra-fast execution)")
-        print("="*60)
-    
-    def launch_gui_mode(self):
-        """Launch bot with GUI interface"""
+    missing_packages = []
+    for package in required_packages:
         try:
-            print("🖥️ Starting GUI Mode...")
-            self.bot = TradingBot()
-            self.bot.root.protocol("WM_DELETE_WINDOW", self.on_close)
-            self.bot.root.mainloop()
-            return True
-        except Exception as e:
-            print(f"❌ GUI launch error: {e}")
-            return False
-    
-    def launch_console_mode(self):
-        """Launch bot in console mode (no GUI)"""
-        try:
-            print("💻 Starting Console Mode...")
-            # Import the trading strategies directly
-            from trading_strategies import TradingStrategies
-            from market_data_api import MarketDataAPI
-            from risk_manager import RiskManager
-            
-            # Initialize components
-            market_data = MarketDataAPI()
-            risk_manager = RiskManager()
-            trading_strategies = TradingStrategies(market_data, risk_manager)
-            
-            print("✅ Console mode initialized")
-            print("🔄 Starting trading loop... (Press Ctrl+C to stop)")
-            
-            self.running = True
-            while self.running:
-                try:
-                    # Run a trading cycle
-                    trading_strategies.run_strategies()
-                    time.sleep(config.DEFAULT_INTERVAL)
-                except KeyboardInterrupt:
-                    print("\n👋 Stopping bot...")
-                    self.running = False
-                    break
-                except Exception as e:
-                    print(f"⚠️ Trading cycle error: {e}")
-                    time.sleep(5)
-            
-            return True
-        except Exception as e:
-            print(f"❌ Console launch error: {e}")
-            return False
-    
-    def on_close(self):
-        """Handle window close event"""
-        if messagebox.askokcancel("Quit", "Do you want to quit the trading bot?"):
-            self.running = False
-            if self.bot:
-                try:
-                    # Try to stop bot gracefully
-                    if hasattr(self.bot, 'stop_trading'):
-                        self.bot.stop_trading()
-                except:
-                    pass
-            self.bot.root.destroy()
-    
-    def start(self, mode="auto"):
-        """Start the trading bot"""
-        try:
-            self.show_startup_info()
-            
-            # Check dependencies
-            missing = self.check_dependencies()
-            if missing:
-                print(f"\n⚠️ Missing dependencies: {', '.join(missing)}")
-                print("📦 Installing missing packages...")
-                
-                import subprocess
-                for package in missing:
-                    try:
-                        subprocess.check_call([sys.executable, '-m', 'pip', 'install', package])
-                        print(f"✅ {package} installed")
-                    except:
-                        print(f"❌ Failed to install {package}")
-            
-            # Choose launch mode
-            if mode == "auto":
-                # Try GUI first, fallback to console
-                print("\n🚀 Auto-detecting best launch mode...")
-                if self.launch_gui_mode():
-                    return
-                else:
-                    print("🔄 GUI failed, trying console mode...")
-                    self.launch_console_mode()
-            elif mode == "gui":
-                self.launch_gui_mode()
-            elif mode == "console":
-                self.launch_console_mode()
+            if package == 'pillow':
+                import PIL
             else:
-                print("❌ Invalid mode. Use 'auto', 'gui', or 'console'")
-                
-        except Exception as e:
-            print(f"❌ Critical startup error: {e}")
-            import traceback
-            traceback.print_exc()
+                __import__(package)
+        except ImportError:
+            missing_packages.append(package)
+    
+    if missing_packages:
+        print(f"🚀 Installing missing packages: {', '.join(missing_packages)}")
+        import subprocess
+        for package in missing_packages:
+            try:
+                subprocess.check_call([sys.executable, '-m', 'pip', 'install', package])
+                print(f"✅ Successfully installed {package}")
+            except subprocess.CalledProcessError as e:
+                print(f"❌ Failed to install {package}: {e}")
+        
+        # Test imports again
+        print("🔄 Testing imports after installation...")
+        for package in missing_packages:
+            try:
+                if package == 'pillow':
+                    import PIL
+                else:
+                    __import__(package)
+                print(f"✅ {package} now available")
+            except ImportError:
+                print(f"❌ {package} still not available")
+
+def find_best_trading_bot():
+    """Find the best available trading bot to run"""
+    # Priority order: most advanced first
+    bot_candidates = [
+        {
+            'path': 'tradebot/trading_bot_integrated.py',
+            'name': 'Integrated Trading Bot (Best)',
+            'class_name': 'TradingBot'
+        },
+        {
+            'path': 'tradebot/trading_bot_windows.py', 
+            'name': 'Windows MT5 Trading Bot',
+            'class_name': 'TradingBotWindows'
+        },
+        {
+            'path': 'tradebot/main.py',
+            'name': 'Alternative Main',
+            'class_name': None
+        }
+    ]
+    
+    for bot in bot_candidates:
+        if os.path.exists(bot['path']):
+            print(f"✅ Found: {bot['name']} at {bot['path']}")
+            return bot
+    
+    print("❌ No trading bot found!")
+    return None
+
+def safe_import_module(file_path):
+    """Safely import a module from file path"""
+    try:
+        spec = importlib.util.spec_from_file_location("trading_module", file_path)
+        if spec is None:
+            return None
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        return module
+    except Exception as e:
+        print(f"❌ Failed to import {file_path}: {e}")
+        return None
+
+def launch_trading_bot():
+    """Launch the trading bot with proper error handling"""
+    print("=" * 60)
+    print("🤖 AURA TRADE - INSTITUTIONAL TRADING BOT")
+    print("   Advanced HFT • Multi-Symbol • AI-Powered")
+    print("=" * 60)
+    
+    # Check requirements first
+    check_and_install_requirements()
+    
+    # Find best bot
+    bot_info = find_best_trading_bot()
+    if not bot_info:
+        print("\n❌ No trading bot files found!")
+        input("Press Enter to exit...")
+        return False
+    
+    print(f"\n🚀 Launching: {bot_info['name']}")
+    
+    try:
+        # Try to import and run the bot
+        if bot_info['path'].endswith('.py'):
+            # Import as module and run
+            module = safe_import_module(bot_info['path'])
+            if module:
+                # Try different ways to start the bot
+                if hasattr(module, 'main'):
+                    print("📊 Starting bot via main() function...")
+                    module.main()
+                elif hasattr(module, bot_info['class_name']):
+                    print(f"📊 Starting bot via {bot_info['class_name']} class...")
+                    bot_class = getattr(module, bot_info['class_name'])
+                    bot = bot_class()
+                    if hasattr(bot, 'run'):
+                        bot.run()
+                    elif hasattr(bot, 'start'):
+                        bot.start()
+                    else:
+                        print("✅ Bot class instantiated successfully")
+                else:
+                    print("📊 Executing module directly...")
+                    # Module was imported, if it has startup code it should run
+            else:
+                print("❌ Failed to import bot module")
+                return False
+        
+        return True
+        
+    except KeyboardInterrupt:
+        print("\n👋 Bot stopped by user (Ctrl+C)")
+        return True
+    except Exception as e:
+        print(f"\n❌ Error launching bot: {e}")
+        print(f"📝 Traceback:\n{traceback.format_exc()}")
+        return False
+
+def show_system_info():
+    """Show system information"""
+    print(f"🖥️  Platform: {platform.system()} {platform.release()}")
+    print(f"🐍 Python: {sys.version.split()[0]}")
+    print(f"📁 Working Directory: {os.getcwd()}")
+    
+    # Check MT5 availability
+    try:
+        import MetaTrader5
+        print("✅ MetaTrader5 available")
+    except ImportError:
+        print("⚠️  MetaTrader5 not available (will use simulation)")
 
 def main():
     """Main entry point"""
-    launcher = AuraTradeBotLauncher()
+    try:
+        show_system_info()
+        success = launch_trading_bot()
+        
+        if not success:
+            print("\n🔧 TROUBLESHOOTING:")
+            print("1. Make sure all files are in place")
+            print("2. Check internet connection for package installation")
+            print("3. Try running from tradebot/ folder directly")
+            print("4. Check the tradebot/README.md for specific instructions")
+        
+        print(f"\n{'='*60}")
+        print("📞 Support: Check README files in tradebot/ folder")
+        print("🔄 To restart: python bot.py")
+        print(f"{'='*60}")
+        
+    except Exception as e:
+        print(f"\n💥 Critical error in main(): {e}")
+        print(f"📝 Traceback:\n{traceback.format_exc()}")
     
-    # Check command line arguments
-    if len(sys.argv) > 1:
-        mode = sys.argv[1].lower()
-        if mode in ['gui', 'console', 'auto']:
-            launcher.start(mode)
-        else:
-            print("Usage: python bot.py [gui|console|auto]")
-            print("Default: auto (tries GUI first, then console)")
-    else:
-        launcher.start("auto")
+    input("\nPress Enter to exit...")
 
 if __name__ == "__main__":
-    try:
-        main()
-    except KeyboardInterrupt:
-        print("\n👋 Bot stopped by user")
-    except Exception as e:
-        print(f"❌ Critical error: {e}")
-        import traceback
-        traceback.print_exc()
+    main()

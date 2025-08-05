@@ -1,6 +1,32 @@
+
 [project]
-name = "repl-nix-workspace"
+name = "aura-trade-bot"
 version = "0.1.0"
-description = "Add your description here"
+description = "AuraTrade - Institutional-Level Python Trading Bot with HFT capabilities"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "numpy>=1.21.0",
+    "pandas>=1.3.0", 
+    "requests>=2.25.0",
+    "matplotlib>=3.5.0",
+    "pillow>=8.0.0",
+    "psutil>=5.8.0",
+    "schedule>=1.1.0",
+    "colorama>=0.4.4",
+    "scikit-learn>=1.0.0",
+]
+
+[project.optional-dependencies]
+windows = [
+    "MetaTrader5>=5.0.0",
+    "pywin32>=227",
+    "plyer>=2.1.0",
+]
+dev = [
+    "pytest>=6.0.0",
+    "black>=21.0.0",
+]
+
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
