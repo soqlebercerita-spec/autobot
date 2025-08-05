@@ -1,0 +1,125 @@
+💼 PROJECT SUMMARY
+Nama Proyek: Institutional-Level AI Auto Trading Bot with HFT
+Platform: Python 3.11+, MT5, Windows 10/11
+Tujuan: Membangun sistem trading otomatis, HFT-ready, fully autonomous, real-time, tanpa TA-Lib, dan siap jalan hanya dengan python trading_bot_windows.py.
+
+🚀 FITUR UTAMA YANG HARUS ADA
+✅ PHASE 1 - CRITICAL FIXES (URGENT)
+ Fix Execution Error: Perbaiki error yang membuat bot gagal eksekusi.
+
+ True HFT Engine: Eksekusi <1ms, market making, arbitrage, order book scan.
+
+ Enhanced Automation: Semua proses auto (set & forget).
+
+✅ PHASE 2 - HIGH IMPACT ADDITIONS
+ News Sentiment Analysis: Dari news + sosial media (tanpa API berbayar).
+
+ Multi-Symbol Support: Trading beberapa pair secara paralel.
+
+ Dynamic Risk Management: Ukuran lot dan exposure otomatis menyesuaikan kondisi pasar.
+
+✅ PHASE 3 - PERFORMANCE ENHANCEMENTS
+ Machine Learning Engine: LSTM/CNN/Transformer untuk prediksi & pattern recognition.
+
+ Advanced Order Types: Partial fill, smart routing, slippage control.
+
+ Real-Time Dashboard & Telegram Alerts: GUI + notifikasi otomatis.
+
+🧠 STRATEGI & ANALISIS YANG HARUS DIDUKUNG
+HFT (<1ms): Orderbook imbalance, latency arbitrage.
+
+Technical (<10s): RSI, MACD, MA crossover, pattern recognition.
+
+Fundamental (1-5m): News sentiment, portfolio rebalancing, exposure control.
+
+Multi-Timeframe: Entry di M15, exit berdasarkan H1/H4 reversal.
+
+Auto Risk Mgmt: Max drawdown, auto reduce lot saat volatility tinggi.
+
+🔢 INDIKATOR KUSTOM (tanpa TA-Lib)
+Semua indikator dibangun pakai numpy, pandas, atau custom:
+
+SMA, EMA, WMA
+
+RSI (rolling)
+
+Bollinger Bands
+
+MACD (custom EMA)
+
+Stochastic
+
+ATR (true range)
+
+Volume analysis
+
+Support/Resistance detection
+
+🛠️ STRUKTUR FILE/FOLDER YANG WAJIB ADA
+bash
+Copy
+Edit
+AuraTrade/
+│
+├── bot.py                    # Entry point
+├── config/
+│   ├── config.py             # API key, settings
+│   ├── credentials.py
+│   └── settings.py
+│
+├── core/
+│   ├── trading_engine.py
+│   ├── mt5_connector.py
+│   ├── order_manager.py
+│   ├── risk_manager.py
+│   ├── position_sizing.py
+│   └── ml_engine.py
+│
+├── strategies/
+│   ├── hft_strategy.py
+│   ├── scalping_strategy.py
+│   └── arbitrage_strategy.py
+│
+├── analysis/
+│   ├── technical_analysis.py
+│   ├── pattern_recognition.py
+│   ├── market_conditions.py
+│   └── sentiment_analyzer.py
+│
+├── data/
+│   └── data_manager.py       # MT5 + Binance feed
+│
+├── gui/
+│   ├── main_window.py
+│   ├── charts.py
+│   └── dashboard.py
+│
+└── utils/
+    ├── logger.py
+    └── notifier.py           # Telegram / GUI alerts
+📈 TARGET KINERJA
+Win rate > 90%
+
+Drawdown < 5%
+
+Daily ROI: 2-5%
+
+Monthly ROI: 20-50%
+
+Auto entry/exit, auto stop-loss, auto rebalancing
+
+📬 NOTIFIKASI OTOMATIS
+Telegram Alerts: Trade executed, risk warning, portfolio update
+
+GUI Alerts: Win rate, equity, exposure
+
+Emergency Stop: Jika drawdown melebihi threshold
+
+📎 PENTING
+⚠️ NO TA-LIB – Semua indikator harus custom coded
+
+✅ Real Account Trading – Bukan simulasi
+
+✅ Windows native – 100% bisa run di Python Windows
+
+✅ Fully Automated – Tidak ada campur tangan manual
